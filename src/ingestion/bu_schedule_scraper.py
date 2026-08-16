@@ -91,7 +91,7 @@ def parse_schedule(html: str) -> list[dict]:
 def save_raw(games: list[dict], season: str) -> Path:
     RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
     out_path = RAW_DATA_DIR / f"schedule_{season.replace('-', '_')}.json"
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(games, f, indent=2)
     return out_path
 
@@ -116,7 +116,7 @@ def main():
         )
         RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
         debug_path = RAW_DATA_DIR / "schedule_page_raw.html"
-        with open(debug_path, "w") as f:
+        with open(debug_path, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"Raw HTML saved to {debug_path} for inspection.")
         return
