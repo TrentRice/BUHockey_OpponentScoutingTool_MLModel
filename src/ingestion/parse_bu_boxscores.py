@@ -27,7 +27,13 @@ PROCESSED_DATA_DIR = Path("data/processed")
 INTERIM_TEXT_DIR = Path("data/interim/boxscore_text")
 PROCESSED_BOXSCORE_DIR = Path("data/processed/boxscores")
 
-BU_TEAM_NAMES = {"Boston University", "BOS", "BU"}
+BU_TEAM_NAMES = {
+    "Boston University",
+    "Boston U.",
+    "Boston U",
+    "BOS",
+    "BU",
+}
 
 
 # ---------------------------------------------------------------------
@@ -36,9 +42,6 @@ BU_TEAM_NAMES = {"Boston University", "BOS", "BU"}
 
 
 def load_schedule(season: str) -> pd.DataFrame:
-    """
-    Loads the processed BU schedule CSV for a season.
-    """
     path = PROCESSED_DATA_DIR / f"bu_schedule_{season.replace('-', '_')}.csv"
 
     if not path.exists():
@@ -50,9 +53,6 @@ def load_schedule(season: str) -> pd.DataFrame:
 
 
 def html_to_soup(path: Path) -> BeautifulSoup:
-    """
-    Reads a saved HTML file and converts it to BeautifulSoup.
-    """
     with open(path, "r", encoding="utf-8") as f:
         html = f.read()
 
@@ -60,17 +60,11 @@ def html_to_soup(path: Path) -> BeautifulSoup:
 
 
 def get_clean_lines(soup: BeautifulSoup) -> list[str]:
-    """
-    Converts a BeautifulSoup page into clean non-empty text lines.
-    """
     text = soup.get_text("\n", strip=True)
     return [line.strip() for line in text.splitlines() if line.strip()]
 
 
 def save_debug_text(lines: list[str], season: str, game_id: str) -> Path:
-    """
-    Saves cleaned text lines for debugging parser behavior.
-    """
     out_dir = INTERIM_TEXT_DIR / season.replace("-", "_")
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -83,9 +77,6 @@ def save_debug_text(lines: list[str], season: str, game_id: str) -> Path:
 
 
 def extract_title_text(soup: BeautifulSoup) -> str | None:
-    """
-    Extracts page title if available.
-    """
     title = soup.select_one("title")
     if title:
         return title.get_text(" ", strip=True)
@@ -97,22 +88,78 @@ def extract_title_text(soup: BeautifulSoup) -> str | None:
     return None
 
 
+def normalize_team_name(name: str | None) -> str | None:
+    """
+    Normalizes common team aliases in SIDEARM box scores.
+    """
+    if name is None:
+        return None
+
+    text = str(name).strip()
+
+    if text in BU_TEAM_NAMES:
+        return "Boston University"
+
+    # Common abbreviation normalization from page titles/table headers.
+    replacements = {
+        "Boston U.": "Boston University",
+        "Boston U": "Boston University",
+        "Michigan St.": "Michigan State",
+        "UConn": "UConn",
+    }
+
+    return replacements.get(text, text)
+
+
+def is_bu_team_name(name: str | None) -> bool:
+    return normalize_team_name(name) == "Boston University"
+
+
 def trim_to_boxscore_content(lines: list[str], schedule_row: pd.Series) -> list[str]:
     """
     Removes site header/navigation text before the actual box score content.
 
-    The goterriers.com page often includes site-wide Upcoming/Results widgets
-    before the actual box score. We trim to the matchup line when possible.
+    The page often includes site-wide Upcoming/Results widgets before the
+    actual box score. We try several robust anchors.
 
     Examples:
         LIU vs Boston University
+        Michigan St. vs Boston U.
         Boston University vs UMass
     """
+
+    # Best case: the actual box score area usually includes this nav cluster:
+    #   Box Score
+    #   Play-by-play
+    #   Individual Stats
+    #   Team Stats
+    #
+    # But "Box Score" also appears in site widgets, so require the nearby cluster.
+    for i in range(len(lines) - 4):
+        if (
+            lines[i] == "Box Score"
+            and lines[i + 1] == "Play-by-play"
+            and lines[i + 2] == "Individual Stats"
+            and lines[i + 3] == "Team Stats"
+        ):
+            # The matchup line is usually a few lines before this.
+            start = max(0, i - 3)
+            return lines[start:]
+
+    # Second case: look for a matchup line containing vs and Boston.
+    for i, line in enumerate(lines):
+        lowered = line.lower()
+        if " vs " in lowered and "boston" in lowered:
+            return lines[i:]
+
+    # Third case: use schedule opponent, but allow common abbreviations.
     opponent_clean = str(schedule_row.get("opponent_clean"))
 
     possible_matchup_lines = [
         f"{opponent_clean} vs Boston University",
+        f"{opponent_clean} vs Boston U.",
         f"Boston University vs {opponent_clean}",
+        f"Boston U. vs {opponent_clean}",
     ]
 
     for i, line in enumerate(lines):
@@ -136,19 +183,10 @@ def is_float_string(value: str) -> bool:
 
 
 def is_player_number(value: str) -> bool:
-    """
-    Player rows usually start with a jersey number.
-    """
     return bool(re.fullmatch(r"\d{1,3}", str(value).strip()))
 
 
 def looks_like_player_name(value: str) -> bool:
-    """
-    SIDEARM player names in this text often look like:
-        Eiserman,Cole
-        McDonald,Casey
-        Perdion,JR
-    """
     value = str(value).strip()
 
     if value == "TEAM":
@@ -158,9 +196,6 @@ def looks_like_player_name(value: str) -> bool:
 
 
 def find_line_index(lines: list[str], target: str) -> int | None:
-    """
-    Finds the first exact index of a line.
-    """
     for i, line in enumerate(lines):
         if line == target:
             return i
@@ -169,9 +204,6 @@ def find_line_index(lines: list[str], target: str) -> int | None:
 
 
 def parse_int_or_none(value: str) -> int | None:
-    """
-    Parses integer strings, returning None for '-' or invalid values.
-    """
     value = str(value).strip()
 
     if value == "-":
@@ -188,9 +220,17 @@ def is_team_skater_block_header(line: str) -> bool:
     Matches headers like:
         LIU - 2
         Boston University - 4
+        Boston U. - 3
+        Michigan St. - 4
         #10/11 Boston College - 1
+        (3) UConn - 5
     """
-    return bool(re.fullmatch(r".+\s+-\s+\d+", str(line).strip()))
+    line = str(line).strip()
+
+    if line in {"Power Play Summary", "Penalty Summary", "Goalkeeping Statistics"}:
+        return False
+
+    return bool(re.fullmatch(r".+\s+-\s+\d+", line))
 
 
 # ---------------------------------------------------------------------
@@ -199,34 +239,6 @@ def is_team_skater_block_header(line: str) -> bool:
 
 
 def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
-    """
-    Extracts final score from the top box-score scoreboard.
-
-    Expected pattern after trimming to boxscore content:
-
-        LIU vs Boston University
-        ...
-        LIU
-        1-1-0
-        2
-        Final
-        4
-        Boston University
-        1-0-0
-
-    Or:
-        LIU
-        2
-        Final
-        4
-        Boston University
-
-    In SIDEARM output, the left-side score is usually before "Final",
-    and the right-side score is usually after "Final".
-
-    If BU is home, BU is usually the right-side team.
-    If BU is away, BU is usually the left-side team.
-    """
     is_home = bool(schedule_row.get("is_home"))
 
     bu_score = None
@@ -286,31 +298,6 @@ def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
 
 
 def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
-    """
-    Extracts Team Statistics block.
-
-    Text pattern:
-
-        Team Statistics
-        38
-        Shots
-        32
-        .053
-        Shots %
-        .125
-        32
-        Faceoffs Won
-        30
-        ...
-
-    In SIDEARM output, values are generally:
-        left team value
-        stat label
-        right team value
-
-    If BU is home, BU is right side.
-    If BU is away, BU is left side.
-    """
     idx = find_line_index(lines, "Team Statistics")
 
     stats = {
@@ -340,7 +327,6 @@ def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
 
     is_home = bool(schedule_row.get("is_home"))
 
-    # Mapping assumes left team is opponent and right team is BU.
     label_to_columns = {
         "Shots": ("opponent_shots", "bu_shots"),
         "Shots %": ("opponent_shot_pct", "bu_shot_pct"),
@@ -353,14 +339,12 @@ def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
         "Blocks": ("opponent_blocks", "bu_blocks"),
     }
 
-    # If BU is away, flip meaning of left/right.
     if not is_home:
         label_to_columns = {
             label: (right_col, left_col)
             for label, (left_col, right_col) in label_to_columns.items()
         }
 
-    # Parse local pattern: value, label, value
     for i in range(idx + 1, min(len(lines) - 2, idx + 100)):
         left_value = lines[i]
         label = lines[i + 1]
@@ -396,23 +380,6 @@ def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
 
 
 def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dict:
-    """
-    Extracts total PP goals/opportunities from lines like:
-
-        LIU - Power Plays
-        ...
-        10:00
-        9
-        1
-        0/5
-
-        BOS - Power Plays
-        ...
-        06:33
-        7
-        1
-        2/5
-    """
     stats = {
         "bu_pp_goals": None,
         "bu_pp_opportunities": None,
@@ -439,7 +406,7 @@ def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dic
             goals, opps = pp_value.split("/")
             pp_blocks.append(
                 {
-                    "team_label": team_label,
+                    "team_label": normalize_team_name(team_label),
                     "goals": int(goals),
                     "opportunities": int(opps),
                 }
@@ -448,7 +415,7 @@ def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dic
     for block in pp_blocks:
         team_label = block["team_label"]
 
-        if team_label in BU_TEAM_NAMES:
+        if is_bu_team_name(team_label):
             stats["bu_pp_goals"] = block["goals"]
             stats["bu_pp_opportunities"] = block["opportunities"]
         else:
@@ -467,36 +434,6 @@ def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dic
 
 
 def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
-    """
-    Extracts basic goalie totals from the Goalkeeping Statistics section.
-
-    Expected block:
-
-        LIU - Goalkeeping
-        #
-        Player
-        Dec
-        Minutes
-        GA
-        EN
-        1
-        2
-        3
-        Totals
-        30
-        Duris,Daniel
-        L
-        57:37
-        4
-        0
-        5
-        13
-        10
-        28
-
-        BOS - Goalkeeping
-        ...
-    """
     stats = {
         "bu_goalie": None,
         "opponent_goalie": None,
@@ -517,16 +454,16 @@ def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
 
     goalie_blocks = []
 
-    for i in range(idx + 1, min(len(lines), idx + 250)):
+    for i in range(idx + 1, min(len(lines), idx + 300)):
         if not lines[i].endswith(" - Goalkeeping"):
             continue
 
         team_label = lines[i].replace(" - Goalkeeping", "").strip()
+        normalized_team_label = normalize_team_name(team_label)
 
         row_start = None
 
-        # Find first player row after header.
-        for j in range(i + 1, min(len(lines), i + 60)):
+        for j in range(i + 1, min(len(lines), i + 70)):
             if is_int_string(lines[j]) and j + 9 < len(lines):
                 if "," in lines[j + 1] or lines[j + 1] == "TEAM":
                     row_start = j
@@ -540,11 +477,36 @@ def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
             decision = lines[row_start + 2]
             minutes = lines[row_start + 3]
             goals_against = int(lines[row_start + 4])
-            saves_total = int(lines[row_start + 9])
+
+            # In 3-period games, saves total is row_start + 9.
+            # In OT games, saves total can be row_start + 10 because there is a 4th period column.
+            # More robustly, find the "Totals" header in this goalie block.
+            totals_header_idx = None
+            for k in range(i + 1, min(len(lines), i + 30)):
+                if lines[k] == "Totals":
+                    totals_header_idx = k
+                    break
+
+            if totals_header_idx is not None:
+                # Offset from start of goalie data row to Totals column.
+                # Header begins at "#", then Player, Dec, Minutes, GA, EN, periods..., Totals.
+                header_start_idx = None
+                for k in range(i + 1, totals_header_idx + 1):
+                    if lines[k] == "#":
+                        header_start_idx = k
+                        break
+
+                if header_start_idx is not None:
+                    totals_offset = totals_header_idx - header_start_idx
+                    saves_total = int(lines[row_start + totals_offset])
+                else:
+                    saves_total = int(lines[row_start + 9])
+            else:
+                saves_total = int(lines[row_start + 9])
 
             goalie_blocks.append(
                 {
-                    "team_label": team_label,
+                    "team_label": normalized_team_label,
                     "player": player,
                     "decision": decision,
                     "minutes": minutes,
@@ -558,7 +520,7 @@ def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
     for block in goalie_blocks:
         team_label = block["team_label"]
 
-        if team_label in BU_TEAM_NAMES:
+        if is_bu_team_name(team_label):
             stats["bu_goalie"] = block["player"]
             stats["bu_goalie_decision"] = block["decision"]
             stats["bu_goalie_minutes"] = block["minutes"]
@@ -582,6 +544,39 @@ def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
 # ---------------------------------------------------------------------
 
 
+def find_team_header_before_shots_table(
+    lines: list[str],
+    shots_idx: int,
+) -> tuple[str | None, int | None]:
+    """
+    Given an index where lines[shots_idx] == 'Shots by Period',
+    look backward for a team skater table header like:
+
+        Michigan St. - 4
+        Boston U. - 3
+    """
+    for j in range(shots_idx - 1, max(-1, shots_idx - 10), -1):
+        line = lines[j]
+
+        if is_team_skater_block_header(line):
+            team_name = re.sub(r"\s+-\s+\d+$", "", line).strip()
+            return team_name, j
+
+    return None, None
+
+
+def looks_like_skater_shots_table(lines: list[str], shots_idx: int) -> bool:
+    """
+    Confirms that a 'Shots by Period' occurrence is a skater table,
+    not the top scoreboard/team-by-period table.
+    """
+    window = lines[shots_idx : min(len(lines), shots_idx + 35)]
+
+    required = {"#", "Player", "G", "A", "Totals", "+/-", "FO", "Pen", "BLK"}
+
+    return required.issubset(set(window))
+
+
 def parse_player_stat_block(
     lines: list[str],
     start_idx: int,
@@ -590,51 +585,51 @@ def parse_player_stat_block(
     game_context: dict,
 ) -> list[dict]:
     """
-    Parses one skater stat block.
+    Parses one skater stat block using dynamic header detection.
 
-    Expected block:
+    Handles normal 3-period games:
 
-        Boston University - 4
-        Shots by Period
-        #
-        Player
-        G
-        A
-        1
-        2
-        3
-        Totals
-        +/-
-        FO
-        Pen
-        BLK
-        34
-        Eiserman,Cole
-        2
-        0
-        3
-        2
-        2
-        7
-        0
-        -
-        -
-        0
-        ...
-        Totals
+        # Player G A 1 2 3 Totals +/- FO Pen BLK
+
+    and overtime games:
+
+        # Player G A 1 2 3 4 Totals +/- FO Pen BLK
     """
     players = []
 
-    data_start = None
-
-    # Find the beginning of player rows after BLK.
-    for i in range(start_idx, min(len(lines), start_idx + 50)):
-        if lines[i] == "BLK":
-            data_start = i + 1
+    shots_idx = None
+    for i in range(start_idx, min(len(lines), start_idx + 20)):
+        if lines[i] == "Shots by Period":
+            shots_idx = i
             break
 
-    if data_start is None:
+    if shots_idx is None:
         return players
+
+    blk_idx = None
+    for i in range(shots_idx, min(len(lines), shots_idx + 50)):
+        if lines[i] == "BLK":
+            blk_idx = i
+            break
+
+    if blk_idx is None:
+        return players
+
+    headers = lines[shots_idx + 1 : blk_idx + 1]
+    data_start = blk_idx + 1
+
+    try:
+        goals_pos = headers.index("G")
+        assists_pos = headers.index("A")
+        totals_pos = headers.index("Totals")
+        plus_minus_pos = headers.index("+/-")
+        fo_pos = headers.index("FO")
+        pen_pos = headers.index("Pen")
+        blk_pos = headers.index("BLK")
+    except ValueError:
+        return players
+
+    row_len = len(headers)
 
     i = data_start
 
@@ -650,59 +645,79 @@ def parse_player_stat_block(
         if line.endswith(" - Goalkeeping"):
             break
 
+        if line == "Faceoff Statistics":
+            break
+
         if not is_player_number(line):
             i += 1
             continue
 
-        # Expected 12-field player row:
-        # number, player, G, A, p1, p2, p3, total, plus_minus, FO, Pen, BLK
-        if i + 11 >= len(lines):
+        if i + row_len - 1 >= len(lines):
             break
 
-        number = lines[i]
-        player_name = lines[i + 1]
+        row_values = lines[i : i + row_len]
+
+        number = row_values[0]
+        player_name = row_values[1]
 
         if not looks_like_player_name(player_name):
             i += 1
             continue
 
         try:
-            goals = int(lines[i + 2])
-            assists = int(lines[i + 3])
-            shots_p1 = int(lines[i + 4])
-            shots_p2 = int(lines[i + 5])
-            shots_p3 = int(lines[i + 6])
-            shots_total = int(lines[i + 7])
-            plus_minus = int(lines[i + 8])
-            faceoffs = lines[i + 9]
-            penalties = lines[i + 10]
-            blocks = int(lines[i + 11])
-        except ValueError:
+            goals = int(row_values[goals_pos])
+            assists = int(row_values[assists_pos])
+            shots_total = int(row_values[totals_pos])
+            plus_minus = int(row_values[plus_minus_pos])
+            faceoffs = row_values[fo_pos]
+            penalties = row_values[pen_pos]
+            blocks = int(row_values[blk_pos])
+        except (ValueError, IndexError):
             i += 1
             continue
 
+        period_headers = headers[assists_pos + 1 : totals_pos]
+        period_values = row_values[assists_pos + 1 : totals_pos]
+
+        period_shots = {}
+        for header, value in zip(period_headers, period_values):
+            header_text = str(header).strip().lower()
+
+            if header_text.isdigit():
+                col_name = f"shots_p{header_text}"
+            elif header_text in {"ot", "overtime"}:
+                col_name = "shots_ot"
+            else:
+                col_name = f"shots_{header_text}"
+
+            try:
+                period_shots[col_name] = int(value)
+            except ValueError:
+                period_shots[col_name] = None
+
+        normalized_team = normalize_team_name(team_name)
+
         row = {
             **game_context,
-            "team": team_name,
+            "team": normalized_team,
+            "team_raw": team_name,
             "team_type": team_type,
             "player_number": number,
             "player_name": player_name,
             "goals": goals,
             "assists": assists,
             "points": goals + assists,
-            "shots_p1": shots_p1,
-            "shots_p2": shots_p2,
-            "shots_p3": shots_p3,
             "shots_total": shots_total,
             "plus_minus": plus_minus,
             "faceoffs": None if faceoffs == "-" else faceoffs,
             "penalties": None if penalties == "-" else penalties,
             "blocks": blocks,
+            **period_shots,
         }
 
         players.append(row)
 
-        i += 12
+        i += row_len
 
     return players
 
@@ -714,6 +729,9 @@ def extract_player_game_stats(
 ) -> list[dict]:
     """
     Extracts skater/player stats for BU and opponent from one box score.
+
+    This searches from each 'Shots by Period' table, verifies that it is
+    a skater table, then looks backward for the team-score header.
     """
     game_context = {
         "game_id": schedule_row.get("game_id"),
@@ -725,23 +743,27 @@ def extract_player_game_stats(
     player_rows = []
 
     for i, line in enumerate(lines):
-        if not is_team_skater_block_header(line):
+        if line != "Shots by Period":
             continue
 
-        # The next line should be Shots by Period for a skater table.
-        if i + 1 >= len(lines) or lines[i + 1] != "Shots by Period":
+        if not looks_like_skater_shots_table(lines, i):
             continue
 
-        team_name = re.sub(r"\s+-\s+\d+$", "", line).strip()
+        team_name, header_idx = find_team_header_before_shots_table(lines, i)
 
-        if team_name == "Boston University":
+        if team_name is None or header_idx is None:
+            continue
+
+        normalized_team = normalize_team_name(team_name)
+
+        if is_bu_team_name(normalized_team):
             team_type = "bu"
         else:
             team_type = "opponent"
 
         block_rows = parse_player_stat_block(
             lines=lines,
-            start_idx=i,
+            start_idx=header_idx,
             team_name=team_name,
             team_type=team_type,
             game_context=game_context,
@@ -764,9 +786,6 @@ def parse_one_boxscore_from_lines(
     schedule_row: pd.Series,
     season: str,
 ) -> dict:
-    """
-    Parses one box score into one game/team-level row.
-    """
     game_id = schedule_row["game_id"]
 
     debug_text_path = INTERIM_TEXT_DIR / season.replace("-", "_") / f"{game_id}.txt"
@@ -795,13 +814,6 @@ def parse_one_boxscore_from_lines(
 
 
 def parse_boxscores(season: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Parses all saved box score HTML files for a season.
-
-    Returns:
-        game_df: one row per game with result/team stats
-        player_df: one row per player per game
-    """
     schedule_df = load_schedule(season)
 
     html_dir = RAW_BOXSCORE_DIR / season.replace("-", "_")
@@ -842,10 +854,7 @@ def parse_boxscores(season: str) -> tuple[pd.DataFrame, pd.DataFrame]:
         players = extract_player_game_stats(lines, schedule_row, season)
         player_rows.extend(players)
 
-    game_df = pd.DataFrame(game_rows)
-    player_df = pd.DataFrame(player_rows)
-
-    return game_df, player_df
+    return pd.DataFrame(game_rows), pd.DataFrame(player_rows)
 
 
 # ---------------------------------------------------------------------
@@ -858,9 +867,6 @@ def save_outputs(
     player_df: pd.DataFrame,
     season: str,
 ) -> tuple[Path, Path, Path]:
-    """
-    Saves parsed game, team, and player stats.
-    """
     PROCESSED_BOXSCORE_DIR.mkdir(parents=True, exist_ok=True)
 
     game_results_path = PROCESSED_BOXSCORE_DIR / f"game_results_{season.replace('-', '_')}.csv"
@@ -926,27 +932,36 @@ def save_outputs(
         "goalie_extraction_status",
     ]
 
-    player_stat_cols = [
+    base_player_stat_cols = [
         "game_id",
         "season",
         "date",
         "opponent_clean",
         "team",
+        "team_raw",
         "team_type",
         "player_number",
         "player_name",
         "goals",
         "assists",
         "points",
-        "shots_p1",
-        "shots_p2",
-        "shots_p3",
+    ]
+
+    shot_period_cols = []
+    if not player_df.empty:
+        shot_period_cols = sorted(
+            [col for col in player_df.columns if col.startswith("shots_p") or col == "shots_ot"]
+        )
+
+    ending_player_stat_cols = [
         "shots_total",
         "plus_minus",
         "faceoffs",
         "penalties",
         "blocks",
     ]
+
+    player_stat_cols = base_player_stat_cols + shot_period_cols + ending_player_stat_cols
 
     existing_game_cols = [col for col in game_result_cols if col in game_df.columns]
     existing_team_cols = [col for col in team_stat_cols if col in game_df.columns]

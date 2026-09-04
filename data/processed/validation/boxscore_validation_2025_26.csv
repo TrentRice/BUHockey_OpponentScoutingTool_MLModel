@@ -1,0 +1,39 @@
+game_id,date,opponent_clean,result,bu_score,opponent_score,bu_player_count,opponent_player_count,bu_player_goals,opponent_player_goals,bu_goals_match,opponent_goals_match,bu_goals_diff,opponent_goals_diff,bu_player_assists,opponent_player_assists,bu_player_points,opponent_player_points,bu_team_shots,opponent_team_shots,bu_player_shots,opponent_player_shots,bu_shots_match,opponent_shots_match,bu_shots_diff,opponent_shots_diff,bu_team_blocks,opponent_team_blocks,bu_player_blocks,opponent_player_blocks,bu_blocks_match,opponent_blocks_match,bu_blocks_diff,opponent_blocks_diff,bu_team_penalty_minutes,opponent_team_penalty_minutes,bu_player_penalty_minutes,opponent_player_penalty_minutes,bu_penalty_minutes_match,opponent_penalty_minutes_match,bu_penalty_minutes_diff,opponent_penalty_minutes_diff,all_core_checks_passed,failed_checks,warning_checks
+bu_2025-10-04_liu,2025-10-04,LIU,W,4,2,27,30,4,2,True,True,0,0,8,3,12,5,32,38,32,38,True,True,0,0,9,18,9,18,True,True,0,0,10,10,8,10,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2025-10-05_rpi,2025-10-05,RPI,W,3,0,27,28,3,0,True,True,0,0,6,0,9,0,29,21,29,21,True,True,0,0,6,13,6,13,True,True,0,0,2,8,0,8,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2025-10-10_colgate,2025-10-10,Colgate,W,6,2,27,26,6,2,True,True,0,0,10,4,16,6,36,26,36,26,True,True,0,0,11,17,11,17,True,True,0,0,12,8,10,8,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2025-10-11_colgate,2025-10-11,Colgate,T,2,2,27,26,2,2,True,True,0,0,3,3,5,5,35,25,35,25,True,True,0,0,11,19,11,19,True,True,0,0,8,10,8,6,True,False,0,-4,True,,opponent_penalty_minutes_match
+bu_2025-10-17_michigan_state,2025-10-17,Michigan State,L,2,4,27,27,2,4,True,True,0,0,4,6,6,10,20,34,20,34,True,True,0,0,18,12,18,12,True,True,0,0,18,35,18,35,True,True,0,0,True,,
+bu_2025-10-18_michigan_state,2025-10-18,Michigan State,L,3,4,27,27,3,4,True,True,0,0,4,6,7,10,34,34,34,34,True,True,0,0,13,13,13,13,True,True,0,0,4,8,4,6,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2025-10-24_uconn,2025-10-24,UConn,L,4,8,27,25,4,8,True,True,0,0,7,13,11,21,34,40,34,40,True,True,0,0,5,15,5,15,True,True,0,0,10,18,10,18,True,True,0,0,True,,
+bu_2025-10-25_uconn,2025-10-25,UConn,W,3,1,27,25,3,1,True,True,0,0,6,2,9,3,20,25,20,25,True,True,0,0,7,7,7,7,True,True,0,0,4,6,2,6,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2025-10-31_maine,2025-10-31,Maine,L,4,5,27,28,4,5,True,True,0,0,8,9,12,14,28,35,28,35,True,True,0,0,19,9,19,9,True,True,0,0,22,8,22,8,True,True,0,0,True,,
+bu_2025-11-01_maine,2025-11-01,Maine,L,5,8,27,28,5,8,True,True,0,0,9,14,14,22,31,46,31,46,True,True,0,0,27,10,27,10,True,True,0,0,14,6,12,6,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2025-11-07_merrimack,2025-11-07,Merrimack,W,3,2,27,29,3,2,True,True,0,0,5,3,8,5,21,25,21,25,True,True,0,0,12,15,12,15,True,True,0,0,10,8,10,8,True,True,0,0,True,,
+bu_2025-11-08_merrimack,2025-11-08,Merrimack,W,5,4,27,29,5,4,True,True,0,0,8,5,13,9,24,31,24,31,True,True,0,0,8,17,8,17,True,True,0,0,25,10,25,8,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2025-11-15_quinnipiac,2025-11-15,Quinnipiac,L,2,6,27,27,2,6,True,True,0,0,3,11,5,17,33,49,33,49,True,True,0,0,14,8,14,8,True,True,0,0,10,12,10,12,True,True,0,0,True,,
+bu_2025-11-21_northeastern,2025-11-21,Northeastern,L,2,3,27,27,2,3,True,True,0,0,4,6,6,9,34,25,34,25,True,True,0,0,13,11,13,11,True,True,0,0,12,16,12,16,True,True,0,0,True,,
+bu_2025-11-22_northeastern,2025-11-22,Northeastern,W,4,3,27,27,4,3,True,True,0,0,6,6,10,9,47,26,47,26,True,True,0,0,16,16,16,16,True,True,0,0,23,8,23,6,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2025-11-29_cornell,2025-11-29,Cornell,W,2,1,27,31,2,1,True,True,0,0,3,2,5,3,17,29,17,29,True,True,0,0,7,10,7,10,True,True,0,0,10,8,10,8,True,True,0,0,True,,
+bu_2025-12-05_vermont,2025-12-05,Vermont,W,2,1,27,30,2,1,True,True,0,0,4,2,6,3,28,26,28,26,True,True,0,0,16,6,16,6,True,True,0,0,4,6,4,6,True,True,0,0,True,,
+bu_2025-12-06_vermont,2025-12-06,Vermont,L,2,3,27,30,2,3,True,True,0,0,4,6,6,9,32,20,32,20,True,True,0,0,16,22,16,22,True,True,0,0,0,0,0,0,True,True,0,0,True,,
+bu_2025-12-13_northeastern,2025-12-13,Northeastern,W,4,3,27,27,4,3,True,True,0,0,8,5,12,8,35,21,35,21,True,True,0,0,10,26,10,26,True,True,0,0,8,8,8,8,True,True,0,0,True,,
+bu_2026-01-03_simon_fraser,2026-01-03,Simon Fraser,W,8,2,27,46,8,2,True,True,0,0,15,3,23,5,52,19,52,19,True,True,0,0,8,23,8,23,True,True,0,0,6,40,6,40,True,True,0,0,True,,
+bu_2026-01-09_umass,2026-01-09,UMass,W,1,0,28,27,1,0,True,True,0,0,2,0,3,0,30,18,30,18,True,True,0,0,13,17,13,17,True,True,0,0,2,2,2,2,True,True,0,0,True,,
+bu_2026-01-10_umass,2026-01-10,UMass,L,0,2,28,27,0,2,True,True,0,0,0,0,0,2,26,18,26,18,True,True,0,0,9,22,9,22,True,True,0,0,4,8,4,6,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2026-01-12_harvard,2026-01-12,Harvard,W,4,1,28,29,4,1,True,True,0,0,8,2,12,3,33,29,33,29,True,True,0,0,12,10,12,10,True,True,0,0,2,2,2,2,True,True,0,0,True,,
+bu_2026-01-16_umass_lowell,2026-01-16,UMass Lowell,L,3,4,28,29,3,4,True,True,0,0,6,6,9,10,34,29,34,29,True,True,0,0,13,15,13,15,True,True,0,0,20,22,20,20,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2026-01-17_umass_lowell,2026-01-17,UMass Lowell,W,3,0,28,29,3,0,True,True,0,0,3,0,6,0,20,23,20,23,True,True,0,0,21,9,21,9,True,True,0,0,6,8,6,8,True,True,0,0,True,,
+bu_2026-01-23_providence,2026-01-23,Providence,L,3,4,28,26,3,4,True,True,0,0,2,6,5,10,18,40,18,40,True,True,0,0,17,12,17,12,True,True,0,0,16,8,16,8,True,True,0,0,True,,
+bu_2026-01-24_providence,2026-01-24,Providence,L,0,4,28,26,0,4,True,True,0,0,0,6,0,10,33,26,33,26,True,True,0,0,9,15,9,15,True,True,0,0,6,21,6,19,True,False,0,-2,True,,opponent_penalty_minutes_match
+bu_2026-01-30_boston_college,2026-01-30,Boston College,L,1,4,28,27,1,4,True,True,0,0,2,6,3,10,34,21,34,21,True,True,0,0,20,16,20,16,True,True,0,0,10,10,10,10,True,True,0,0,True,,
+bu_2026-02-02_northeastern,2026-02-02,Northeastern,T,2,2,28,27,2,2,True,True,0,0,3,4,5,6,26,38,38,26,False,False,12,-12,22,9,9,22,False,False,-13,13,2,4,4,2,False,False,2,-2,False,bu_shots_match; opponent_shots_match; bu_blocks_match; opponent_blocks_match,bu_penalty_minutes_match; opponent_penalty_minutes_match
+bu_2026-02-06_maine,2026-02-06,Maine,W,3,2,28,28,3,2,True,True,0,0,6,3,9,5,31,30,31,30,True,True,0,0,28,11,28,11,True,True,0,0,6,2,4,2,False,True,-2,0,True,,bu_penalty_minutes_match
+bu_2026-02-09_boston_college,2026-02-09,Boston College,L,2,6,28,27,2,6,True,True,0,0,3,10,5,16,29,38,29,38,True,True,0,0,9,17,9,17,True,True,0,0,8,10,8,10,True,True,0,0,True,,
+bu_2026-02-13_new_hampshire,2026-02-13,New Hampshire,L,1,4,28,27,1,4,True,True,0,0,2,7,3,11,26,24,26,24,True,True,0,0,6,17,6,17,True,True,0,0,10,6,10,6,True,True,0,0,True,,
+bu_2026-02-14_new_hampshire,2026-02-14,New Hampshire,W,5,3,28,27,5,3,True,True,0,0,9,6,14,9,34,27,34,27,True,True,0,0,10,19,10,19,True,True,0,0,2,2,2,2,True,True,0,0,True,,
+bu_2026-02-27_boston_college,2026-02-27,Boston College,W,3,1,28,27,3,1,True,True,0,0,6,2,9,3,41,25,41,25,True,True,0,0,5,14,5,14,True,True,0,0,6,6,6,6,True,True,0,0,True,,
+bu_2026-02-28_boston_college,2026-02-28,Boston College,W,5,1,28,27,5,1,True,True,0,0,9,1,14,2,20,29,20,29,True,True,0,0,17,7,17,7,True,True,0,0,6,4,6,4,True,True,0,0,True,,
+bu_2026-03-07_umass_lowell,2026-03-07,UMass Lowell,L,3,4,28,30,3,4,True,True,0,0,4,5,7,9,27,27,27,27,True,True,0,0,8,12,8,12,True,True,0,0,16,10,16,10,True,True,0,0,True,,
+bu_2026-03-11_vermont,2026-03-11,Vermont,W,4,1,28,30,4,1,True,True,0,0,6,2,10,3,28,26,28,26,True,True,0,0,15,15,15,15,True,True,0,0,4,6,4,6,True,True,0,0,True,,
+bu_2026-03-14_uconn,2026-03-14,UConn,L,3,5,28,26,3,5,True,True,0,0,2,8,5,13,32,38,32,38,True,True,0,0,12,17,12,17,True,True,0,0,8,6,8,6,True,True,0,0,True,,
