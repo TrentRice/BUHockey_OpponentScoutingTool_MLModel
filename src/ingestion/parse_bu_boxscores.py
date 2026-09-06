@@ -100,12 +100,12 @@ def normalize_team_name(name: str | None) -> str | None:
     if text in BU_TEAM_NAMES:
         return "Boston University"
 
-    # Common abbreviation normalization from page titles/table headers.
     replacements = {
         "Boston U.": "Boston University",
         "Boston U": "Boston University",
         "Michigan St.": "Michigan State",
-        "UConn": "UConn",
+        "Michigan St": "Michigan State",
+        "Massachusetts": "UMass",
     }
 
     return replacements.get(text, text)
@@ -125,7 +125,7 @@ def trim_to_boxscore_content(lines: list[str], schedule_row: pd.Series) -> list[
     Examples:
         LIU vs Boston University
         Michigan St. vs Boston U.
-        Boston University vs UMass
+        Northeastern vs Boston University
     """
 
     # Best case: the actual box score area usually includes this nav cluster:
@@ -142,7 +142,6 @@ def trim_to_boxscore_content(lines: list[str], schedule_row: pd.Series) -> list[
             and lines[i + 2] == "Individual Stats"
             and lines[i + 3] == "Team Stats"
         ):
-            # The matchup line is usually a few lines before this.
             start = max(0, i - 3)
             return lines[start:]
 
@@ -152,7 +151,7 @@ def trim_to_boxscore_content(lines: list[str], schedule_row: pd.Series) -> list[
         if " vs " in lowered and "boston" in lowered:
             return lines[i:]
 
-    # Third case: use schedule opponent, but allow common abbreviations.
+    # Third case: use schedule opponent, allowing common BU abbreviations.
     opponent_clean = str(schedule_row.get("opponent_clean"))
 
     possible_matchup_lines = [
@@ -182,6 +181,15 @@ def is_float_string(value: str) -> bool:
     return bool(re.fullmatch(r"-?\d+(\.\d+)?", str(value).strip()))
 
 
+def is_record_string(value: str) -> bool:
+    """
+    Matches records like:
+        12-13-2
+        1-0-0
+    """
+    return bool(re.fullmatch(r"\d+-\d+-\d+", str(value).strip()))
+
+
 def is_player_number(value: str) -> bool:
     return bool(re.fullmatch(r"\d{1,3}", str(value).strip()))
 
@@ -199,18 +207,6 @@ def find_line_index(lines: list[str], target: str) -> int | None:
     for i, line in enumerate(lines):
         if line == target:
             return i
-
-    return None
-
-
-def parse_int_or_none(value: str) -> int | None:
-    value = str(value).strip()
-
-    if value == "-":
-        return None
-
-    if is_int_string(value):
-        return int(value)
 
     return None
 
@@ -234,12 +230,123 @@ def is_team_skater_block_header(line: str) -> bool:
 
 
 # ---------------------------------------------------------------------
+# Box score side detection
+# ---------------------------------------------------------------------
+
+
+def extract_boxscore_sides(lines: list[str]) -> dict:
+    """
+    Determines which team is displayed on the left/right side of the box score.
+
+    Example:
+
+        Northeastern
+        12-12-1
+        2
+        Final
+        2
+        Boston University
+        12-13-2
+
+    Returns:
+        {
+            "left_team": "Northeastern",
+            "right_team": "Boston University",
+            "bu_side": "right"
+        }
+    """
+    result = {
+        "left_team": None,
+        "right_team": None,
+        "bu_side": None,
+        "side_extraction_status": "sides_not_found",
+    }
+
+    for i, line in enumerate(lines):
+        if line != "Final":
+            continue
+
+        # Find left score before Final.
+        left_score_idx = None
+        for j in range(i - 1, max(-1, i - 10), -1):
+            if is_int_string(lines[j]):
+                left_score_idx = j
+                break
+
+        # Find right score after Final.
+        right_score_idx = None
+        for j in range(i + 1, min(len(lines), i + 10)):
+            if is_int_string(lines[j]):
+                right_score_idx = j
+                break
+
+        if left_score_idx is None or right_score_idx is None:
+            continue
+
+        # Team name is usually before the record/score on the left side.
+        left_team = None
+        for j in range(left_score_idx - 1, max(-1, left_score_idx - 7), -1):
+            candidate = lines[j]
+
+            if (
+                not is_int_string(candidate)
+                and not is_record_string(candidate)
+                and candidate != "Final"
+            ):
+                left_team = candidate
+                break
+
+        # Team name is usually after the score on the right side.
+        right_team = None
+        for j in range(right_score_idx + 1, min(len(lines), right_score_idx + 7)):
+            candidate = lines[j]
+
+            if (
+                not is_int_string(candidate)
+                and not is_record_string(candidate)
+                and candidate != "Final"
+            ):
+                right_team = candidate
+                break
+
+        if left_team is None or right_team is None:
+            continue
+
+        left_team_norm = normalize_team_name(left_team)
+        right_team_norm = normalize_team_name(right_team)
+
+        if is_bu_team_name(left_team_norm):
+            bu_side = "left"
+        elif is_bu_team_name(right_team_norm):
+            bu_side = "right"
+        else:
+            bu_side = None
+
+        result.update(
+            {
+                "left_team": left_team_norm,
+                "right_team": right_team_norm,
+                "bu_side": bu_side,
+                "side_extraction_status": ("sides_found" if bu_side else "sides_found_bu_unknown"),
+            }
+        )
+        return result
+
+    return result
+
+
+# ---------------------------------------------------------------------
 # Game result parser
 # ---------------------------------------------------------------------
 
 
 def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
-    is_home = bool(schedule_row.get("is_home"))
+    """
+    Extracts final score using actual box score left/right side,
+    not schedule home/away.
+    """
+    sides = extract_boxscore_sides(lines)
+    bu_side = sides.get("bu_side")
 
     bu_score = None
     opponent_score = None
@@ -264,12 +371,21 @@ def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
         if left_score is None or right_score is None:
             continue
 
-        if is_home:
+        if bu_side == "left":
+            bu_score = left_score
+            opponent_score = right_score
+        elif bu_side == "right":
             opponent_score = left_score
             bu_score = right_score
         else:
-            bu_score = left_score
-            opponent_score = right_score
+            # Fallback to schedule if side detection fails.
+            is_home = bool(schedule_row.get("is_home"))
+            if is_home:
+                opponent_score = left_score
+                bu_score = right_score
+            else:
+                bu_score = left_score
+                opponent_score = right_score
 
         extraction_status = "score_found"
         break
@@ -285,6 +401,7 @@ def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
         result = None
 
     return {
+        **sides,
         "bu_score": bu_score,
         "opponent_score": opponent_score,
         "result": result,
@@ -298,6 +415,25 @@ def extract_game_result(lines: list[str], schedule_row: pd.Series) -> dict:
 
 
 def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
+    """
+    Extracts Team Statistics block using actual box score left/right side.
+
+    Text pattern:
+
+        Team Statistics
+        26
+        Shots
+        38
+        ...
+        22
+        Blocks
+        9
+
+    Values are:
+        left team value
+        stat label
+        right team value
+    """
     idx = find_line_index(lines, "Team Statistics")
 
     stats = {
@@ -325,8 +461,10 @@ def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
     if idx is None:
         return stats
 
-    is_home = bool(schedule_row.get("is_home"))
+    sides = extract_boxscore_sides(lines)
+    bu_side = sides.get("bu_side")
 
+    # Default mapping: left = opponent, right = BU.
     label_to_columns = {
         "Shots": ("opponent_shots", "bu_shots"),
         "Shots %": ("opponent_shot_pct", "bu_shot_pct"),
@@ -339,11 +477,23 @@ def extract_team_stats(lines: list[str], schedule_row: pd.Series) -> dict:
         "Blocks": ("opponent_blocks", "bu_blocks"),
     }
 
-    if not is_home:
+    if bu_side == "left":
+        # left = BU, right = opponent
         label_to_columns = {
             label: (right_col, left_col)
             for label, (left_col, right_col) in label_to_columns.items()
         }
+    elif bu_side == "right":
+        # left = opponent, right = BU
+        pass
+    else:
+        # Fallback to old schedule home/away mapping if side detection fails.
+        is_home = bool(schedule_row.get("is_home"))
+        if not is_home:
+            label_to_columns = {
+                label: (right_col, left_col)
+                for label, (left_col, right_col) in label_to_columns.items()
+            }
 
     for i in range(idx + 1, min(len(lines) - 2, idx + 100)):
         left_value = lines[i]
@@ -395,6 +545,7 @@ def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dic
             continue
 
         team_label = line.replace(" - Power Plays", "").strip()
+        team_label = normalize_team_name(team_label)
 
         pp_value = None
         for j in range(i + 1, min(len(lines), i + 100)):
@@ -406,7 +557,7 @@ def extract_power_play_summary(lines: list[str], schedule_row: pd.Series) -> dic
             goals, opps = pp_value.split("/")
             pp_blocks.append(
                 {
-                    "team_label": normalize_team_name(team_label),
+                    "team_label": team_label,
                     "goals": int(goals),
                     "opportunities": int(opps),
                 }
@@ -478,18 +629,13 @@ def extract_goalie_stats(lines: list[str], schedule_row: pd.Series) -> dict:
             minutes = lines[row_start + 3]
             goals_against = int(lines[row_start + 4])
 
-            # In 3-period games, saves total is row_start + 9.
-            # In OT games, saves total can be row_start + 10 because there is a 4th period column.
-            # More robustly, find the "Totals" header in this goalie block.
             totals_header_idx = None
-            for k in range(i + 1, min(len(lines), i + 30)):
+            for k in range(i + 1, min(len(lines), i + 35)):
                 if lines[k] == "Totals":
                     totals_header_idx = k
                     break
 
             if totals_header_idx is not None:
-                # Offset from start of goalie data row to Totals column.
-                # Header begins at "#", then Player, Dec, Minutes, GA, EN, periods..., Totals.
                 header_start_idx = None
                 for k in range(i + 1, totals_header_idx + 1):
                     if lines[k] == "#":
@@ -548,13 +694,6 @@ def find_team_header_before_shots_table(
     lines: list[str],
     shots_idx: int,
 ) -> tuple[str | None, int | None]:
-    """
-    Given an index where lines[shots_idx] == 'Shots by Period',
-    look backward for a team skater table header like:
-
-        Michigan St. - 4
-        Boston U. - 3
-    """
     for j in range(shots_idx - 1, max(-1, shots_idx - 10), -1):
         line = lines[j]
 
@@ -566,10 +705,6 @@ def find_team_header_before_shots_table(
 
 
 def looks_like_skater_shots_table(lines: list[str], shots_idx: int) -> bool:
-    """
-    Confirms that a 'Shots by Period' occurrence is a skater table,
-    not the top scoreboard/team-by-period table.
-    """
     window = lines[shots_idx : min(len(lines), shots_idx + 35)]
 
     required = {"#", "Player", "G", "A", "Totals", "+/-", "FO", "Pen", "BLK"}
@@ -584,17 +719,6 @@ def parse_player_stat_block(
     team_type: str,
     game_context: dict,
 ) -> list[dict]:
-    """
-    Parses one skater stat block using dynamic header detection.
-
-    Handles normal 3-period games:
-
-        # Player G A 1 2 3 Totals +/- FO Pen BLK
-
-    and overtime games:
-
-        # Player G A 1 2 3 4 Totals +/- FO Pen BLK
-    """
     players = []
 
     shots_idx = None
@@ -727,12 +851,6 @@ def extract_player_game_stats(
     schedule_row: pd.Series,
     season: str,
 ) -> list[dict]:
-    """
-    Extracts skater/player stats for BU and opponent from one box score.
-
-    This searches from each 'Shots by Period' table, verifies that it is
-    a skater table, then looks backward for the team-score header.
-    """
     game_context = {
         "game_id": schedule_row.get("game_id"),
         "season": season,
@@ -883,6 +1001,10 @@ def save_outputs(
         "opponent_clean",
         "is_home",
         "is_neutral",
+        "left_team",
+        "right_team",
+        "bu_side",
+        "side_extraction_status",
         "bu_score",
         "opponent_score",
         "result",
@@ -1011,6 +1133,9 @@ def main() -> None:
     preview_cols = [
         "game_id",
         "opponent_clean",
+        "left_team",
+        "right_team",
+        "bu_side",
         "bu_score",
         "opponent_score",
         "result",

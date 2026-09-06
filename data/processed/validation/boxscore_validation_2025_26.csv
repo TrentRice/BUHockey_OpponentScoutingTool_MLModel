@@ -27,7 +27,7 @@ bu_2026-01-17_umass_lowell,2026-01-17,UMass Lowell,W,3,0,28,29,3,0,True,True,0,0
 bu_2026-01-23_providence,2026-01-23,Providence,L,3,4,28,26,3,4,True,True,0,0,2,6,5,10,18,40,18,40,True,True,0,0,17,12,17,12,True,True,0,0,16,8,16,8,True,True,0,0,True,,
 bu_2026-01-24_providence,2026-01-24,Providence,L,0,4,28,26,0,4,True,True,0,0,0,6,0,10,33,26,33,26,True,True,0,0,9,15,9,15,True,True,0,0,6,21,6,19,True,False,0,-2,True,,opponent_penalty_minutes_match
 bu_2026-01-30_boston_college,2026-01-30,Boston College,L,1,4,28,27,1,4,True,True,0,0,2,6,3,10,34,21,34,21,True,True,0,0,20,16,20,16,True,True,0,0,10,10,10,10,True,True,0,0,True,,
-bu_2026-02-02_northeastern,2026-02-02,Northeastern,T,2,2,28,27,2,2,True,True,0,0,3,4,5,6,26,38,38,26,False,False,12,-12,22,9,9,22,False,False,-13,13,2,4,4,2,False,False,2,-2,False,bu_shots_match; opponent_shots_match; bu_blocks_match; opponent_blocks_match,bu_penalty_minutes_match; opponent_penalty_minutes_match
+bu_2026-02-02_northeastern,2026-02-02,Northeastern,T,2,2,28,27,2,2,True,True,0,0,3,4,5,6,38,26,38,26,True,True,0,0,9,22,9,22,True,True,0,0,4,2,4,2,True,True,0,0,True,,
 bu_2026-02-06_maine,2026-02-06,Maine,W,3,2,28,28,3,2,True,True,0,0,6,3,9,5,31,30,31,30,True,True,0,0,28,11,28,11,True,True,0,0,6,2,4,2,False,True,-2,0,True,,bu_penalty_minutes_match
 bu_2026-02-09_boston_college,2026-02-09,Boston College,L,2,6,28,27,2,6,True,True,0,0,3,10,5,16,29,38,29,38,True,True,0,0,9,17,9,17,True,True,0,0,8,10,8,10,True,True,0,0,True,,
 bu_2026-02-13_new_hampshire,2026-02-13,New Hampshire,L,1,4,28,27,1,4,True,True,0,0,2,7,3,11,26,24,26,24,True,True,0,0,6,17,6,17,True,True,0,0,10,6,10,6,True,True,0,0,True,,
