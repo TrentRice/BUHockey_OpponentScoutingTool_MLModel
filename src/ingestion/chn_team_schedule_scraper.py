@@ -1,26 +1,25 @@
 """
-Scrapes a team's schedule/results from College Hockey News.
+College Hockey News (CHN) team schedule scraper.
 
-Example CHN URL:
-    https://www.collegehockeynews.com/schedules/team/Boston-University/10/20252026
+Parses  table.data.schedule.full  from pages like
+  https://www.collegehockeynews.com/schedules/team/Boston-University/10/20252026
 
-Usage:
-    uv run python -m src.ingestion.chn_team_schedule_scraper \
-        --team "Boston University" \
-        --slug Boston-University \
-        --team-id 10 \
-        --season 2025-26
+Usage (from project root):
+  uv run python -m src.ingestion.chn_team_schedule_scraper                 # BU only
+  uv run python -m src.ingestion.chn_team_schedule_scraper --team "Northeastern"
+  uv run python -m src.ingestion.chn_team_schedule_scraper --all           # all 63 D-I teams + combined CSV
 
-Output:
-    data/raw/chn/schedules/2025_26/boston_university.html
-    data/raw/chn/schedules/2025_26/boston_university_tables.json
-    data/processed/chn/team_schedule_boston_university_2025_26.csv
+Outputs:
+  data/raw/chn/schedules/<slug>_<season>.html
+  data/processed/chn/team_schedule_<team_snake>_2025_26.csv
 """
 
+from __future__ import annotations
+
 import argparse
-import json
 import re
 import time
+from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -28,348 +27,363 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-CHN_BASE_URL = "https://www.collegehockeynews.com"
-RAW_CHN_SCHEDULE_DIR = Path("data/raw/chn/schedules")
-PROCESSED_CHN_DIR = Path("data/processed/chn")
+BASE_URL = "https://www.collegehockeynews.com"
+SEASON_LABEL = "2025-26"
+SEASON_CODE = "20252026"
 
-HEADERS = {"User-Agent": "bu-hockey-scouting-tool/0.1 (personal project; contact via GitHub)"}
+# conference -> [(display name, chn slug, chn team id)]
+# Source: the "Other Teams" menu on any CHN 2025-26 schedule page.
+_CONFERENCES: dict[str, list[tuple[str, str, int]]] = {
+    "Atlantic Hockey": [
+        ("Air Force", "Air-Force", 1),
+        ("Army", "Army", 6),
+        ("Bentley", "Bentley", 8),
+        ("Canisius", "Canisius", 13),
+        ("Holy Cross", "Holy-Cross", 23),
+        ("Mercyhurst", "Mercyhurst", 28),
+        ("Niagara", "Niagara", 39),
+        ("RIT", "RIT", 49),
+        ("Robert Morris", "Robert-Morris", 50),
+        ("Sacred Heart", "Sacred-Heart", 51),
+    ],
+    "Big Ten": [
+        ("Michigan", "Michigan", 31),
+        ("Michigan State", "Michigan-State", 32),
+        ("Minnesota", "Minnesota", 34),
+        ("Notre Dame", "Notre-Dame", 43),
+        ("Ohio State", "Ohio-State", 44),
+        ("Penn State", "Penn-State", 60),
+        ("Wisconsin", "Wisconsin", 58),
+    ],
+    "CCHA": [
+        ("Augustana", "Augustana", 64),
+        ("Bemidji State", "Bemidji-State", 7),
+        ("Bowling Green", "Bowling-Green", 11),
+        ("Ferris State", "Ferris-State", 21),
+        ("Lake Superior", "Lake-Superior", 24),
+        ("Michigan Tech", "Michigan-Tech", 33),
+        ("Minnesota State", "Minnesota-State", 35),
+        ("Northern Michigan", "Northern-Michigan", 42),
+        ("St. Thomas", "St-Thomas", 63),
+    ],
+    "Independent": [
+        ("Alaska", "Alaska", 4),
+        ("Alaska-Anchorage", "Alaska-Anchorage", 3),
+        ("Lindenwood", "Lindenwood", 433),
+        ("Long Island", "Long-Island", 62),
+        ("Stonehill", "Stonehill", 422),
+    ],
+    "ECAC": [
+        ("Brown", "Brown", 12),
+        ("Clarkson", "Clarkson", 14),
+        ("Colgate", "Colgate", 15),
+        ("Cornell", "Cornell", 18),
+        ("Dartmouth", "Dartmouth", 19),
+        ("Harvard", "Harvard", 22),
+        ("Princeton", "Princeton", 45),
+        ("Quinnipiac", "Quinnipiac", 47),
+        ("RPI", "RPI", 48),
+        ("St. Lawrence", "St-Lawrence", 53),
+        ("Union", "Union", 54),
+        ("Yale", "Yale", 59),
+    ],
+    "Hockey East": [
+        ("Boston College", "Boston-College", 9),
+        ("Boston University", "Boston-University", 10),
+        ("Connecticut", "Connecticut", 17),
+        ("Maine", "Maine", 25),
+        ("Mass.-Lowell", "Mass-Lowell", 26),
+        ("Massachusetts", "Massachusetts", 27),
+        ("Merrimack", "Merrimack", 29),
+        ("New Hampshire", "New-Hampshire", 38),
+        ("Northeastern", "Northeastern", 41),
+        ("Providence", "Providence", 46),
+        ("Vermont", "Vermont", 55),
+    ],
+    "NCHC": [
+        ("Arizona State", "Arizona-State", 61),
+        ("Colorado College", "Colorado-College", 16),
+        ("Denver", "Denver", 20),
+        ("Miami", "Miami", 30),
+        ("Minnesota-Duluth", "Minnesota-Duluth", 36),
+        ("North Dakota", "North-Dakota", 40),
+        ("Omaha", "Omaha", 37),
+        ("St. Cloud State", "St-Cloud-State", 52),
+        ("Western Michigan", "Western-Michigan", 57),
+    ],
+}
+
+# name -> (chn slug, chn team id)
+TEAMS: dict[str, tuple[str, int]] = {
+    name: (slug, tid) for teams in _CONFERENCES.values() for name, slug, tid in teams
+}
+TEAM_CONFERENCE: dict[str, str] = {
+    name: conf for conf, teams in _CONFERENCES.items() for name, _, _ in teams
+}
+ID_TO_CONFERENCE: dict[int, str] = {
+    tid: conf for conf, teams in _CONFERENCES.items() for _, _, tid in teams
+}
+
+MONTHS = {
+    m: i
+    for i, m in enumerate(
+        [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ],
+        start=1,
+    )
+}
+
+HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; bu-scouting-tool/0.1; personal research)"}
+
+COLUMNS = [
+    "season",
+    "team",
+    "date",
+    "day_of_week",
+    "result",
+    "goals_for",
+    "goals_against",
+    "is_home",
+    "is_away",
+    "is_neutral",
+    "home_away_raw",
+    "opponent",
+    "opponent_chn_url",
+    "opponent_team_id",
+    "is_conference",
+    "is_exhibition",
+    "is_overtime",
+    "box_score_url",
+    "metrics_url",
+    "game_note",
+    "source",
+    "source_url",
+    "team_conference",
+    "opponent_conference",
+    "is_same_conference_opponent",
+]
 
 
-def season_to_chn_key(season: str) -> str:
-    """
-    Converts:
-        2025-26
-    to:
-        20252026
-    """
-    start_year = int(season.split("-")[0])
-    end_suffix = int(season.split("-")[1])
-    end_year = int(str(start_year)[:2] + f"{end_suffix:02d}")
-
-    return f"{start_year}{end_year}"
+def clean(text: str) -> str:
+    return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
 
 
-def slugify(value: str) -> str:
-    value = value.lower().strip()
-    value = re.sub(r"[^a-z0-9]+", "_", value)
-    value = value.strip("_")
-    return value
+def to_int(text: str) -> int | None:
+    m = re.search(r"\d+", text or "")
+    return int(m.group()) if m else None
 
 
-def build_chn_schedule_url(slug: str, team_id: str | int, season: str) -> str:
-    season_key = season_to_chn_key(season)
-    return f"{CHN_BASE_URL}/schedules/team/{slug}/{team_id}/{season_key}"
+def schedule_url(slug: str, team_id: int, season_code: str = SEASON_CODE) -> str:
+    return f"{BASE_URL}/schedules/team/{slug}/{team_id}/{season_code}"
 
 
-def fetch_html(url: str) -> str:
-    resp = requests.get(url, headers=HEADERS, timeout=20)
-
-    print(f"Requested URL: {resp.url}")
-    print(f"Status code: {resp.status_code}")
-
+def fetch_html(url: str, cache_path: Path, refresh: bool = False) -> str:
+    if cache_path.exists() and not refresh:
+        return cache_path.read_text(encoding="utf-8")
+    resp = requests.get(url, headers=HEADERS, timeout=30)
     resp.raise_for_status()
-
-    time.sleep(1)
-
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(resp.text, encoding="utf-8")
     return resp.text
 
 
-def save_raw_html(html: str, team: str, season: str) -> Path:
-    out_dir = RAW_CHN_SCHEDULE_DIR / season.replace("-", "_")
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    out_path = out_dir / f"{slugify(team)}.html"
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(html)
-
-    return out_path
-
-
-def inspect_tables_with_pandas(html: str) -> list[pd.DataFrame]:
-    """
-    Uses pandas.read_html to inspect all HTML tables on the CHN page.
-
-    This is often the fastest way to parse sports schedule tables.
-    """
-    try:
-        tables = pd.read_html(html)
-    except ValueError:
-        return []
-
-    return tables
+def parse_opponent_cell(td) -> dict:
+    """Opponent link + trailing markers like (nc) / (ex)."""
+    link = td.find("a", href=re.compile(r"/reports/team/"))
+    text = clean(td.get_text(" "))
+    name = clean(link.get_text()) if link else re.sub(r"\(.*?\)", "", text).strip()
+    markers = {m.lower() for m in re.findall(r"\(([^)]*)\)", text)}
+    href = urljoin(BASE_URL, link["href"]) if link else None
+    team_id = None
+    if href:
+        m = re.search(r"/reports/team/[^/]+/(\d+)", href)
+        team_id = int(m.group(1)) if m else None
+    return {
+        "opponent": name,
+        "opponent_chn_url": href,
+        "opponent_team_id": team_id,
+        "is_nc": "nc" in markers,
+        "is_exhibition": "ex" in markers,
+    }
 
 
-def save_tables_debug(tables: list[pd.DataFrame], team: str, season: str) -> Path:
-    out_dir = RAW_CHN_SCHEDULE_DIR / season.replace("-", "_")
-    out_dir.mkdir(parents=True, exist_ok=True)
+def parse_footnotes(soup) -> dict[str, str]:
+    """Footnotes under the table: <b>2</b> Beanpot - TD Garden, Boston, Mass.<br/>"""
+    notes = {}
+    for box in soup.select("div.factbox"):
+        for b in box.find_all("b"):
+            marker = clean(b.get_text())
+            text = b.next_sibling
+            if marker.isdigit() and isinstance(text, str):
+                notes[marker] = clean(text)
+    return notes
 
-    out_path = out_dir / f"{slugify(team)}_tables.json"
 
-    payload = []
+def parse_schedule_html(html: str, team: str, source_url: str) -> pd.DataFrame:
+    # lxml (not html.parser): CHN leaves <td> tags unclosed, and html.parser nests them.
+    soup = BeautifulSoup(html, "lxml")
+    table = soup.select_one("table.data.schedule.full")
+    if table is None:
+        raise ValueError(f"No table.data.schedule.full found for {team} ({source_url})")
 
-    for idx, table in enumerate(tables):
-        payload.append(
+    footnotes = parse_footnotes(soup)
+    rows, cur_year, cur_month = [], None, None
+    for tr in table.find_all("tr"):
+        # Month separator: <tr class="stats-section"><td>October 2025</td></tr>
+        if "stats-section" in (tr.get("class") or []):
+            m = re.match(r"([A-Za-z]+)\s+(\d{4})", clean(tr.get_text()))
+            if m and m.group(1) in MONTHS:
+                cur_month, cur_year = MONTHS[m.group(1)], int(m.group(2))
+            continue
+
+        tds = tr.find_all("td", recursive=False)
+        if len(tds) < 8 or cur_month is None:
+            continue
+
+        # Date cell: "04 Sat"
+        dm = re.match(r"(\d{1,2})\s*([A-Za-z]{3})?", clean(tds[0].get_text(" ")))
+        if not dm:
+            continue
+        game_date = date(cur_year, cur_month, int(dm.group(1)))
+        dow = dm.group(2)
+
+        # Result + score
+        res_td = tr.select_one("td.result")
+        result = clean(res_td.get_text()) if res_td else ""
+        idx = tds.index(res_td) if res_td in tds else 2
+        gf = to_int(tds[idx + 1].get_text()) if len(tds) > idx + 1 else None
+        ga = to_int(tds[idx + 2].get_text()) if len(tds) > idx + 2 else None
+        # OT/SO marker lives somewhere in the cells between the score and the opponent
+        score_zone = " ".join(clean(t.get_text(" ")) for t in tds[idx : idx + 5])
+        is_ot = bool(re.search(r"\b(\d*OT|SO)\b", score_zone, re.I))
+
+        # Cells after the result td: [gf, "- ga", ot, home/away, opponent, box, metrics]
+        # Opponent is located by position because exhibition opponents have no link.
+        if len(tds) < idx + 6:
+            continue
+        ha_raw = clean(tds[idx + 4].get_text()).lower()
+        opp_td = tds[idx + 5]
+        is_away = ha_raw == "at"
+        is_neutral = ha_raw.startswith("vs")
+        is_home = not (is_away or is_neutral)
+
+        opp = parse_opponent_cell(opp_td)
+
+        marker = clean(tds[1].get_text())
+        box = tr.find("a", title="Box Score")
+        metrics = tr.find("a", title="Game Metrics")
+
+        rows.append(
             {
-                "table_index": idx,
-                "shape": list(table.shape),
-                "columns": [str(col) for col in table.columns],
-                "head": table.head(10).astype(str).to_dict(orient="records"),
+                "season": SEASON_LABEL,
+                "team": team,
+                "date": game_date.isoformat(),
+                "day_of_week": dow,
+                "result": result or None,
+                "goals_for": gf,
+                "goals_against": ga,
+                "is_home": is_home,
+                "is_away": is_away,
+                "is_neutral": is_neutral,
+                "home_away_raw": ha_raw,
+                "opponent": opp["opponent"],
+                "opponent_chn_url": opp["opponent_chn_url"],
+                "opponent_team_id": opp["opponent_team_id"],
+                # Assumption: not (nc) and not (ex) => conference. Refine later for
+                # non-league opponents that CHN doesn't tag.
+                "is_conference": not opp["is_nc"] and not opp["is_exhibition"],
+                "is_exhibition": opp["is_exhibition"],
+                "is_overtime": is_ot,
+                "box_score_url": urljoin(BASE_URL, box["href"]) if box else None,
+                "metrics_url": urljoin(BASE_URL, metrics["href"]) if metrics else None,
+                "game_note": footnotes.get(marker),
+                "source": "college_hockey_news",
+                "source_url": source_url,
             }
         )
 
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2)
-
-    return out_path
-
-
-def choose_schedule_table(tables: list[pd.DataFrame]) -> pd.DataFrame | None:
-    """
-    Chooses the most likely schedule table.
-
-    We look for a table with columns or content related to:
-        Date, Opponent, Result, Time, Box
-    """
-    if not tables:
-        return None
-
-    best_table = None
-    best_score = -1
-
-    keywords = [
-        "date",
-        "opponent",
-        "result",
-        "time",
-        "score",
-        "conf",
-        "location",
-        "venue",
-    ]
-
-    for table in tables:
-        columns_text = " ".join(str(col).lower() for col in table.columns)
-        sample_text = " ".join(
-            table.head(5).astype(str).fillna("").to_numpy().flatten().tolist()
-        ).lower()
-
-        text = columns_text + " " + sample_text
-
-        score = sum(1 for keyword in keywords if keyword in text)
-
-        # Prefer larger tables too.
-        score += min(len(table), 40) / 10
-
-        if score > best_score:
-            best_score = score
-            best_table = table
-
-    return best_table
+    df = pd.DataFrame(rows, columns=COLUMNS)
+    for col in ("goals_for", "goals_against", "opponent_team_id"):
+        df[col] = df[col].astype("Int64")
+    return df
 
 
-def clean_column_name(col) -> str:
-    col = str(col).strip().lower()
-    col = re.sub(r"[^a-z0-9]+", "_", col)
-    col = col.strip("_")
-    return col
+def scrape_team(team: str, refresh: bool = False, root: Path = Path(".")) -> pd.DataFrame:
+    slug, team_id = TEAMS[team]
+    url = schedule_url(slug, team_id)
+    html = fetch_html(url, root / f"data/raw/chn/schedules/{slug}_{SEASON_CODE}.html", refresh)
+    df = parse_schedule_html(html, team, url)
+
+    # Real "same league" flag (is_conference only means "counts in league standings").
+    df["team_conference"] = TEAM_CONFERENCE[team]
+    df["opponent_conference"] = df["opponent_team_id"].map(ID_TO_CONFERENCE)
+    df["is_same_conference_opponent"] = df["opponent_conference"] == df["team_conference"]
+
+    out = root / f"data/processed/chn/team_schedule_{slug.lower().replace('-', '_')}_2025_26.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out, index=False)
+    played = int(df["result"].notna().sum())
+    print(f"{team}: {len(df)} games ({played} played) -> {out}")
+    return df
 
 
-def normalize_schedule_table(
-    df: pd.DataFrame, team: str, season: str, source_url: str
+def scrape_many(
+    teams: list[str], refresh: bool = False, delay: float = 1.5, root: Path = Path(".")
 ) -> pd.DataFrame:
-    """
-    Normalizes a CHN schedule table as best as possible.
+    frames, failures = [], []
+    for i, t in enumerate(teams):
+        try:
+            frames.append(scrape_team(t, refresh=refresh, root=root))
+        except Exception as e:  # keep going; report at the end
+            print(f"{t}: FAILED -> {e}")
+            failures.append((t, str(e)))
+        if i < len(teams) - 1:
+            time.sleep(delay)
 
-    Because CHN table structure may differ, this keeps original columns too.
-    """
-    df = df.copy()
+    combined = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=COLUMNS)
+    out = root / "data/processed/chn/all_team_schedules_2025_26.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    combined.to_csv(out, index=False)
 
-    # Flatten MultiIndex columns if any.
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = [
-            "_".join(str(part) for part in col if str(part) != "nan").strip() for col in df.columns
-        ]
-
-    original_columns = list(df.columns)
-
-    df.columns = [clean_column_name(col) for col in df.columns]
-
-    df["season"] = season
-    df["team"] = team
-    df["source"] = "college_hockey_news"
-    df["source_url"] = source_url
-
-    # Try to identify common columns.
-    # We keep this intentionally broad for first pass.
-    col_map_candidates = {
-        "date": ["date", "game_date"],
-        "opponent": ["opponent", "opp"],
-        "result": ["result", "res"],
-        "score": ["score"],
-        "time": ["time"],
-        "location": ["location", "site", "venue"],
-    }
-
-    for canonical, candidates in col_map_candidates.items():
-        if canonical in df.columns:
-            continue
-
-        for candidate in candidates:
-            matches = [col for col in df.columns if col == candidate or candidate in col]
-            if matches:
-                df[canonical] = df[matches[0]]
-                break
-
-        if canonical not in df.columns:
-            df[canonical] = None
-
-    df["original_columns"] = ", ".join(str(col) for col in original_columns)
-
-    return df
-
-
-def parse_schedule_with_bs4(html: str, team: str, season: str, source_url: str) -> pd.DataFrame:
-    """
-    Backup parser using BeautifulSoup.
-
-    This collects table rows into generic columns if pandas parsing is insufficient.
-    """
-    soup = BeautifulSoup(html, "lxml")
-
-    tables = soup.select("table")
-
-    parsed_tables = []
-
-    for table_idx, table in enumerate(tables):
-        rows = []
-
-        for tr in table.select("tr"):
-            cells = [cell.get_text(" ", strip=True) for cell in tr.select("th, td")]
-
-            if cells:
-                rows.append(cells)
-
-        if not rows:
-            continue
-
-        max_len = max(len(row) for row in rows)
-        normalized_rows = [row + [None] * (max_len - len(row)) for row in rows]
-
-        df = pd.DataFrame(normalized_rows)
-        df["table_index"] = table_idx
-        parsed_tables.append(df)
-
-    if not parsed_tables:
-        return pd.DataFrame()
-
-    # Use the largest parsed table.
-    best = max(parsed_tables, key=len)
-    best["season"] = season
-    best["team"] = team
-    best["source"] = "college_hockey_news"
-    best["source_url"] = source_url
-
-    return best
-
-
-def scrape_chn_team_schedule(team: str, slug: str, team_id: str | int, season: str) -> pd.DataFrame:
-    url = build_chn_schedule_url(slug=slug, team_id=team_id, season=season)
-
-    html = fetch_html(url)
-
-    raw_path = save_raw_html(html, team=team, season=season)
-    print(f"Saved raw HTML to {raw_path}")
-
-    tables = inspect_tables_with_pandas(html)
-    print(f"Found {len(tables)} tables with pandas.read_html")
-
-    debug_tables_path = save_tables_debug(tables, team=team, season=season)
-    print(f"Saved table debug JSON to {debug_tables_path}")
-
-    schedule_table = choose_schedule_table(tables)
-
-    if schedule_table is not None:
-        print(f"Selected schedule table shape: {schedule_table.shape}")
-        df = normalize_schedule_table(
-            schedule_table,
-            team=team,
-            season=season,
-            source_url=url,
-        )
-    else:
-        print("No pandas table selected. Trying BeautifulSoup fallback.")
-        df = parse_schedule_with_bs4(
-            html,
-            team=team,
-            season=season,
-            source_url=url,
-        )
-
-    return df
-
-
-def save_processed_schedule(df: pd.DataFrame, team: str, season: str) -> Path:
-    PROCESSED_CHN_DIR.mkdir(parents=True, exist_ok=True)
-
-    out_path = PROCESSED_CHN_DIR / f"team_schedule_{slugify(team)}_{season.replace('-', '_')}.csv"
-
-    df.to_csv(out_path, index=False)
-
-    return out_path
+    print(f"\nCombined: {len(combined)} team-game rows from {len(frames)} teams -> {out}")
+    empty = [
+        t
+        for t, f in zip([t for t in teams if t not in {x[0] for x in failures}], frames)
+        if len(f) == 0
+    ]
+    if empty:
+        print("Teams with 0 parsed rows (check the HTML):", ", ".join(empty))
+    if failures:
+        print("Failed teams (re-run with the same command; cached pages are skipped):")
+        for t, msg in failures:
+            print(f"  {t}: {msg}")
+    return combined
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Scrape College Hockey News team schedule")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--team", default="Boston University", choices=sorted(TEAMS))
+    ap.add_argument("--all", action="store_true", help="scrape every D-I team in TEAMS")
+    ap.add_argument("--refresh", action="store_true", help="ignore cached HTML")
+    ap.add_argument("--delay", type=float, default=1.5, help="seconds between requests")
+    args = ap.parse_args()
 
-    parser.add_argument(
-        "--team",
-        default="Boston University",
-        help='Canonical team name, e.g. "Boston University"',
-    )
-
-    parser.add_argument(
-        "--slug",
-        default="Boston-University",
-        help='CHN team slug, e.g. "Boston-University"',
-    )
-
-    parser.add_argument(
-        "--team-id",
-        default="10",
-        help="CHN numeric team id, e.g. 10 for Boston University",
-    )
-
-    parser.add_argument(
-        "--season",
-        default="2025-26",
-        help="Season, e.g. 2025-26",
-    )
-
-    args = parser.parse_args()
-
-    print(
-        f"Scraping CHN schedule for {args.team} "
-        f"({args.slug}, id={args.team_id}) season {args.season}"
-    )
-
-    df = scrape_chn_team_schedule(
-        team=args.team,
-        slug=args.slug,
-        team_id=args.team_id,
-        season=args.season,
-    )
-
-    if df.empty:
-        print("WARNING: No schedule rows parsed.")
-        return
-
-    out_path = save_processed_schedule(df, team=args.team, season=args.season)
-
-    print()
-    print(f"Saved {len(df)} rows to {out_path}")
-    print()
-    print(df.head(20).to_string(index=False))
+    if args.all:
+        scrape_many(list(TEAMS), refresh=args.refresh, delay=args.delay)
+    else:
+        scrape_team(args.team, refresh=args.refresh)
 
 
 if __name__ == "__main__":
