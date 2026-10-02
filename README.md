@@ -1,136 +1,40 @@
-# ML Project Template
+## Project Status
 
-A reusable scaffold for end-to-end ML projects: data pipeline → experimentation →
-containerized deployment → CI/CD → monitoring. Use this as a starting point rather
-than rebuilding the same MLOps skeleton from scratch each time.
+**BU Hockey Opponent Scouting Tool** automates the repetitive statistical groundwork behind pre-game opponent scouting reports for Boston University Men's Hockey, using only public data. The end goal is a short pre-game report for BU's next opponent covering schedule and results, recent form, special teams, top scorers, goalie usage, and eventually model-based predictions.
 
-> Click **"Use this template"** on GitHub to start a new project from this repo.
-> See [`TEMPLATE_USAGE.md`](TEMPLATE_USAGE.md) for the setup checklist.
+### Completed
 
----
+**1. BU official data pipeline (2025-26), validated**
+Schedule and box scores from goterriers.com:
 
-## What this template gives you
+`BU schedule page -> raw JSON -> processed schedule CSV -> box score HTML -> game results / team game stats / player game stats CSVs -> validation`
 
-- A clean separation between data ingestion, feature engineering, modeling, and
-  serving — so each stage can be developed, tested, and swapped independently
-- Experiment tracking wired up out of the box (MLflow: tracking server + Postgres
-  backend + model registry)
-- A containerized FastAPI serving app
-- A CI/CD pipeline (GitHub Actions → Docker → ECR → ECS Fargate) so "deploy to
-  production" isn't an afterthought
-- A monitoring stage as a first-class part of the project, not something bolted on
-  after the fact
+- Handles neutral-site games, team-name aliases (e.g. "Boston U.", "Michigan St."), and overtime columns in player tables
+- Validation checks that player goals, shots, and blocks sum to team totals for both teams; all core checks pass
 
----
+**2. League-wide schedule/results scraper (College Hockey News)**
+BU's box scores only cover games BU played, so scouting an opponent requires that opponent's full season. `chn_team_schedule_scraper.py` collects schedules and results for all 63 Division I teams:
 
-## Architecture
+- Raw HTML is cached in `data/raw/chn/schedules/`, so re-runs don't re-download
+- Outputs one CSV per team plus a combined `all_team_schedules_2025_26.csv`
+- Fields include date, result, score, home/away/neutral, opponent, overtime, exhibition, conference flags, event notes (Beanpot, tournaments), and box score / metrics URLs
+- Includes team and opponent conference, so same-league games can be identified
 
+### In Progress
+
+**CHN box score ingestion for all games.** Download and parse CHN box scores for every game to get team and player stats (shots, special teams, goalies, scoring) for each opponent's full season, not just their games against BU.
+
+### Planned
+
+- **Feature building** (`src/features/`): record, last-5 form, goals for/against, shot differential, special teams, goalie workload, top scorers, point pace
+- **Report generation** (`src/reports/`): HTML or PDF opponent report for BU's next game
+- **Modeling** (`src/models/`): game outcome predictions
+
+### Tech Stack
+Python, requests, BeautifulSoup (lxml), pandas, managed with uv.
+
+### Project Structure
 ```
-Data source(s)
-      │
-      ▼
-data/raw → data/interim → data/processed
-      │
-      ▼
-Feature engineering
-      │
-      ▼
-Model training  ──────────►  Experiment tracking (MLflow)
-      │                              │
-      ▼                              ▼
-Model evaluation              Model registry
-                                      │
-                                      ▼
-                          Serving app (FastAPI, Docker)
-                                      │
-                                      ▼
-                   CI/CD (GitHub Actions) → ECR → ECS Fargate
-                                      │
-                                      ▼
-                          Monitoring (drift / performance over time)
+data/{raw,interim,processed}/
+src/{ingestion,evaluation,features,models,serving}/
 ```
-
----
-
-## Repo structure
-
-```
-project-name/
-├── .github/workflows/     # CI (lint/test/build) and CD (deploy) pipelines
-├── data/                  # raw/interim/processed — gitignored, populated by ingestion scripts
-├── src/
-│   ├── ingestion/         # data collection / loading
-│   ├── features/          # feature engineering
-│   ├── models/            # training scripts
-│   ├── evaluation/        # metrics, validation, backtesting
-│   └── serving/           # FastAPI app
-├── notebooks/             # exploration only — nothing production runs from here
-├── tests/                 # mirrors src/ structure
-├── monitoring/            # scheduled drift / performance checks
-├── infra/terraform/       # AWS infra as code (ECR, ECS, ALB)
-├── Dockerfile
-├── docker-compose.yml     # local: API + MLflow server + Postgres
-├── pyproject.toml
-└── README.md
-```
-
----
-
-## Setup
-
-### Prerequisites
-- Python 3.11+
-- Docker + Docker Compose
-- [uv](https://github.com/astral-sh/uv) or Poetry
-- AWS CLI configured, if deploying (not needed for local dev)
-
-### Local development
-
-```bash
-git clone https://github.com/<your-username>/<project-name>.git
-cd <project-name>
-
-uv sync            # or: poetry install
-
-# spin up the local stack — API + MLflow tracking server + Postgres
-docker compose up --build
-```
-
-| Service | URL | Purpose |
-|---|---|---|
-| FastAPI app | http://localhost:8000/docs | Prediction API (Swagger UI) |
-| MLflow UI | http://localhost:5000 | Experiment tracking / model registry |
-| Postgres | localhost:5432 | MLflow backend store |
-
-### Pipeline commands (rename/replace with your actual scripts)
-
-```bash
-python -m src.ingestion.load_data
-python -m src.features.build_features
-python -m src.models.train --model <model_name>
-pytest
-```
-
----
-
-## CI/CD
-
-- **`ci.yml`** — runs on every PR: lint (`ruff`), unit tests (`pytest`), Docker build,
-  smoke test against the built image.
-- **`cd.yml`** — runs on merge to `main`: pushes image to Amazon ECR, deploys to ECS
-  Fargate via `infra/terraform/`.
-
----
-
-## Monitoring
-
-`monitoring/` holds a scheduled job that compares live predictions/outcomes against
-training-time distributions and generates a drift report (e.g. via
-[Evidently](https://www.evidentlyai.com/)). Swap the preset (data drift, classification,
-regression, etc.) to match your model type.
-
----
-
-## License
-
-MIT — see [`LICENSE`](LICENSE).
