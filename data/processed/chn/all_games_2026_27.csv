@@ -1,78 +1,78 @@
 season,game_id,date,day_of_week,home_team,away_team,home_team_id,away_team_id,home_goals,away_goals,is_played,is_neutral,is_overtime,is_conference,home_conference,away_conference,game_note,box_score_url,metrics_url,source
-2026-27,2026-10-02_10_4,2026-10-02,Fri,Alaska,Boston University,4,10,,,False,False,False,False,Independent,Hockey East,,,,college_hockey_news
-2026-27,2026-10-02_11_31,2026-10-02,Fri,Michigan,Bowling Green,31,11,,,False,False,False,False,Big Ten,CCHA,,,,college_hockey_news
-2026-27,2026-10-02_13_21,2026-10-02,Fri,Canisius,Ferris State,13,21,,,False,False,False,False,Atlantic Hockey,CCHA,,,,college_hockey_news
-2026-27,2026-10-02_16_27,2026-10-02,Fri,Colorado College,Massachusetts,16,27,,,False,False,False,False,NCHC,Hockey East,,,,college_hockey_news
-2026-27,2026-10-02_20_3,2026-10-02,Fri,Alaska-Anchorage,Denver,3,20,,,False,False,False,False,Independent,NCHC,,,,college_hockey_news
-2026-27,2026-10-02_23_25,2026-10-02,Fri,Holy Cross,Maine,23,25,,,False,False,False,False,Atlantic Hockey,Hockey East,,,,college_hockey_news
-2026-27,2026-10-02_30_42,2026-10-02,Fri,Northern Michigan,Miami,42,30,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-02_33_34,2026-10-02,Fri,Michigan Tech,Minnesota,33,34,,,False,False,False,False,CCHA,Big Ten,,,,college_hockey_news
-2026-27,2026-10-02_36_62,2026-10-02,Fri,Minnesota-Duluth,Long Island,36,62,,,False,False,False,False,NCHC,Independent,,,,college_hockey_news
-2026-27,2026-10-02_38_47,2026-10-02,Fri,Quinnipiac,New Hampshire,47,38,,,False,False,False,False,ECAC,Hockey East,,,,college_hockey_news
-2026-27,2026-10-02_39_49,2026-10-02,Fri,Niagara,RIT,39,49,,,False,False,False,True,Atlantic Hockey,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-02_433_61,2026-10-02,Fri,Lindenwood,Arizona State,433,61,,,False,False,False,False,Independent,NCHC,,,,college_hockey_news
-2026-27,2026-10-02_50_58,2026-10-02,Fri,Wisconsin,Robert Morris,58,50,,,False,False,False,False,Big Ten,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-02_53_66,2026-10-02,Fri,St. Lawrence,Maryville,53,,,,False,False,False,False,ECAC,,,,,college_hockey_news
-2026-27,2026-10-03_10_4,2026-10-03,Sat,Alaska,Boston University,4,10,,,False,False,False,False,Independent,Hockey East,,,,college_hockey_news
-2026-27,2026-10-03_11_31,2026-10-03,Sat,Bowling Green,Michigan,11,31,,,False,False,False,False,CCHA,Big Ten,,,,college_hockey_news
-2026-27,2026-10-03_13_21,2026-10-03,Sat,Canisius,Ferris State,13,21,,,False,False,False,False,Atlantic Hockey,CCHA,,,,college_hockey_news
-2026-27,2026-10-03_16_27,2026-10-03,Sat,Colorado College,Massachusetts,16,27,,,False,False,False,False,NCHC,Hockey East,,,,college_hockey_news
-2026-27,2026-10-03_20_3,2026-10-03,Sat,Alaska-Anchorage,Denver,3,20,,,False,False,False,False,Independent,NCHC,,,,college_hockey_news
-2026-27,2026-10-03_23_25,2026-10-03,Sat,Holy Cross,Maine,23,25,,,False,False,False,False,Atlantic Hockey,Hockey East,"at DCU Center, Worcester, Mass.",,,college_hockey_news
-2026-27,2026-10-03_29_47,2026-10-03,Sat,Quinnipiac,Merrimack,47,29,,,False,False,False,False,ECAC,Hockey East,,,,college_hockey_news
-2026-27,2026-10-03_30_42,2026-10-03,Sat,Northern Michigan,Miami,42,30,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-03_33_34,2026-10-03,Sat,Michigan Tech,Minnesota,33,34,,,False,False,False,False,CCHA,Big Ten,,,,college_hockey_news
-2026-27,2026-10-03_36_62,2026-10-03,Sat,Minnesota-Duluth,Long Island,36,62,,,False,False,False,False,NCHC,Independent,,,,college_hockey_news
-2026-27,2026-10-03_39_49,2026-10-03,Sat,RIT,Niagara,49,39,,,False,False,False,True,Atlantic Hockey,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-03_433_61,2026-10-03,Sat,Lindenwood,Arizona State,433,61,,,False,False,False,False,Independent,NCHC,,,,college_hockey_news
-2026-27,2026-10-03_50_58,2026-10-03,Sat,Wisconsin,Robert Morris,58,50,,,False,False,False,False,Big Ten,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-03_52_7,2026-10-03,Sat,Bemidji State,St. Cloud State,7,52,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-03_54_6,2026-10-03,Sat,Army,Union,6,54,,,False,False,False,False,Atlantic Hockey,ECAC,,,,college_hockey_news
-2026-27,2026-10-08_21_57,2026-10-08,Thu,Western Michigan,Ferris State,57,21,,,False,False,False,False,NCHC,CCHA,,,,college_hockey_news
-2026-27,2026-10-08_24_433,2026-10-08,Thu,Lindenwood,Lake Superior,433,24,,,False,False,False,False,Independent,CCHA,,,,college_hockey_news
-2026-27,2026-10-08_29_38,2026-10-08,Thu,Merrimack,New Hampshire,29,38,,,False,False,False,True,Hockey East,Hockey East,,,,college_hockey_news
-2026-27,2026-10-08_39_43,2026-10-08,Thu,Notre Dame,Niagara,43,39,,,False,False,False,False,Big Ten,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_11_51,2026-10-09,Fri,Sacred Heart,Bowling Green,51,11,,,False,False,False,False,Atlantic Hockey,CCHA,Ice Breaker,,,college_hockey_news
-2026-27,2026-10-09_13_62,2026-10-09,Fri,Long Island,Canisius,62,13,,,False,False,False,False,Independent,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_14_26,2026-10-09,Fri,Mass.-Lowell,Clarkson,26,14,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-09_15_422,2026-10-09,Fri,Stonehill,Colgate,422,15,,,False,False,False,False,Independent,ECAC,"at Warrior Ice Arena, Brighton, Mass.",,,college_hockey_news
-2026-27,2026-10-09_17_60,2026-10-09,Fri,Connecticut,Penn State,17,60,,,False,False,False,False,Hockey East,Big Ten,"Ice Breaker – Toscano Forum, Storrs, Conn.",,,college_hockey_news
-2026-27,2026-10-09_1_63,2026-10-09,Fri,St. Thomas,Air Force,63,1,,,False,False,False,False,NCHC,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_21_57,2026-10-09,Fri,Ferris State,Western Michigan,21,57,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-09_23_61,2026-10-09,Fri,Arizona State,Holy Cross,61,23,,,False,False,False,False,NCHC,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_24_433,2026-10-09,Fri,Lindenwood,Lake Superior,433,24,,,False,False,False,False,Independent,CCHA,,,,college_hockey_news
-2026-27,2026-10-09_25_47,2026-10-09,Fri,Maine,Quinnipiac,25,47,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-09_27_49,2026-10-09,Fri,Massachusetts,RIT,27,49,,,False,False,False,False,Hockey East,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_32_42,2026-10-09,Fri,Michigan State,Northern Michigan,32,42,,,False,False,False,False,Big Ten,CCHA,,,,college_hockey_news
-2026-27,2026-10-09_33_52,2026-10-09,Fri,St. Cloud State,Michigan Tech,52,33,,,False,False,False,False,NCHC,CCHA,,,,college_hockey_news
-2026-27,2026-10-09_35_58,2026-10-09,Fri,Minnesota State,Wisconsin,35,58,,,False,False,False,False,CCHA,Big Ten,,,,college_hockey_news
-2026-27,2026-10-09_36_64,2026-10-09,Fri,Augustana,Minnesota-Duluth,64,36,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-09_39_43,2026-10-09,Fri,Notre Dame,Niagara,43,39,,,False,False,False,False,Big Ten,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-09_3_31,2026-10-09,Fri,Michigan,Alaska-Anchorage,31,3,,,False,False,False,False,Big Ten,Independent,,,,college_hockey_news
-2026-27,2026-10-09_40_7,2026-10-09,Fri,Bemidji State,North Dakota,7,40,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-09_44_48,2026-10-09,Fri,RPI,Ohio State,48,44,,,False,False,False,False,ECAC,Big Ten,,,,college_hockey_news
-2026-27,2026-10-09_46_53,2026-10-09,Fri,Providence,St. Lawrence,46,53,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-09_4_9,2026-10-09,Fri,Boston College,Alaska,9,4,,,False,False,False,False,Hockey East,Independent,,,,college_hockey_news
-2026-27,2026-10-09_55_8,2026-10-09,Fri,Bentley,Vermont,8,55,,,False,False,False,False,Atlantic Hockey,Hockey East,,,,college_hockey_news
-2026-27,2026-10-10_11_17,2026-10-10,Sat,Connecticut,Bowling Green,17,11,,,False,False,False,False,Hockey East,CCHA,"Ice Breaker – Toscano Forum, Storrs, Conn.",,,college_hockey_news
-2026-27,2026-10-10_13_62,2026-10-10,Sat,Long Island,Canisius,62,13,,,False,False,False,False,Independent,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-10_14_46,2026-10-10,Sat,Providence,Clarkson,46,14,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-10_15_422,2026-10-10,Sat,Stonehill,Colgate,422,15,,,False,False,False,False,Independent,ECAC,"at Warrior Ice Arena, Brighton, Mass.",,,college_hockey_news
-2026-27,2026-10-10_1_63,2026-10-10,Sat,St. Thomas,Air Force,63,1,,,False,False,False,False,NCHC,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-10_23_61,2026-10-10,Sat,Arizona State,Holy Cross,61,23,,,False,False,False,False,NCHC,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-10_25_47,2026-10-10,Sat,Maine,Quinnipiac,25,47,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-10_26_53,2026-10-10,Sat,Mass.-Lowell,St. Lawrence,26,53,,,False,False,False,False,Hockey East,ECAC,,,,college_hockey_news
-2026-27,2026-10-10_27_49,2026-10-10,Sat,Massachusetts,RIT,27,49,,,False,False,False,False,Hockey East,Atlantic Hockey,,,,college_hockey_news
-2026-27,2026-10-10_33_52,2026-10-10,Sat,St. Cloud State,Michigan Tech,52,33,,,False,False,False,False,NCHC,CCHA,,,,college_hockey_news
-2026-27,2026-10-10_35_58,2026-10-10,Sat,Minnesota State,Wisconsin,35,58,,,False,False,False,False,CCHA,Big Ten,,,,college_hockey_news
-2026-27,2026-10-10_36_64,2026-10-10,Sat,Augustana,Minnesota-Duluth,64,36,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
-2026-27,2026-10-10_3_31,2026-10-10,Sat,Michigan,Alaska-Anchorage,31,3,,,False,False,False,False,Big Ten,Independent,,,,college_hockey_news
-2026-27,2026-10-10_40_7,2026-10-10,Sat,North Dakota,Bemidji State,40,7,,,False,False,False,False,NCHC,CCHA,,,,college_hockey_news
-2026-27,2026-10-10_41_8,2026-10-10,Sat,Bentley,Northeastern,8,41,,,False,False,False,False,Atlantic Hockey,Hockey East,,,,college_hockey_news
-2026-27,2026-10-10_44_48,2026-10-10,Sat,RPI,Ohio State,48,44,,,False,False,False,False,ECAC,Big Ten,,,,college_hockey_news
-2026-27,2026-10-10_4_54,2026-10-10,Sat,Union,Alaska,54,4,,,False,False,False,False,ECAC,Independent,,,,college_hockey_news
-2026-27,2026-10-10_51_60,2026-10-10,Sat,Sacred Heart,Penn State,51,60,,,False,False,False,False,Atlantic Hockey,Big Ten,Ice Breaker,,,college_hockey_news
-2026-27,2026-10-11_32_42,2026-10-11,Sun,Michigan State,Northern Michigan,32,42,,,False,False,False,False,Big Ten,CCHA,,,,college_hockey_news
+2026-27,2026-10-02_10_4,2026-10-02,Fri,Alaska,Boston University,4,10,1,2,True,False,True,False,Independent,Hockey East,,https://www.collegehockeynews.com/box/final/20261002/bu_/akf/,https://www.collegehockeynews.com/box/metrics.php?gd=117305,college_hockey_news
+2026-27,2026-10-02_11_31,2026-10-02,Fri,Michigan,Bowling Green,31,11,7,2,True,False,False,False,Big Ten,CCHA,,https://www.collegehockeynews.com/box/final/20261002/bgs/mic/,https://www.collegehockeynews.com/box/metrics.php?gd=114353,college_hockey_news
+2026-27,2026-10-02_13_21,2026-10-02,Fri,Canisius,Ferris State,13,21,4,0,True,False,False,False,Atlantic Hockey,CCHA,,https://www.collegehockeynews.com/box/final/20261002/fsu/cns/,https://www.collegehockeynews.com/box/metrics.php?gd=118406,college_hockey_news
+2026-27,2026-10-02_16_27,2026-10-02,Fri,Colorado College,Massachusetts,16,27,2,0,True,False,False,False,NCHC,Hockey East,,https://www.collegehockeynews.com/box/final/20261002/uma/cc_/,https://www.collegehockeynews.com/box/metrics.php?gd=117302,college_hockey_news
+2026-27,2026-10-02_20_3,2026-10-02,Fri,Alaska-Anchorage,Denver,3,20,2,6,True,False,False,False,Independent,NCHC,,https://www.collegehockeynews.com/box/final/20261002/den/aka/,https://www.collegehockeynews.com/box/metrics.php?gd=114352,college_hockey_news
+2026-27,2026-10-02_23_25,2026-10-02,Fri,Holy Cross,Maine,23,25,1,4,True,False,False,False,Atlantic Hockey,Hockey East,,https://www.collegehockeynews.com/box/final/20261002/mne/hcr/,https://www.collegehockeynews.com/box/metrics.php?gd=117304,college_hockey_news
+2026-27,2026-10-02_30_42,2026-10-02,Fri,Northern Michigan,Miami,42,30,3,0,True,False,False,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261002/mia/nmu/,https://www.collegehockeynews.com/box/metrics.php?gd=116281,college_hockey_news
+2026-27,2026-10-02_36_62,2026-10-02,Fri,Minnesota-Duluth,Long Island,36,62,7,4,True,False,False,False,NCHC,Independent,,https://www.collegehockeynews.com/box/final/20261002/liu/mnd/,https://www.collegehockeynews.com/box/metrics.php?gd=114354,college_hockey_news
+2026-27,2026-10-02_38_47,2026-10-02,Fri,Quinnipiac,New Hampshire,47,38,10,2,True,False,False,False,ECAC,Hockey East,,https://www.collegehockeynews.com/box/final/20261002/unh/qui/,https://www.collegehockeynews.com/box/metrics.php?gd=116985,college_hockey_news
+2026-27,2026-10-02_39_49,2026-10-02,Fri,Niagara,RIT,39,49,4,1,True,False,False,True,Atlantic Hockey,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261002/rit/nia/,https://www.collegehockeynews.com/box/metrics.php?gd=116410,college_hockey_news
+2026-27,2026-10-02_433_61,2026-10-02,Fri,Lindenwood,Arizona State,433,61,0,5,True,False,False,False,Independent,NCHC,,https://www.collegehockeynews.com/box/final/20261002/asu/lin/,https://www.collegehockeynews.com/box/metrics.php?gd=118362,college_hockey_news
+2026-27,2026-10-02_50_58,2026-10-02,Fri,Wisconsin,Robert Morris,58,50,4,2,True,False,False,False,Big Ten,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261002/rmu/wis/,https://www.collegehockeynews.com/box/metrics.php?gd=117563,college_hockey_news
+2026-27,2026-10-02_53_66,2026-10-02,Fri,St. Lawrence,Maryville,53,,2,3,True,False,False,False,ECAC,,,https://www.collegehockeynews.com/box/final/20261002/mry/stl/,https://www.collegehockeynews.com/box/metrics.php?gd=117050,college_hockey_news
+2026-27,2026-10-03_10_4,2026-10-03,Sat,Alaska,Boston University,4,10,0,4,True,False,False,False,Independent,Hockey East,,https://www.collegehockeynews.com/box/final/20261003/bu_/akf/,https://www.collegehockeynews.com/box/metrics.php?gd=117308,college_hockey_news
+2026-27,2026-10-03_11_31,2026-10-03,Sat,Bowling Green,Michigan,11,31,3,4,True,False,False,False,CCHA,Big Ten,,https://www.collegehockeynews.com/box/final/20261003/mic/bgs/,https://www.collegehockeynews.com/box/metrics.php?gd=114355,college_hockey_news
+2026-27,2026-10-03_13_21,2026-10-03,Sat,Canisius,Ferris State,13,21,5,5,True,False,True,False,Atlantic Hockey,CCHA,,https://www.collegehockeynews.com/box/final/20261003/fsu/cns/,https://www.collegehockeynews.com/box/metrics.php?gd=118407,college_hockey_news
+2026-27,2026-10-03_16_27,2026-10-03,Sat,Colorado College,Massachusetts,16,27,6,1,True,False,False,False,NCHC,Hockey East,,https://www.collegehockeynews.com/box/final/20261003/uma/cc_/,https://www.collegehockeynews.com/box/metrics.php?gd=117306,college_hockey_news
+2026-27,2026-10-03_20_3,2026-10-03,Sat,Alaska-Anchorage,Denver,3,20,1,4,True,False,False,False,Independent,NCHC,,https://www.collegehockeynews.com/box/final/20261003/den/aka/,https://www.collegehockeynews.com/box/metrics.php?gd=114356,college_hockey_news
+2026-27,2026-10-03_23_25,2026-10-03,Sat,Holy Cross,Maine,23,25,3,2,True,False,True,False,Atlantic Hockey,Hockey East,"at DCU Center, Worcester, Mass.",https://www.collegehockeynews.com/box/final/20261003/mne/hcr/,https://www.collegehockeynews.com/box/metrics.php?gd=117307,college_hockey_news
+2026-27,2026-10-03_29_47,2026-10-03,Sat,Quinnipiac,Merrimack,47,29,6,3,True,False,False,False,ECAC,Hockey East,,https://www.collegehockeynews.com/box/final/20261003/mer/qui/,https://www.collegehockeynews.com/box/metrics.php?gd=118469,college_hockey_news
+2026-27,2026-10-03_30_42,2026-10-03,Sat,Northern Michigan,Miami,42,30,1,4,True,False,False,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261003/mia/nmu/,https://www.collegehockeynews.com/box/metrics.php?gd=116283,college_hockey_news
+2026-27,2026-10-03_33_34,2026-10-03,Sat,Michigan Tech,Minnesota,33,34,3,2,True,False,False,False,CCHA,Big Ten,,https://www.collegehockeynews.com/box/final/20261003/min/mtu/,https://www.collegehockeynews.com/box/metrics.php?gd=116282,college_hockey_news
+2026-27,2026-10-03_36_62,2026-10-03,Sat,Minnesota-Duluth,Long Island,36,62,4,0,True,False,False,False,NCHC,Independent,,https://www.collegehockeynews.com/box/final/20261003/liu/mnd/,https://www.collegehockeynews.com/box/metrics.php?gd=114358,college_hockey_news
+2026-27,2026-10-03_39_49,2026-10-03,Sat,RIT,Niagara,49,39,4,2,True,False,False,True,Atlantic Hockey,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261003/nia/rit/,https://www.collegehockeynews.com/box/metrics.php?gd=116411,college_hockey_news
+2026-27,2026-10-03_433_61,2026-10-03,Sat,Lindenwood,Arizona State,433,61,9,6,True,False,False,False,Independent,NCHC,,https://www.collegehockeynews.com/box/final/20261003/asu/lin/,https://www.collegehockeynews.com/box/metrics.php?gd=118363,college_hockey_news
+2026-27,2026-10-03_50_58,2026-10-03,Sat,Wisconsin,Robert Morris,58,50,1,0,True,False,False,False,Big Ten,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261003/rmu/wis/,https://www.collegehockeynews.com/box/metrics.php?gd=117564,college_hockey_news
+2026-27,2026-10-03_52_7,2026-10-03,Sat,Bemidji State,St. Cloud State,7,52,3,2,True,False,True,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261003/stc/bmj/,https://www.collegehockeynews.com/box/metrics.php?gd=116986,college_hockey_news
+2026-27,2026-10-03_54_6,2026-10-03,Sat,Army,Union,6,54,2,4,True,False,False,False,Atlantic Hockey,ECAC,,https://www.collegehockeynews.com/box/final/20261003/uni/arm/,https://www.collegehockeynews.com/box/metrics.php?gd=117209,college_hockey_news
+2026-27,2026-10-04_33_34,2026-10-04,Sun,Michigan Tech,Minnesota,33,34,3,1,True,False,False,False,CCHA,Big Ten,"ppd. from Oct. 2 (ice issues) – MacInnes Student Ice Arena, Houghton, Mich.",https://www.collegehockeynews.com/box/final/20261004/min/mtu/,https://www.collegehockeynews.com/box/metrics.php?gd=116280,college_hockey_news
+2026-27,2026-10-08_21_57,2026-10-08,Thu,Western Michigan,Ferris State,57,21,6,0,True,False,False,False,NCHC,CCHA,,https://www.collegehockeynews.com/box/final/20261008/fsu/wmu/,https://www.collegehockeynews.com/box/metrics.php?gd=114361,college_hockey_news
+2026-27,2026-10-08_24_433,2026-10-08,Thu,Lindenwood,Lake Superior,433,24,7,4,True,False,False,False,Independent,CCHA,,https://www.collegehockeynews.com/box/final/20261008/lss/lin/,https://www.collegehockeynews.com/box/metrics.php?gd=118437,college_hockey_news
+2026-27,2026-10-08_29_38,2026-10-08,Thu,Merrimack,New Hampshire,29,38,3,3,True,False,True,True,Hockey East,Hockey East,,https://www.collegehockeynews.com/box/final/20261008/unh/mer/,https://www.collegehockeynews.com/box/metrics.php?gd=116987,college_hockey_news
+2026-27,2026-10-08_39_43,2026-10-08,Thu,Notre Dame,Niagara,43,39,3,1,True,False,False,False,Big Ten,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261008/nia/ndm/,https://www.collegehockeynews.com/box/metrics.php?gd=117231,college_hockey_news
+2026-27,2026-10-09_11_51,2026-10-09,Fri,Sacred Heart,Bowling Green,51,11,2,3,True,False,False,False,Atlantic Hockey,CCHA,Ice Breaker,https://www.collegehockeynews.com/box/final/20261009/bgs/sac/,https://www.collegehockeynews.com/box/metrics.php?gd=117240,college_hockey_news
+2026-27,2026-10-09_13_62,2026-10-09,Fri,Long Island,Canisius,62,13,2,3,True,False,False,False,Independent,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261009/cns/liu/,https://www.collegehockeynews.com/box/metrics.php?gd=118408,college_hockey_news
+2026-27,2026-10-09_14_26,2026-10-09,Fri,Mass.-Lowell,Clarkson,26,14,2,3,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261009/clk/uml/,https://www.collegehockeynews.com/box/metrics.php?gd=117311,college_hockey_news
+2026-27,2026-10-09_15_422,2026-10-09,Fri,Stonehill,Colgate,422,15,2,1,True,False,True,False,Independent,ECAC,"at Warrior Ice Arena, Brighton, Mass.",https://www.collegehockeynews.com/box/final/20261009/clg/stn/,https://www.collegehockeynews.com/box/metrics.php?gd=118415,college_hockey_news
+2026-27,2026-10-09_17_60,2026-10-09,Fri,Connecticut,Penn State,17,60,3,1,True,False,False,False,Hockey East,Big Ten,"Ice Breaker – Toscano Forum, Storrs, Conn.",https://www.collegehockeynews.com/box/final/20261009/psu/con/,https://www.collegehockeynews.com/box/metrics.php?gd=117316,college_hockey_news
+2026-27,2026-10-09_1_63,2026-10-09,Fri,St. Thomas,Air Force,63,1,1,5,True,False,False,False,NCHC,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261009/afa/stt/,https://www.collegehockeynews.com/box/metrics.php?gd=116519,college_hockey_news
+2026-27,2026-10-09_21_57,2026-10-09,Fri,Ferris State,Western Michigan,21,57,1,5,True,False,False,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261009/wmu/fsu/,https://www.collegehockeynews.com/box/metrics.php?gd=114362,college_hockey_news
+2026-27,2026-10-09_23_61,2026-10-09,Fri,Arizona State,Holy Cross,61,23,1,2,True,False,False,False,NCHC,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261009/hcr/asu/,https://www.collegehockeynews.com/box/metrics.php?gd=118364,college_hockey_news
+2026-27,2026-10-09_24_433,2026-10-09,Fri,Lindenwood,Lake Superior,433,24,3,4,True,False,False,False,Independent,CCHA,,https://www.collegehockeynews.com/box/final/20261009/lss/lin/,https://www.collegehockeynews.com/box/metrics.php?gd=118438,college_hockey_news
+2026-27,2026-10-09_25_47,2026-10-09,Fri,Maine,Quinnipiac,25,47,1,2,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261009/qui/mne/,https://www.collegehockeynews.com/box/metrics.php?gd=117310,college_hockey_news
+2026-27,2026-10-09_27_49,2026-10-09,Fri,Massachusetts,RIT,27,49,2,2,True,False,True,False,Hockey East,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261009/rit/uma/,https://www.collegehockeynews.com/box/metrics.php?gd=117312,college_hockey_news
+2026-27,2026-10-09_32_42,2026-10-09,Fri,Michigan State,Northern Michigan,32,42,6,2,True,False,False,False,Big Ten,CCHA,,https://www.collegehockeynews.com/box/final/20261009/nmu/msu/,https://www.collegehockeynews.com/box/metrics.php?gd=116284,college_hockey_news
+2026-27,2026-10-09_33_52,2026-10-09,Fri,St. Cloud State,Michigan Tech,52,33,2,3,True,False,True,False,NCHC,CCHA,,https://www.collegehockeynews.com/box/final/20261009/mtu/stc/,https://www.collegehockeynews.com/box/metrics.php?gd=116286,college_hockey_news
+2026-27,2026-10-09_35_58,2026-10-09,Fri,Minnesota State,Wisconsin,35,58,0,4,True,False,False,False,CCHA,Big Ten,,https://www.collegehockeynews.com/box/final/20261009/wis/mns/,https://www.collegehockeynews.com/box/metrics.php?gd=116285,college_hockey_news
+2026-27,2026-10-09_36_64,2026-10-09,Fri,Augustana,Minnesota-Duluth,64,36,4,3,True,False,True,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261009/mnd/aug/,https://www.collegehockeynews.com/box/metrics.php?gd=114364,college_hockey_news
+2026-27,2026-10-09_39_43,2026-10-09,Fri,Notre Dame,Niagara,43,39,4,0,True,False,False,False,Big Ten,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261009/nia/ndm/,https://www.collegehockeynews.com/box/metrics.php?gd=117232,college_hockey_news
+2026-27,2026-10-09_3_31,2026-10-09,Fri,Michigan,Alaska-Anchorage,31,3,10,1,True,False,False,False,Big Ten,Independent,,https://www.collegehockeynews.com/box/final/20261009/aka/mic/,https://www.collegehockeynews.com/box/metrics.php?gd=114363,college_hockey_news
+2026-27,2026-10-09_40_7,2026-10-09,Fri,Bemidji State,North Dakota,7,40,2,3,True,False,False,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261009/ndk/bmj/,https://www.collegehockeynews.com/box/metrics.php?gd=114365,college_hockey_news
+2026-27,2026-10-09_44_48,2026-10-09,Fri,RPI,Ohio State,48,44,3,0,True,False,False,False,ECAC,Big Ten,,https://www.collegehockeynews.com/box/final/20261009/osu/ren/,https://www.collegehockeynews.com/box/metrics.php?gd=117467,college_hockey_news
+2026-27,2026-10-09_46_53,2026-10-09,Fri,Providence,St. Lawrence,46,53,6,2,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261009/stl/prv/,https://www.collegehockeynews.com/box/metrics.php?gd=117258,college_hockey_news
+2026-27,2026-10-09_4_9,2026-10-09,Fri,Boston College,Alaska,9,4,2,3,True,False,False,False,Hockey East,Independent,,https://www.collegehockeynews.com/box/final/20261009/akf/bc_/,https://www.collegehockeynews.com/box/metrics.php?gd=117223,college_hockey_news
+2026-27,2026-10-09_55_8,2026-10-09,Fri,Bentley,Vermont,8,55,3,0,True,False,False,False,Atlantic Hockey,Hockey East,,https://www.collegehockeynews.com/box/final/20261009/ver/ben/,https://www.collegehockeynews.com/box/metrics.php?gd=117314,college_hockey_news
+2026-27,2026-10-10_11_17,2026-10-10,Sat,Connecticut,Bowling Green,17,11,2,5,True,False,False,False,Hockey East,CCHA,"Ice Breaker – Toscano Forum, Storrs, Conn.",https://www.collegehockeynews.com/box/final/20261010/bgs/con/,https://www.collegehockeynews.com/box/metrics.php?gd=117309,college_hockey_news
+2026-27,2026-10-10_13_62,2026-10-10,Sat,Long Island,Canisius,62,13,3,2,True,False,False,False,Independent,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261010/cns/liu/,https://www.collegehockeynews.com/box/metrics.php?gd=118409,college_hockey_news
+2026-27,2026-10-10_14_46,2026-10-10,Sat,Providence,Clarkson,46,14,4,0,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261010/clk/prv/,https://www.collegehockeynews.com/box/metrics.php?gd=117259,college_hockey_news
+2026-27,2026-10-10_15_422,2026-10-10,Sat,Stonehill,Colgate,422,15,4,2,True,False,False,False,Independent,ECAC,"at Warrior Ice Arena, Brighton, Mass.",https://www.collegehockeynews.com/box/final/20261010/clg/stn/,https://www.collegehockeynews.com/box/metrics.php?gd=118416,college_hockey_news
+2026-27,2026-10-10_1_63,2026-10-10,Sat,St. Thomas,Air Force,63,1,4,2,True,False,False,False,NCHC,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261010/afa/stt/,https://www.collegehockeynews.com/box/metrics.php?gd=116520,college_hockey_news
+2026-27,2026-10-10_23_61,2026-10-10,Sat,Arizona State,Holy Cross,61,23,5,4,True,False,True,False,NCHC,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261010/hcr/asu/,https://www.collegehockeynews.com/box/metrics.php?gd=118365,college_hockey_news
+2026-27,2026-10-10_25_47,2026-10-10,Sat,Maine,Quinnipiac,25,47,5,3,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261010/qui/mne/,https://www.collegehockeynews.com/box/metrics.php?gd=117317,college_hockey_news
+2026-27,2026-10-10_26_53,2026-10-10,Sat,Mass.-Lowell,St. Lawrence,26,53,4,2,True,False,False,False,Hockey East,ECAC,,https://www.collegehockeynews.com/box/final/20261010/stl/uml/,https://www.collegehockeynews.com/box/metrics.php?gd=117318,college_hockey_news
+2026-27,2026-10-10_27_49,2026-10-10,Sat,Massachusetts,RIT,27,49,5,1,True,False,False,False,Hockey East,Atlantic Hockey,,https://www.collegehockeynews.com/box/final/20261010/rit/uma/,https://www.collegehockeynews.com/box/metrics.php?gd=117319,college_hockey_news
+2026-27,2026-10-10_33_52,2026-10-10,Sat,St. Cloud State,Michigan Tech,52,33,5,3,True,False,False,False,NCHC,CCHA,,https://www.collegehockeynews.com/box/final/20261010/mtu/stc/,https://www.collegehockeynews.com/box/metrics.php?gd=116289,college_hockey_news
+2026-27,2026-10-10_35_58,2026-10-10,Sat,Minnesota State,Wisconsin,35,58,1,4,True,False,False,False,CCHA,Big Ten,,https://www.collegehockeynews.com/box/final/20261010/wis/mns/,https://www.collegehockeynews.com/box/metrics.php?gd=116288,college_hockey_news
+2026-27,2026-10-10_36_64,2026-10-10,Sat,Augustana,Minnesota-Duluth,64,36,1,1,True,False,True,False,CCHA,NCHC,,https://www.collegehockeynews.com/box/final/20261010/mnd/aug/,https://www.collegehockeynews.com/box/metrics.php?gd=114367,college_hockey_news
+2026-27,2026-10-10_3_31,2026-10-10,Sat,Michigan,Alaska-Anchorage,31,3,7,2,True,False,False,False,Big Ten,Independent,,https://www.collegehockeynews.com/box/final/20261010/aka/mic/,https://www.collegehockeynews.com/box/metrics.php?gd=114366,college_hockey_news
+2026-27,2026-10-10_40_7,2026-10-10,Sat,North Dakota,Bemidji State,40,7,4,3,True,False,False,False,NCHC,CCHA,,https://www.collegehockeynews.com/box/final/20261010/bmj/ndk/,https://www.collegehockeynews.com/box/metrics.php?gd=114368,college_hockey_news
+2026-27,2026-10-10_41_8,2026-10-10,Sat,Bentley,Northeastern,8,41,1,5,True,False,False,False,Atlantic Hockey,Hockey East,,https://www.collegehockeynews.com/box/final/20261010/noe/ben/,https://www.collegehockeynews.com/box/metrics.php?gd=117321,college_hockey_news
+2026-27,2026-10-10_44_48,2026-10-10,Sat,RPI,Ohio State,48,44,2,3,True,False,False,False,ECAC,Big Ten,,https://www.collegehockeynews.com/box/final/20261010/osu/ren/,https://www.collegehockeynews.com/box/metrics.php?gd=117468,college_hockey_news
+2026-27,2026-10-10_4_54,2026-10-10,Sat,Union,Alaska,54,4,7,1,True,False,False,False,ECAC,Independent,,https://www.collegehockeynews.com/box/final/20261010/akf/uni/,https://www.collegehockeynews.com/box/metrics.php?gd=117210,college_hockey_news
+2026-27,2026-10-10_51_60,2026-10-10,Sat,Sacred Heart,Penn State,51,60,6,3,True,False,False,False,Atlantic Hockey,Big Ten,Ice Breaker,https://www.collegehockeynews.com/box/final/20261010/psu/sac/,https://www.collegehockeynews.com/box/metrics.php?gd=117241,college_hockey_news
+2026-27,2026-10-11_32_42,2026-10-11,Sun,Michigan State,Northern Michigan,32,42,5,1,True,False,False,False,Big Ten,CCHA,,https://www.collegehockeynews.com/box/final/20261011/nmu/msu/,https://www.collegehockeynews.com/box/metrics.php?gd=116287,college_hockey_news
 2026-27,2026-10-15_1_433,2026-10-15,Thu,Air Force,Lindenwood,1,433,,,False,False,False,False,Atlantic Hockey,Independent,,,,college_hockey_news
 2026-27,2026-10-15_30_50,2026-10-15,Thu,Miami,Robert Morris,30,50,,,False,False,False,False,NCHC,Atlantic Hockey,,,,college_hockey_news
 2026-27,2026-10-15_37_64,2026-10-15,Thu,Augustana,Omaha,64,37,,,False,False,False,False,CCHA,NCHC,,,,college_hockey_news
@@ -117,7 +117,6 @@ season,game_id,date,day_of_week,home_team,away_team,home_team_id,away_team_id,ho
 2026-27,2026-10-17_42_422,2026-10-17,Sat,Northern Michigan,Stonehill,42,422,,,False,False,False,False,CCHA,Independent,,,,college_hockey_news
 2026-27,2026-10-17_43_57,2026-10-17,Sat,Notre Dame,Western Michigan,43,57,,,False,False,False,False,Big Ten,NCHC,,,,college_hockey_news
 2026-27,2026-10-17_44_51,2026-10-17,Sat,Sacred Heart,Ohio State,51,44,,,False,False,False,False,Atlantic Hockey,Big Ten,,,,college_hockey_news
-2026-27,2026-10-17_45_66,2026-10-17,Sat,Princeton,Maryville,45,,,,False,False,False,False,ECAC,,,,,college_hockey_news
 2026-27,2026-10-17_48_62,2026-10-17,Sat,RPI,Long Island,48,62,,,False,False,False,False,ECAC,Independent,,,,college_hockey_news
 2026-27,2026-10-17_52_9,2026-10-17,Sat,Boston College,St. Cloud State,9,52,,,False,False,False,False,Hockey East,NCHC,,,,college_hockey_news
 2026-27,2026-10-18_23_6,2026-10-18,Sun,Holy Cross,Army,23,6,,,False,False,False,True,Atlantic Hockey,Atlantic Hockey,,,,college_hockey_news
