@@ -1,0 +1,66 @@
+check,game_id,team,detail,cause
+Every played game has a box score,2021-11-23_419_62,,no box score,CHN's box score link for this game returns HTTP 404
+Every played game has a box score,2023-11-28_419_62,,no box score,CHN's box score link for this game returns HTTP 404
+Scoring summary matches the score,2021-10-30_32_44,Michigan State,"0 goals listed, score 1",CHN's scoring summary leaves out Michigan State's goal
+Scoring summary matches the score,2021-11-13_24_7,Bemidji State,"5 goals listed, score 4",CHN's scoring summary lists 5 Bemidji State goals; the score says 4
+Scoring summary matches the score,2021-11-27_23_38,Holy Cross,"3 goals listed, score 2",CHN's scoring summary lists 3 Holy Cross goals; the score says 2
+Scoring summary matches the score,2022-10-08_422_62,Long Island,"0 goals listed, score 7",CHN's scoring summary for this game is empty
+Scoring summary matches the score,2022-10-08_422_62,Stonehill,"0 goals listed, score 1",CHN's scoring summary for this game is empty
+Skater goals add up to the score,2021-10-02_21_30,Ferris State,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-08_21_57,Western Michigan,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-09_25_37,Maine,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-09_46_5,Providence,"skaters 4, score 5",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-16_10_51,Boston University,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-23_21_63,Ferris State,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-29_15_57,Western Michigan,"skaters 5, score 6",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-10-30_15_57,Western Michigan,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-20_52_57,Western Michigan,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-26_21_33,Ferris State,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-26_53_57,Western Michigan,"skaters 6, score 8",CHN credited 2 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-27_10_18,Boston University,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-27_21_33,Michigan Tech,"skaters 5, score 6",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-11-27_53_57,Western Michigan,"skaters 4, score 5",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-12-03_30_57,Western Michigan,"skaters 5, score 6",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-12-04_21_24,Ferris State,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-12-04_25_55,Vermont,"skaters 0, score 1",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2021-12-10_45_46,Providence,"skaters 5, score 7",CHN credited 2 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-01-08_21_35,Minnesota State,"skaters 5, score 7",CHN credited 2 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-02-12_11_33,Michigan Tech,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-02-19_29_55,Vermont,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-03-04_17_55,Vermont,"skaters 3, score 5",CHN credited 2 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-10-02_28_44,Mercyhurst,"skaters 0, score 1",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-10-07_1_25,Maine,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-10-21_14_28,Mercyhurst,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-10-21_60_63,Penn State,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-10-27_17_9,Connecticut,"skaters 4, score 5",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2022-12-29_28_51,Mercyhurst,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2023-02-03_1_28,Mercyhurst,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2023-03-03_28_49,Mercyhurst,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2023-10-07_33_36,Michigan Tech,"skaters 1, score 2",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2024-10-12_39_53,St. Lawrence,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2025-10-03_33_34,Michigan Tech,"skaters 2, score 3",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2025-12-07_64_7,Augustana,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2025-12-13_35_64,Augustana,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2026-01-23_40_61,Arizona State,"skaters 3, score 4",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Skater goals add up to the score,2026-03-06_64_7,Augustana,"skaters 4, score 5",CHN credited 1 goal(s) to 'Uknown' (no player named)
+Penalty list matches the penalty count,2021-10-15_17_44,Connecticut,"list 4, total 5",CHN lists 4 of UConn's 5 penalties
+Penalty list matches the penalty count,2021-10-16_17_44,Connecticut,"list 5, total 6",CHN lists 5 of UConn's 6 penalties
+Penalty list matches the penalty count,2021-10-30_32_44,Michigan State,"list 3, total 4",CHN lists 3 of Michigan State's 4 penalties
+Penalty list matches the penalty count,2021-12-10_10_9,Boston College,"list 3, total 4",CHN lists 3 of Boston College's 4 penalties
+Penalty minutes match the PIM total,2021-10-15_17_44,Connecticut,"list 8, total 10",CHN lists 4 of UConn's 5 penalties
+Penalty minutes match the PIM total,2021-10-16_17_44,Connecticut,"list 10, total 12",CHN lists 5 of UConn's 6 penalties
+Penalty minutes match the PIM total,2021-10-30_32_44,Michigan State,"list 6, total 8",CHN lists 3 of Michigan State's 4 penalties
+Penalty minutes match the PIM total,2021-12-10_10_9,Boston College,"list 6, total 8",CHN lists 3 of Boston College's 4 penalties
+Penalty minutes match the PIM total,2022-01-07_24_7,Lake Superior,"list 8, total 18",CHN's PIM total counts game misconducts differently from its penalty list
+Penalty minutes match the PIM total,2022-10-01_34_433,Lindenwood,"list 23, total 33",CHN's PIM total counts game misconducts differently from its penalty list
+Penalty minutes match the PIM total,2022-10-01_4_5,American Int'l,"list 26, total 36",CHN's PIM total counts game misconducts differently from its penalty list
+Penalty minutes match the PIM total,2022-10-02_21_30,Miami,"list 30, total 40",CHN's PIM total counts game misconducts differently from its penalty list
+Penalty minutes match the PIM total,2024-11-09_19_45,Dartmouth,"list 19, total 9",CHN's PIM total counts game misconducts differently from its penalty list
+Goalie goals against add up,2021-11-06_34_58,Minnesota,"goalies+EN 0, allowed 1",CHN labels Minnesota's goalie 'EMPTY NET' (34 saves in 58:02)
+Goalie goals against add up,2021-12-04_31_34,Minnesota,"goalies+EN 1, allowed 6",CHN labels one of Minnesota's goalies 'EMPTY NET' (21 saves in 33:23)
+Goalie goals against add up,2022-01-15_11_7,Bemidji State,"goalies+EN 4, allowed 3",CHN tags Bowling Green's OT goal empty-net but charges it to Bemidji State's goalie
+Goalie goals against add up,2022-10-13_23_51,Holy Cross,"goalies+EN 4, allowed 3",CHN tags a Sacred Heart goal empty-net but charges it to Holy Cross's goalie
+Values are in plausible ranges,2021-10-15_17_44,Connecticut,out of range: PP goals <= PP chances,CHN's page shows 1 PP goal on 0 PP chances
+Values are in plausible ranges,2021-10-15_17_44,Ohio State,out of range: PP goals <= PP chances,CHN's page shows 1 PP goal on 0 PP chances
+Values are in plausible ranges,2021-10-30_32_44,Michigan State,out of range: PP goals <= PP chances,CHN's page shows 1 PP goal on 0 PP chances
+Values are in plausible ranges,2022-10-08_422_62,Long Island,out of range: PP goals <= PP chances,CHN's page shows 1 PP goal on 0 PP chances

@@ -1,5 +1,7 @@
 ## Project Status
 
+[![CI](https://github.com/TrentRice/BUHockey_OpponentScoutingTool_MLModel/actions/workflows/ci.yml/badge.svg)](https://github.com/TrentRice/BUHockey_OpponentScoutingTool_MLModel/actions/workflows/ci.yml) [Data validation report](docs/data_validation.md)
+
 **BU Hockey Opponent Scouting Tool** automates the repetitive statistical groundwork behind pre-game opponent scouting reports for Boston University Men's Hockey, using only public data. The end goal is a short pre-game report for BU's next opponent covering schedule and results, recent form, special teams, top scorers, goalie usage, and eventually model-based predictions.
 
 ### Completed
@@ -30,6 +32,9 @@ uv run python -m src.ingestion.chn_team_schedule_scraper
 uv run python -m src.ingestion.chn_boxscore_downloader
 uv run python -m src.ingestion.chn_boxscore_parser
 ```
+
+**Data validation**
+Every season on disk (2021-22 on) is checked by `src/evaluation/validate_chn_data.py`, which writes [docs/data_validation.md](docs/data_validation.md). It cross-checks each box score against the separate schedule pages (final score, overtime) and checks that the sections of each box score agree (period totals, scoring summary, skater goals, penalties, goalies, faceoffs). Every remaining mismatch is an error on the source page, listed in the report with a link to it. CI re-runs the checks on every push. Re-run locally with `make validate`.
 
 ### Planned
 

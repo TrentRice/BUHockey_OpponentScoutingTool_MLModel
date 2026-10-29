@@ -71,7 +71,8 @@ def to_seconds(text: str) -> int | None:
 
 
 def period_number(label: str) -> int | None:
-    """'1st Period' -> 1, 'Overtime' -> 4, '2nd Overtime' -> 5."""
+    """'1st Period' -> 1, 'Overtime' -> 4. CHN heads every overtime 'Overtime' (even in a
+    triple-OT game), so 4 means 'overtime', not 'first OT'; box_games.ot_periods has the count."""
     label = clean(label).lower()
     m = re.match(r"(\d)\w*\s+period", label)
     if m:
@@ -164,10 +165,12 @@ def parse_linescore(soup) -> dict[str, dict]:
         labels = cells(rows[0])[1:]  # 1, 2, 3, OT (or 2OT, ...), T
         ot_periods = max(ot_periods, sum("OT" in lab for lab in labels))
         for side, tr in zip(SIDES, rows[1:3]):
-            vals = dict(zip(labels, cells(tr)[1:]))
+            pairs = list(zip(labels, cells(tr)[1:]))
+            vals = dict(pairs)
             for p in ("1", "2", "3"):
                 line[side][f"{kind}_p{p}"] = to_int(vals.get(p, ""))
-            ot = [to_int(v) for lab, v in vals.items() if "OT" in lab]
+            # multi-OT games repeat the label ("OT", "OT"), so sum from pairs, not the dict
+            ot = [to_int(v) for lab, v in pairs if "OT" in lab]
             line[side][f"{kind}_ot"] = sum(v or 0 for v in ot) if ot else None
             line[side][kind] = to_int(vals.get("T", ""))
 
@@ -220,6 +223,8 @@ def parse_goals(soup) -> list[dict]:
         assists = [a.strip() for a in c[4].split(",") if a.strip()] if len(c) > 4 else []
         strength = c[1]
         flags = {f.strip() for f in strength.split(",")}
+        # manpower like "5x3" (scoring team first): CHN uses it instead of PP/SH when the gap is 2
+        manpower = [tuple(map(int, f.split("x"))) for f in flags if re.fullmatch(r"\d+x\d+", f)]
         out.append(
             {
                 "side": side,
@@ -227,10 +232,11 @@ def parse_goals(soup) -> list[dict]:
                 "time": c[5] if len(c) > 5 else None,
                 "time_seconds": to_seconds(c[5]) if len(c) > 5 else None,
                 "strength": strength or "EV",
-                "is_pp": "PP" in flags,
-                "is_sh": "SH" in flags,
+                "is_pp": "PP" in flags or any(us > them for us, them in manpower),
+                "is_sh": "SH" in flags or any(us < them for us, them in manpower),
                 "is_en": "EN" in flags,
                 "is_extra_attacker": "EA" in flags,
+                "is_penalty_shot": "PS" in flags,
                 "scorer": scorer,
                 "scorer_chn_id": int(m.group(1)) if m else None,
                 "scorer_season_goal": int(season_goal.group(1)) if season_goal else None,
@@ -282,9 +288,36 @@ def parse_goalies(soup, side_by_name: dict[str, str]) -> list[dict]:
     return out
 
 
+LINEUP_POSITIONS = {"forward": "F", "defense": "D", "goalie": "G"}
+
+
+def parse_lineups(soup, side_by_name: dict[str, str]) -> dict[tuple[str, str], str]:
+    """#linechart: each team's dressed players under Forward / Defense / Extras / Goalie.
+    Extras carry their position in the name: 'Jack Rosensteel (F)'. -> {(side, name): F/D/G}"""
+    out = {}
+    chart = soup.find("div", id="linechart")
+    for team in chart.find_all("div", recursive=False) if chart else []:
+        h3 = team.find("h3")
+        side = side_by_name.get(clean(h3.get_text())) if h3 else None
+        if side is None:
+            continue
+        for h4 in team.find_all("h4"):
+            group = h4.find_next_sibling("div")
+            pos = LINEUP_POSITIONS.get(clean(h4.get_text()).lower())
+            for d in group.find_all("div") if group else []:
+                m = re.fullmatch(r"(.+?)\s*\(([FDG])\)", clean(d.get_text()))
+                name, p = (m.group(1), m.group(2)) if m else (clean(d.get_text()), pos)
+                if p:
+                    out[(side, name)] = p
+    return out
+
+
 def parse_skaters(soup, side_by_name: dict[str, str]) -> list[dict]:
-    """playersum tables: one per team (order varies), forwards, then D, then G; each group after
-    the first starts with a row of class 'first'."""
+    """playersum tables: one per team (order varies), grouped forwards, then D, then the rest;
+    each group after the first starts with a row of class 'first'. The last group is mostly
+    goalies, but a skater with no listed position lands there too; for that group only, the
+    lineup section decides (it mislabels the occasional F/D, so it isn't used for the others)."""
+    lineup = parse_lineups(soup, side_by_name)
     out = []
     for table in soup.select("#playersums div.playersum table"):
         rows = table.find_all("tr")
@@ -298,7 +331,10 @@ def parse_skaters(soup, side_by_name: dict[str, str]) -> list[dict]:
             if "first" in (tr.get("class") or []):
                 group += 1
             c = cells(tr)
-            if len(c) < 2 or group > 1:  # group 2 is goalies; they're in the goalie table
+            if len(c) < 2:
+                continue
+            position = {0: "F", 1: "D"}.get(group) or lineup.get((side, c[0]), "G")
+            if position == "G":  # goalies are in the goalie table
                 continue
             vals = dict(zip(cols, c[1:]))
             fo = nums(vals.get("FOW‑L", ""))
@@ -306,7 +342,7 @@ def parse_skaters(soup, side_by_name: dict[str, str]) -> list[dict]:
                 {
                     "side": side,
                     "player": c[0],
-                    "position": "F" if group == 0 else "D",
+                    "position": position,
                     "goals": to_int(vals.get("G", "")),
                     "assists": to_int(vals.get("A", "")),
                     "points": to_int(vals.get("Pt.", "")),

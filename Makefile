@@ -38,6 +38,10 @@ logs:
 ingest:
 	python -m src.ingestion.load_data
 
+# Validate the processed CHN data and regenerate docs/data_validation.md
+validate:
+	uv run python -m src.evaluation.validate_chn_data --strict
+
 # Build features
 features:
 	python -m src.features.build_features

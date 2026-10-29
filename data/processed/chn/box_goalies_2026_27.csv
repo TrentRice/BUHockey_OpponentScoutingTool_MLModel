@@ -155,3 +155,205 @@ season,game_id,date,team,opponent,is_home,goalie,is_starter,saves,goals_against,
 2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,Ajeet Gundarah,True,22,3,25,3600
 2026-27,2026-10-11_32_42,2026-10-11,Northern Michigan,Michigan State,False,Oliver Auyeung-Ashton,True,28,5,33,3598
 2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,Quentin Sigurdson,True,29,1,30,3600
+2026-27,2026-10-15_1_433,2026-10-15,Lindenwood,Air Force,False,Liam Beerman,True,24,5,29,3567
+2026-27,2026-10-15_1_433,2026-10-15,Air Force,Lindenwood,True,Dominik Wasik,True,44,2,46,3600
+2026-27,2026-10-15_30_50,2026-10-15,Robert Morris,Miami,False,Lucas Massie,True,13,2,15,2090
+2026-27,2026-10-15_30_50,2026-10-15,Robert Morris,Miami,False,Charlie Schenkel,False,15,5,20,1510
+2026-27,2026-10-15_30_50,2026-10-15,Miami,Robert Morris,True,Matteo Drobac,True,22,1,23,3600
+2026-27,2026-10-15_37_64,2026-10-15,Omaha,Augustana,False,William Lacelle,True,40,2,42,3556
+2026-27,2026-10-15_37_64,2026-10-15,Augustana,Omaha,True,Mathis Langevin,True,28,1,29,3600
+2026-27,2026-10-15_52_9,2026-10-15,St. Cloud State,Boston College,False,Patriks Berzins,True,28,3,31,3554
+2026-27,2026-10-15_52_9,2026-10-15,Boston College,St. Cloud State,True,Louka Cloutier,True,28,0,28,3600
+2026-27,2026-10-16_10_55,2026-10-16,Boston University,Vermont,False,Mikhail Yegorov,True,22,2,24,3476
+2026-27,2026-10-16_10_55,2026-10-16,Vermont,Boston University,True,Jacob Oster,True,24,1,25,3577
+2026-27,2026-10-16_11_39,2026-10-16,Niagara,Bowling Green,False,Tomas Anderson,True,23,2,25,3872
+2026-27,2026-10-16_11_39,2026-10-16,Bowling Green,Niagara,True,Tyler Palmer,True,26,3,29,3872
+2026-27,2026-10-16_13_14,2026-10-16,Canisius,Clarkson,False,Jack Lisson,True,28,3,31,3701
+2026-27,2026-10-16_13_14,2026-10-16,Clarkson,Canisius,True,Ben Gaudreau,True,22,4,26,3701
+2026-27,2026-10-16_15_38,2026-10-16,New Hampshire,Colgate,False,Michael Simpson,True,17,2,19,3600
+2026-27,2026-10-16_15_38,2026-10-16,Colgate,New Hampshire,True,Reid Dyck,True,27,4,31,3516
+2026-27,2026-10-16_16_17,2026-10-16,Colorado College,Connecticut,False,Jackson Unger,True,33,3,36,3691
+2026-27,2026-10-16_16_17,2026-10-16,Connecticut,Colorado College,True,Kam Hendrickson,True,27,2,29,3691
+2026-27,2026-10-16_1_433,2026-10-16,Lindenwood,Air Force,False,Klayton Knapp,True,29,4,33,3600
+2026-27,2026-10-16_1_433,2026-10-16,Air Force,Lindenwood,True,Dominik Wasik,True,34,7,41,3570
+2026-27,2026-10-16_20_31,2026-10-16,Michigan,Denver,False,Jack Ivankovic,True,27,1,28,3600
+2026-27,2026-10-16_20_31,2026-10-16,Denver,Michigan,True,Tyler Krivtsov,True,16,3,19,3417
+2026-27,2026-10-16_24_3,2026-10-16,Lake Superior,Alaska-Anchorage,False,Anders Miller,True,15,5,20,3600
+2026-27,2026-10-16_24_3,2026-10-16,Alaska-Anchorage,Lake Superior,True,Joey Rocha,True,20,2,22,3600
+2026-27,2026-10-16_26_61,2026-10-16,Arizona State,Mass.-Lowell,False,Samuel Urban,True,33,4,37,3600
+2026-27,2026-10-16_26_61,2026-10-16,Mass.-Lowell,Arizona State,True,Austin Elliott,True,32,5,37,3519
+2026-27,2026-10-16_27_41,2026-10-16,Northeastern,Massachusetts,False,Lawton Zacher,True,16,3,19,2708
+2026-27,2026-10-16_27_41,2026-10-16,Northeastern,Massachusetts,False,Sam Caulfield,False,6,1,7,892
+2026-27,2026-10-16_27_41,2026-10-16,Massachusetts,Northeastern,True,Ethan Eskit,True,27,1,28,3597
+2026-27,2026-10-16_29_35,2026-10-16,Minnesota State,Merrimack,False,Raiden LeGall,True,30,4,34,3793
+2026-27,2026-10-16_29_35,2026-10-16,Merrimack,Minnesota State,True,Linards Feldbergs,True,17,3,20,3793
+2026-27,2026-10-16_33_4,2026-10-16,Alaska,Michigan Tech,False,Tyler Shea,True,36,3,39,3600
+2026-27,2026-10-16_33_4,2026-10-16,Michigan Tech,Alaska,True,Owen Bartoszkiewicz,True,30,0,30,3600
+2026-27,2026-10-16_34_36,2026-10-16,Minnesota,Minnesota-Duluth,False,Luca Di Pasquo,True,17,4,21,1846
+2026-27,2026-10-16_34_36,2026-10-16,Minnesota,Minnesota-Duluth,False,Melvin Strahl,False,14,3,17,1754
+2026-27,2026-10-16_34_36,2026-10-16,Minnesota-Duluth,Minnesota,True,Carl Axelsson,True,24,1,25,3580
+2026-27,2026-10-16_40_8,2026-10-16,Bentley,North Dakota,False,Lukas Swedin,True,39,5,44,3585
+2026-27,2026-10-16_40_8,2026-10-16,North Dakota,Bentley,True,Caleb Heil,True,14,0,14,3583
+2026-27,2026-10-16_42_422,2026-10-16,Stonehill,Northern Michigan,False,Linards Lipskis,True,22,5,27,3571
+2026-27,2026-10-16_42_422,2026-10-16,Northern Michigan,Stonehill,True,Oliver Auyeung-Ashton,True,27,1,28,3586
+2026-27,2026-10-16_43_57,2026-10-16,Notre Dame,Western Michigan,False,Nicholas Kempf,True,45,6,51,3600
+2026-27,2026-10-16_43_57,2026-10-16,Western Michigan,Notre Dame,True,Quentin Miller,True,19,1,20,3600
+2026-27,2026-10-16_44_51,2026-10-16,Ohio State,Sacred Heart,False,Kristoffer Eberly,True,8,2,10,1465
+2026-27,2026-10-16_44_51,2026-10-16,Ohio State,Sacred Heart,False,Jakub Milota,False,9,2,11,2058
+2026-27,2026-10-16_44_51,2026-10-16,Sacred Heart,Ohio State,True,Ajeet Gundarah,True,28,3,31,3600
+2026-27,2026-10-16_46_54,2026-10-16,Providence,Union,False,Jack Parsons,True,32,2,34,3794
+2026-27,2026-10-16_46_54,2026-10-16,Union,Providence,True,Brayden Gillespie,True,29,3,32,3794
+2026-27,2026-10-16_47_60,2026-10-16,Quinnipiac,Penn State,False,Christian Kirsch,True,30,3,33,3600
+2026-27,2026-10-16_47_60,2026-10-16,Penn State,Quinnipiac,True,Joshua Fleming,True,40,6,46,3600
+2026-27,2026-10-16_48_62,2026-10-16,Long Island,RPI,False,Daniel Duris,True,29,2,31,3504
+2026-27,2026-10-16_48_62,2026-10-16,RPI,Long Island,True,Nate Krawchuk,True,30,1,31,3583
+2026-27,2026-10-17_10_55,2026-10-17,Boston University,Vermont,False,Mikhail Yegorov,True,24,1,25,3609
+2026-27,2026-10-17_10_55,2026-10-17,Vermont,Boston University,True,Jacob Oster,True,32,2,34,3656
+2026-27,2026-10-17_11_39,2026-10-17,Niagara,Bowling Green,False,Charles-Edward Gravel,True,36,1,37,3575
+2026-27,2026-10-17_11_39,2026-10-17,Bowling Green,Niagara,True,Jacob Steinman,True,21,2,23,3486
+2026-27,2026-10-17_13_14,2026-10-17,Canisius,Clarkson,False,Jack Lisson,True,24,5,29,3600
+2026-27,2026-10-17_13_14,2026-10-17,Clarkson,Canisius,True,Shane Soderwall,True,19,0,19,3582
+2026-27,2026-10-17_15_38,2026-10-17,New Hampshire,Colgate,False,Michael Simpson,True,15,0,15,3600
+2026-27,2026-10-17_15_38,2026-10-17,Colgate,New Hampshire,True,Reid Dyck,True,30,1,31,3429
+2026-27,2026-10-17_16_17,2026-10-17,Colorado College,Connecticut,False,Jackson Unger,True,31,1,32,3600
+2026-27,2026-10-17_16_17,2026-10-17,Connecticut,Colorado College,True,Veeti Louhivaara,True,26,4,30,3600
+2026-27,2026-10-17_20_31,2026-10-17,Michigan,Denver,False,Jack Ivankovic,True,33,3,36,3600
+2026-27,2026-10-17_20_31,2026-10-17,Denver,Michigan,True,Tyler Krivtsov,True,21,4,25,3434
+2026-27,2026-10-17_23_6,2026-10-17,Army,Holy Cross,False,JJ Cataldo,True,28,2,30,3588
+2026-27,2026-10-17_23_6,2026-10-17,Holy Cross,Army,True,Connor MacKenzie,True,10,1,11,1529
+2026-27,2026-10-17_23_6,2026-10-17,Holy Cross,Army,True,Danick Leroux,False,18,4,22,2048
+2026-27,2026-10-17_24_3,2026-10-17,Lake Superior,Alaska-Anchorage,False,Andrew Oke,True,26,2,28,3588
+2026-27,2026-10-17_24_3,2026-10-17,Alaska-Anchorage,Lake Superior,True,Joey Rocha,True,18,3,21,3560
+2026-27,2026-10-17_26_61,2026-10-17,Arizona State,Mass.-Lowell,False,Samuel Urban,True,42,2,44,3600
+2026-27,2026-10-17_26_61,2026-10-17,Mass.-Lowell,Arizona State,True,Cole Moore,True,23,4,27,3456
+2026-27,2026-10-17_27_41,2026-10-17,Northeastern,Massachusetts,False,Sam Caulfield,True,34,1,35,3600
+2026-27,2026-10-17_27_41,2026-10-17,Massachusetts,Northeastern,True,Ethan Eskit,True,34,3,37,3557
+2026-27,2026-10-17_29_35,2026-10-17,Minnesota State,Merrimack,False,Matthew Syverson,True,5,4,9,860
+2026-27,2026-10-17_29_35,2026-10-17,Minnesota State,Merrimack,False,Raiden LeGall,False,16,4,20,2712
+2026-27,2026-10-17_29_35,2026-10-17,Merrimack,Minnesota State,True,Ryan Keyes,True,20,2,22,3576
+2026-27,2026-10-17_30_50,2026-10-17,Miami,Robert Morris,False,Yegor Yegorov,True,20,2,22,3583
+2026-27,2026-10-17_30_50,2026-10-17,Robert Morris,Miami,True,Charlie Schenkel,True,35,3,38,3467
+2026-27,2026-10-17_32_49,2026-10-17,Michigan State,RIT,False,Joshua Ravensbergen,True,25,1,26,3581
+2026-27,2026-10-17_32_49,2026-10-17,RIT,Michigan State,True,Jakub Krbecek,True,32,4,36,3586
+2026-27,2026-10-17_33_4,2026-10-17,Alaska,Michigan Tech,False,Tyler Shea,True,29,3,32,3424
+2026-27,2026-10-17_33_4,2026-10-17,Michigan Tech,Alaska,True,Owen Bartoszkiewicz,True,30,2,32,3600
+2026-27,2026-10-17_34_36,2026-10-17,Minnesota,Minnesota-Duluth,False,Luca Di Pasquo,True,34,2,36,3899
+2026-27,2026-10-17_34_36,2026-10-17,Minnesota-Duluth,Minnesota,True,Carl Axelsson,True,16,2,18,3885
+2026-27,2026-10-17_37_64,2026-10-17,Augustana,Omaha,False,Mathis Langevin,True,28,2,30,3824
+2026-27,2026-10-17_37_64,2026-10-17,Omaha,Augustana,True,William Lacelle,True,33,3,36,3837
+2026-27,2026-10-17_40_8,2026-10-17,Bentley,North Dakota,False,Easton Rye,True,25,5,30,3600
+2026-27,2026-10-17_40_8,2026-10-17,North Dakota,Bentley,True,Caleb Heil,True,15,0,15,3599
+2026-27,2026-10-17_42_422,2026-10-17,Stonehill,Northern Michigan,False,Mason Vaccari,True,23,1,24,3787
+2026-27,2026-10-17_42_422,2026-10-17,Northern Michigan,Stonehill,True,Oliver Auyeung-Ashton,True,25,2,27,3784
+2026-27,2026-10-17_43_57,2026-10-17,Western Michigan,Notre Dame,False,Quentin Miller,True,17,0,17,3600
+2026-27,2026-10-17_43_57,2026-10-17,Notre Dame,Western Michigan,True,Nicholas Kempf,True,35,4,39,3600
+2026-27,2026-10-17_44_51,2026-10-17,Ohio State,Sacred Heart,False,Jakub Milota,True,17,1,18,3600
+2026-27,2026-10-17_44_51,2026-10-17,Sacred Heart,Ohio State,True,Ajeet Gundarah,True,15,4,19,1649
+2026-27,2026-10-17_44_51,2026-10-17,Sacred Heart,Ohio State,True,Jack Spicer,False,13,1,14,1951
+2026-27,2026-10-17_48_62,2026-10-17,Long Island,RPI,False,Lukas Renaud,True,34,3,37,3510
+2026-27,2026-10-17_48_62,2026-10-17,RPI,Long Island,True,Ethan McCallum,True,24,2,26,3600
+2026-27,2026-10-17_52_9,2026-10-17,St. Cloud State,Boston College,False,Yan Shostak,True,43,3,46,3600
+2026-27,2026-10-17_52_9,2026-10-17,Boston College,St. Cloud State,True,Leo Henriquez,True,20,5,25,3428
+2026-27,2026-10-18_23_6,2026-10-18,Army,Holy Cross,False,JJ Cataldo,True,17,1,18,3600
+2026-27,2026-10-18_23_6,2026-10-18,Holy Cross,Army,True,Danick Leroux,True,25,2,27,3569
+2026-27,2026-10-20_50_60,2026-10-20,Robert Morris,Penn State,False,Lucas Massie,True,33,2,35,3600
+2026-27,2026-10-20_50_60,2026-10-20,Penn State,Robert Morris,True,Ryder Fetterolf,True,27,4,31,3514
+2026-27,2026-10-20_53_62,2026-10-20,Long Island,St. Lawrence,False,Daniel Duris,True,14,4,18,2043
+2026-27,2026-10-20_53_62,2026-10-20,Long Island,St. Lawrence,False,Lukas Renaud,False,20,2,22,1528
+2026-27,2026-10-20_53_62,2026-10-20,St. Lawrence,Long Island,True,Colin Winn,True,33,7,40,3444
+2026-27,2026-10-22_10_17,2026-10-22,Boston University,Connecticut,False,Mikhail Yegorov,True,25,5,30,3821
+2026-27,2026-10-22_10_17,2026-10-22,Connecticut,Boston University,True,Kam Hendrickson,True,46,4,50,3851
+2026-27,2026-10-22_34_40,2026-10-22,North Dakota,Minnesota,False,Jan Špunar,True,30,4,34,3556
+2026-27,2026-10-22_34_40,2026-10-22,Minnesota,North Dakota,True,Luca Di Pasquo,True,21,3,24,3600
+2026-27,2026-10-23_11_24,2026-10-23,Bowling Green,Lake Superior,False,Jacob Steinman,True,27,2,29,3600
+2026-27,2026-10-23_11_24,2026-10-23,Lake Superior,Bowling Green,True,Andrew Oke,True,31,5,36,3565
+2026-27,2026-10-23_13_60,2026-10-23,Canisius,Penn State,False,Jack Lisson,True,39,4,43,3539
+2026-27,2026-10-23_13_60,2026-10-23,Penn State,Canisius,True,Joshua Fleming,True,23,1,24,3600
+2026-27,2026-10-23_14_55,2026-10-23,Clarkson,Vermont,False,Dawson Labre,True,17,1,18,1444
+2026-27,2026-10-23_14_55,2026-10-23,Clarkson,Vermont,False,Shane Soderwall,False,11,1,12,2025
+2026-27,2026-10-23_14_55,2026-10-23,Vermont,Clarkson,True,Jacob Oster,True,24,1,25,3597
+2026-27,2026-10-23_15_25,2026-10-23,Colgate,Maine,False,Reid Dyck,True,34,3,37,3481
+2026-27,2026-10-23_15_25,2026-10-23,Maine,Colgate,True,Petter Wickström Stumer,True,24,0,24,3600
+2026-27,2026-10-23_1_16,2026-10-23,Air Force,Colorado College,False,Dominik Wasik,True,22,4,26,2400
+2026-27,2026-10-23_1_16,2026-10-23,Air Force,Colorado College,False,Jack Solomon,False,5,2,7,1200
+2026-27,2026-10-23_1_16,2026-10-23,Colorado College,Air Force,True,Jackson Unger,True,23,2,25,3566
+2026-27,2026-10-23_20_9,2026-10-23,Boston College,Denver,False,Louka Cloutier,True,27,4,31,3465
+2026-27,2026-10-23_20_9,2026-10-23,Denver,Boston College,True,Tyler Krivtsov,True,26,2,28,3588
+2026-27,2026-10-23_21_33,2026-10-23,Michigan Tech,Ferris State,False,Owen Bartoszkiewicz,True,24,1,25,3600
+2026-27,2026-10-23_21_33,2026-10-23,Ferris State,Michigan Tech,True,Alan Lendak,True,25,2,27,3452
+2026-27,2026-10-23_23_51,2026-10-23,Sacred Heart,Holy Cross,False,Ajeet Gundarah,True,10,2,12,3510
+2026-27,2026-10-23_23_51,2026-10-23,Holy Cross,Sacred Heart,True,Danick Leroux,True,21,1,22,3600
+2026-27,2026-10-23_26_46,2026-10-23,Providence,Mass.-Lowell,False,Jack Parsons,True,30,0,30,3600
+2026-27,2026-10-23_26_46,2026-10-23,Mass.-Lowell,Providence,True,Austin Elliott,True,36,3,39,3600
+2026-27,2026-10-23_29_43,2026-10-23,Merrimack,Notre Dame,False,Linards Feldbergs,True,32,1,33,3848
+2026-27,2026-10-23_29_43,2026-10-23,Notre Dame,Merrimack,True,Patrick Quinlan,True,20,2,22,3849
+2026-27,2026-10-23_31_57,2026-10-23,Western Michigan,Michigan,False,Quentin Miller,True,25,3,28,3600
+2026-27,2026-10-23_31_57,2026-10-23,Michigan,Western Michigan,True,Jack Ivankovic,True,27,2,29,3600
+2026-27,2026-10-23_32_38,2026-10-23,Michigan State,New Hampshire,False,Joshua Ravensbergen,True,33,1,34,3476
+2026-27,2026-10-23_32_38,2026-10-23,New Hampshire,Michigan State,True,Michael Simpson,True,14,0,14,3600
+2026-27,2026-10-23_34_40,2026-10-23,North Dakota,Minnesota,False,Jan Špunar,True,17,5,22,3411
+2026-27,2026-10-23_34_40,2026-10-23,Minnesota,North Dakota,True,Melvin Strahl,True,42,3,45,3600
+2026-27,2026-10-23_35_63,2026-10-23,Minnesota State,St. Thomas,False,Lassi Lehti,True,51,1,52,3600
+2026-27,2026-10-23_35_63,2026-10-23,St. Thomas,Minnesota State,True,Ajay White,True,18,3,21,3484
+2026-27,2026-10-23_36_7,2026-10-23,Bemidji State,Minnesota-Duluth,False,Max Hildebrand,True,28,4,32,3600
+2026-27,2026-10-23_36_7,2026-10-23,Minnesota-Duluth,Bemidji State,True,Carl Axelsson,True,26,1,27,3600
+2026-27,2026-10-23_37_433,2026-10-23,Omaha,Lindenwood,False,Dawson Cowan,True,30,4,34,3588
+2026-27,2026-10-23_37_433,2026-10-23,Lindenwood,Omaha,True,Klayton Knapp,True,30,7,37,3600
+2026-27,2026-10-23_39_54,2026-10-23,Union,Niagara,False,Brayden Gillespie,True,30,1,31,3587
+2026-27,2026-10-23_39_54,2026-10-23,Niagara,Union,True,Charles-Edward Gravel,True,40,2,42,3432
+2026-27,2026-10-23_3_30,2026-10-23,Alaska-Anchorage,Miami,False,Joey Rocha,True,26,5,31,3600
+2026-27,2026-10-23_3_30,2026-10-23,Miami,Alaska-Anchorage,True,Matteo Drobac,True,19,1,20,3600
+2026-27,2026-10-23_44_64,2026-10-23,Augustana,Ohio State,False,Mathis Langevin,True,29,2,31,3731
+2026-27,2026-10-23_44_64,2026-10-23,Ohio State,Augustana,True,Jakub Milota,True,19,3,22,3731
+2026-27,2026-10-23_47_6,2026-10-23,Army,Quinnipiac,False,JJ Cataldo,True,36,3,39,3883
+2026-27,2026-10-23_47_6,2026-10-23,Quinnipiac,Army,True,Christian Kirsch,True,19,4,23,3883
+2026-27,2026-10-23_48_49,2026-10-23,RPI,RIT,False,Nate Krawchuk,True,31,1,32,3600
+2026-27,2026-10-23_48_49,2026-10-23,RIT,RPI,True,Zachary Bowen,True,23,3,26,3481
+2026-27,2026-10-23_50_8,2026-10-23,Robert Morris,Bentley,False,Croix Kochendorfer,True,5,0,5,741
+2026-27,2026-10-23_50_8,2026-10-23,Robert Morris,Bentley,False,Charlie Schenkel,False,20,5,25,2859
+2026-27,2026-10-23_50_8,2026-10-23,Bentley,Robert Morris,True,Lukas Swedin,True,30,0,30,3600
+2026-27,2026-10-24_10_17,2026-10-24,Connecticut,Boston University,False,Veeti Louhivaara,True,29,5,34,3551
+2026-27,2026-10-24_10_17,2026-10-24,Boston University,Connecticut,True,Mikhail Yegorov,True,33,3,36,3597
+2026-27,2026-10-24_11_24,2026-10-24,Bowling Green,Lake Superior,False,Jacob Steinman,True,27,2,29,3600
+2026-27,2026-10-24_11_24,2026-10-24,Lake Superior,Bowling Green,True,Anders Miller,True,16,3,19,3488
+2026-27,2026-10-24_13_60,2026-10-24,Canisius,Penn State,False,Jack Lisson,True,34,3,37,3615
+2026-27,2026-10-24_13_60,2026-10-24,Penn State,Canisius,True,Ryder Fetterolf,True,26,2,28,3615
+2026-27,2026-10-24_15_25,2026-10-24,Colgate,Maine,False,Reid Dyck,True,29,3,32,3598
+2026-27,2026-10-24_15_25,2026-10-24,Maine,Colgate,True,Albin Boija,True,17,0,17,3596
+2026-27,2026-10-24_1_16,2026-10-24,Colorado College,Air Force,False,Jackson Unger,True,35,0,35,3591
+2026-27,2026-10-24_1_16,2026-10-24,Air Force,Colorado College,True,Dominik Wasik,True,18,4,22,3600
+2026-27,2026-10-24_20_9,2026-10-24,Boston College,Denver,False,Louka Cloutier,True,21,2,23,3834
+2026-27,2026-10-24_20_9,2026-10-24,Denver,Boston College,True,Tyler Krivtsov,True,23,2,25,3900
+2026-27,2026-10-24_21_33,2026-10-24,Michigan Tech,Ferris State,False,Owen Bartoszkiewicz,True,24,2,26,3495
+2026-27,2026-10-24_21_33,2026-10-24,Ferris State,Michigan Tech,True,Alan Lendak,True,30,1,31,3600
+2026-27,2026-10-24_23_51,2026-10-24,Holy Cross,Sacred Heart,False,Danick Leroux,True,13,4,17,3523
+2026-27,2026-10-24_23_51,2026-10-24,Sacred Heart,Holy Cross,True,Ajeet Gundarah,True,20,3,23,3586
+2026-27,2026-10-24_26_46,2026-10-24,Mass.-Lowell,Providence,False,Cole Moore,True,12,0,12,2691
+2026-27,2026-10-24_26_46,2026-10-24,Mass.-Lowell,Providence,False,Austin Elliott,False,7,5,12,909
+2026-27,2026-10-24_26_46,2026-10-24,Providence,Mass.-Lowell,True,Jack Parsons,True,26,2,28,3595
+2026-27,2026-10-24_27_422,2026-10-24,Stonehill,Massachusetts,False,Mason Vaccari,True,39,4,43,3493
+2026-27,2026-10-24_27_422,2026-10-24,Massachusetts,Stonehill,True,Tobias Trejbal,True,26,3,29,3587
+2026-27,2026-10-24_29_43,2026-10-24,Merrimack,Notre Dame,False,Linards Feldbergs,True,30,3,33,3600
+2026-27,2026-10-24_29_43,2026-10-24,Notre Dame,Merrimack,True,Patrick Quinlan,True,24,5,29,3459
+2026-27,2026-10-24_32_38,2026-10-24,Michigan State,New Hampshire,False,Joshua Ravensbergen,True,38,1,39,3587
+2026-27,2026-10-24_32_38,2026-10-24,New Hampshire,Michigan State,True,Michael Simpson,True,21,2,23,3499
+2026-27,2026-10-24_35_63,2026-10-24,St. Thomas,Minnesota State,False,William Ingemann,True,23,1,24,3574
+2026-27,2026-10-24_35_63,2026-10-24,Minnesota State,St. Thomas,True,Lassi Lehti,True,30,0,30,3600
+2026-27,2026-10-24_36_7,2026-10-24,Minnesota-Duluth,Bemidji State,False,Carl Axelsson,True,22,0,22,3600
+2026-27,2026-10-24_36_7,2026-10-24,Bemidji State,Minnesota-Duluth,True,Max Hildebrand,True,27,2,29,3464
+2026-27,2026-10-24_37_433,2026-10-24,Omaha,Lindenwood,False,William Lacelle,True,30,3,33,3749
+2026-27,2026-10-24_37_433,2026-10-24,Lindenwood,Omaha,True,Liam Beerman,True,39,4,43,3749
+2026-27,2026-10-24_39_54,2026-10-24,Union,Niagara,False,Brayden Gillespie,True,23,5,28,3664
+2026-27,2026-10-24_39_54,2026-10-24,Niagara,Union,True,Tomas Anderson,True,31,4,35,3664
+2026-27,2026-10-24_3_30,2026-10-24,Alaska-Anchorage,Miami,False,Joey Rocha,True,26,3,29,3620
+2026-27,2026-10-24_3_30,2026-10-24,Miami,Alaska-Anchorage,True,Matteo Drobac,True,21,2,23,3620
+2026-27,2026-10-24_44_64,2026-10-24,Augustana,Ohio State,False,Mathis Langevin,True,21,3,24,3580
+2026-27,2026-10-24_44_64,2026-10-24,Augustana,Ohio State,False,Angelo Zol,False,0,0,0,20
+2026-27,2026-10-24_44_64,2026-10-24,Ohio State,Augustana,True,Kristoffer Eberly,True,5,4,9,921
+2026-27,2026-10-24_44_64,2026-10-24,Ohio State,Augustana,True,Jakub Milota,False,11,0,11,2433
+2026-27,2026-10-24_48_49,2026-10-24,RPI,RIT,False,Ethan McCallum,True,25,5,30,3532
+2026-27,2026-10-24_48_49,2026-10-24,RIT,RPI,True,Collin Mackenzie,True,23,4,27,3591
+2026-27,2026-10-24_50_8,2026-10-24,Robert Morris,Bentley,False,Lucas Massie,True,37,5,42,3593
+2026-27,2026-10-24_50_8,2026-10-24,Bentley,Robert Morris,True,Nicholas Bevilacqua,True,27,1,28,3600
+2026-27,2026-10-25_14_55,2026-10-25,Vermont,Clarkson,False,Jacob Oster,True,31,2,33,3750
+2026-27,2026-10-25_14_55,2026-10-25,Clarkson,Vermont,True,Ben Gaudreau,True,29,1,30,3750

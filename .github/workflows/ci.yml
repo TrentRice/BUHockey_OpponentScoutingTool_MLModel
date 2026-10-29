@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-data:
+    name: Validate CHN data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Run validation checks
+        run: uv run python -m src.evaluation.validate_chn_data --strict
+
+      - name: Check the committed report is up to date
+        run: |
+          changed=$(git status --porcelain -- docs/data_validation.md data/processed/validation/)
+          if [ -n "$changed" ]; then
+            echo "::error::The validation report doesn't match the committed data."
+            echo "Run 'make validate' locally and commit docs/data_validation.md and data/processed/validation/."
+            echo "$changed"
+            exit 1
+          fi
