@@ -1,0 +1,33 @@
+game_id,issue
+2021-10-02_21_30,home skater goals 3 != 4
+2021-10-08_21_57,home skater goals 3 != 4
+2021-10-09_25_37,away skater goals 2 != 3
+2021-10-09_46_5,away skater goals 4 != 5
+2021-10-15_17_44,"away penalty summary has 4 penalties, totals 5"
+2021-10-16_10_51,home skater goals 3 != 4
+2021-10-16_17_44,away goalie GA 2 != opponent goals 3
+2021-10-16_17_44,"away penalty summary has 5 penalties, totals 6"
+2021-10-23_21_63,away skater goals 1 != 2
+2021-10-29_15_57,away skater goals 5 != 6
+2021-10-30_15_57,away skater goals 1 != 2
+2021-10-30_32_44,"away scoring summary has 0 goals, linescore 1"
+2021-10-30_32_44,away goalie GA 4 != opponent goals 5
+2021-10-30_32_44,"away penalty summary has 3 penalties, totals 4"
+2021-11-13_24_7,"away scoring summary has 5 goals, linescore 4"
+2021-11-20_52_57,home skater goals 3 != 4
+2021-11-26_21_33,away skater goals 3 != 4
+2021-11-26_53_57,away skater goals 6 != 8
+2021-11-27_10_18,away skater goals 3 != 4
+2021-11-27_21_33,home skater goals 5 != 6
+2021-11-27_23_38,"away scoring summary has 3 goals, linescore 2"
+2021-11-27_53_57,away skater goals 4 != 5
+2021-12-03_30_57,away skater goals 5 != 6
+2021-12-04_21_24,home skater goals 2 != 3
+2021-12-04_25_55,away skater goals 0 != 1
+2021-12-10_10_9,"away penalty summary has 3 penalties, totals 4"
+2021-12-10_45_46,home skater goals 5 != 7
+2022-01-08_21_35,home skater goals 5 != 7
+2022-02-12_11_33,home skater goals 1 != 2
+2022-02-14_22_9,away goalie GA 0 != opponent goals 3
+2022-02-19_29_55,away skater goals 1 != 2
+2022-03-04_17_55,away skater goals 3 != 5

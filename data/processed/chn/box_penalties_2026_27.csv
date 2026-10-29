@@ -1,0 +1,730 @@
+season,game_id,date,team,opponent,is_home,period,time,time_seconds,player,minutes,infraction
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,1,0:58,58,Carter Amico,2,Cross-Checking
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,1,4:40,280,Xavier Villeneuve,2,Hooking
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,1,9:47,587,Jackson Anderson,2,Hooking
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,2,1:57,117,Aiden Celebrini,2,High-sticking
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,2,1:57,117,Joseph Serpa,2,Boarding
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,2,5:18,318,Caleb Malhotra,2,Tripping
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,2,12:18,738,Linden Burrett,2,Holding
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,2,16:58,1018,Mick Frechette,2,Roughing
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,2,16:58,1018,Misha Danylov,2,Roughing
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,2,16:58,1018,Misha Danylov,2,Embellishment
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,3,14:28,868,Jack Murtagh,2,Roughing
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,4,0:25,25,Haoxi (Simon) Wang,2,Interference
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,4,0:25,25,Dominik Bartecko,2,Embellishment
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,1,7:10,430,Nic Sima,2,Roughing
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,1,7:10,430,Jake Sloan,2,Roughing
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,1,7:10,430,J.P. Hurlbert,2,Roughing
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,1,10:41,641,Tyler Hotson,2,Roughing
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,2,6:27,387,Jake Sloan,2,Hooking
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,2,7:35,455,Ben Doran,2,Interference
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,2,12:58,778,Tyler Hotson,2,Interference
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,2,16:11,971,Brody Waters,2,Slashing
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,2,17:34,1054,Malcolm Spence,2,Tripping
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,3,1:15,75,Tyler Hotson,2,Interference
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,1:15,75,Jack Ivankovic,2,Embellishment
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,5:27,327,Nic Sima,2,Elbowing
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,10:45,645,Will Horcoff,2,Roughing
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,10:45,645,Will Horcoff,10,Misconduct
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,3,17:16,1036,Ty Cheveldayoff,10,Misconduct
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,1,3:30,210,Reggie Newman,2,Interference
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,1,7:13,433,Ryan Kusler,2,Boarding
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,1,10:12,612,Nathan Leek,2,Cross-Checking
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,1,10:12,612,FJ Buteau,2,Embellishment
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,1,10:42,642,Jack Mesic,2,Slashing
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,1,17:39,1059,Trey Funk,10,Game Misconduct
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,1,17:39,1059,Trey Funk,5,Hitting From Behind
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,2,17:42,1062,Urban Podrekar,2,Cross-Checking
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,3,4:56,296,Brian Morse,2,Cross-Checking
+2026-27,2026-10-02_13_21,2026-10-02,Ferris State,Canisius,False,3,10:01,601,Gavin Garland,2,Hooking
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,3,15:44,944,Kyan Haldenby,2,Roughing
+2026-27,2026-10-02_16_27,2026-10-02,Colorado College,Massachusetts,True,1,10:38,638,Ryan Koering,2,Hooking
+2026-27,2026-10-02_16_27,2026-10-02,Colorado College,Massachusetts,True,2,0:52,52,Mats Lindgren,2,Hooking
+2026-27,2026-10-02_16_27,2026-10-02,Massachusetts,Colorado College,False,3,4:12,252,Francesco Dell'Elce,2,Holding
+2026-27,2026-10-02_16_27,2026-10-02,Colorado College,Massachusetts,True,3,15:12,912,BENCH,2,Delay of Game
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,1,3:41,221,Jacob Terpstra,2,Tripping
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,1,18:26,1106,JP Steele,2,Holding
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,1,19:57,1197,Sam Harris,2,High-sticking
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,7:39,459,Max Heise,2,Hooking
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,13:54,834,Ben Anderson,2,Interference
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,20:00,1200,Brendan McMorrow,10,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,20:00,1200,Brendan McMorrow,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,20:00,1200,Ryan Miller,10,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,20:00,1200,Ryan Miller,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,20:00,1200,Karter McNarland,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,20:00,1200,Karter McNarland,10,Game Misconduct
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,20:00,1200,Aiden Westin,10,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,20:00,1200,Aiden Westin,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,20:00,1200,Karter McNarland,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,3,9:54,594,Blake Fiddler,2,Holding
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,3,9:54,594,Ethan Neutens,2,Roughing
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,3,14:27,867,Jack Pridham,2,Hooking
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,3,16:42,1002,Tory Pitner,2,Holding
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,1,3:45,225,Owen Kim,5,Contact to the Head
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,1,3:45,225,Owen Kim,10,Game Misconduct
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,1,3:45,225,Ben Riche,2,Cross-Checking
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,1,9:39,579,Alexander Bales,2,Interference
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,1,12:23,743,Jack Martin,2,Holding
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,1,16:52,1012,Owain Johnston,2,High-sticking
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,2,3:57,237,Owain Johnston,2,Boarding
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,2,12:27,747,Samuel Alfano,2,Tripping
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,3,13:20,800,Masun Fleece,2,Hooking
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,3,14:46,886,Charlie Russell,2,Hooking
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,1,7:19,439,Ian Engel,2,Cross-Checking
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,1,16:58,1018,Reilley Kotai,5,Butt-ending
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,1,16:58,1018,Reilley Kotai,10,Game Misconduct
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,1,16:58,1018,Reilley Kotai,2,Cross-Checking
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,2,3:30,210,Doug Grimes,2,Elbowing
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,12:16,736,Coster Dunn,2,Hooking
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,14:28,868,Medrick Bolduc,2,Roughing
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,14:28,868,Peter Cisar,2,Roughing
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,2,14:28,868,Michael Phelan,2,Roughing
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,2,14:28,868,Matous Kucharcik,10,Game Misconduct
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,2,14:28,868,Matous Kucharcik,5,Grabbing Facemask
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,14:28,868,Medrick Bolduc,2,Roughing
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,14:28,868,Peter Cisar,2,Cross-Checking
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,3,3:04,184,Bradley Walker,2,Contact to the Head
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,3,4:42,282,Chuck Blanchard,2,Tripping
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,3,8:55,535,Merril Steenari,2,Goaltender Interference
+2026-27,2026-10-02_30_42,2026-10-02,Miami,Northern Michigan,False,3,17:08,1028,Ilia Morozov,2,Boarding
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,3,18:57,1137,Nik Gudmundson,2,Boarding
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,1,9:41,581,Nate Benoit,2,Boarding
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,1,11:03,663,J.R. Perdion,2,Hooking
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,1,13:54,834,Bo Cosman,2,Interference
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,1,15:56,956,Aaron Pionk,2,Roughing
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,0:21,21,Luca Leighton,2,Slashing
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,2,6:08,368,Hunter Anderson,2,Slashing
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,14:01,841,Garrett Valk,2,Slashing
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,18:12,1092,Samuel Rousseau,2,Boarding
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,3,14:29,869,Trent Powell,2,Boarding
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,15:49,949,Harper Bentz,2,Holding
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,19:31,1171,Brady Cleveland,2,Roughing
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,1,0:14,14,Markus Vidicek,2,Tripping
+2026-27,2026-10-02_38_47,2026-10-02,New Hampshire,Quinnipiac,False,1,3:01,181,Sam Oliver,2,Hooking
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,6:31,391,Jan Golicic,2,Hooking
+2026-27,2026-10-02_38_47,2026-10-02,New Hampshire,Quinnipiac,False,2,14:12,852,Parker von Richter,5,Kneeing
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,15:23,923,Jack Stockfish,2,Interference
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,16:45,1005,Matthew Lansing,2,Roughing
+2026-27,2026-10-02_38_47,2026-10-02,New Hampshire,Quinnipiac,False,2,18:25,1105,Ryan Philbrick,5,Boarding
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,3:24,204,Spencer Young,2,Roughing
+2026-27,2026-10-02_39_49,2026-10-02,RIT,Niagara,False,2,3:24,204,Camden Bajzer,2,Roughing
+2026-27,2026-10-02_39_49,2026-10-02,RIT,Niagara,False,2,3:24,204,Jakub Krbecek,2,Tripping
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,9:19,559,Dallon Melin,2,Holding
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,15:55,955,Maxim Muranov,2,Hooking
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,19:12,1152,Mitchell Young,2,Slashing
+2026-27,2026-10-02_39_49,2026-10-02,RIT,Niagara,False,3,7:12,432,Julian Demiglio,2,Tripping
+2026-27,2026-10-02_39_49,2026-10-02,RIT,Niagara,False,3,15:18,918,William Moore,2,Interference
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,1,10:17,617,Richard Baran,2,Hooking
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,1,10:17,617,Caden Brown,2,Slashing
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,1,13:25,805,Richard Baran,2,Tripping
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,1,15:23,923,Anselmo Rego,2,Boarding
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,1,17:38,1058,Filip Nordberg,2,Roughing
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,1,17:38,1058,Ryan Abraham,2,Roughing
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,2,1:13,73,Filip Nordberg,2,Tripping
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,2,3:13,193,Logan Morrell,2,Cross-Checking
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,2,9:03,543,Connor Gengle,2,Hooking
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,2,11:28,688,Filip Nordberg,2,Interference
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,2,13:12,792,Kian Bell,2,Boarding
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,2,16:22,982,Jacob Leblanc,2,Slashing
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,3,5:34,334,Jonas Woo,2,Cross-Checking
+2026-27,2026-10-02_433_61,2026-10-02,Lindenwood,Arizona State,True,3,18:36,1116,Andrew LeBlanc,2,Interference
+2026-27,2026-10-02_50_58,2026-10-02,Robert Morris,Wisconsin,False,1,17:35,1055,Trent Wilson,2,Cross-Checking
+2026-27,2026-10-02_50_58,2026-10-02,Robert Morris,Wisconsin,False,2,14:25,865,Luke van Why,2,Slashing
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,3,2:52,172,Grady Deering,2,Interference
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,3,10:42,642,Brent Solomon,5,Contact to the Head
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,3,10:42,642,Brent Solomon,10,Game Misconduct
+2026-27,2026-10-02_50_58,2026-10-02,Robert Morris,Wisconsin,False,3,16:08,968,John Babcock,2,Roughing
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,3,16:08,968,Adam Pietila,2,Roughing
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,1,6:09,369,Campbell Mclean,2,Hooking
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,1,15:16,916,Max Dirracolo,2,Interference
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,0:20,20,Adam Cavallin,2,Cross-Checking
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,2,7:06,426,Isaac Tremblay,2,Embellishment
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,2,7:06,426,Gabe Westling,2,Roughing
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,7:06,426,Antoine Dorion,2,Hooking
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,7:06,426,Adam Timm,2,Roughing
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,8:47,527,Cade Kozak,2,Interference
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,2,11:22,682,Sam Frandina,2,Holding
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,17:50,1070,Cade Kozak,2,Hooking
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,3,8:39,519,Nicholas Beneteau,2,Holding
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,1,4:12,252,Seth Fryer,2,High-sticking
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,1,6:18,378,William Fleet,2,Holding
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,1,17:30,1050,Davis Borozinskis,2,Hooking
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,2,3:31,211,Mick Frechette,2,Tripping
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,2,10:31,631,Jack Harvey,2,Hooking
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,2,19:51,1191,Jack Murtagh,2,Roughing
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,4:32,272,Seth Fryer,5,Kneeing
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,4:32,272,Seth Fryer,10,Game Misconduct
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,9:06,546,Grady Gallatin,2,Cross-Checking
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,9:06,546,Ben Merrill,2,Cross-Checking
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,15:32,932,Kyle Powers,2,Roughing
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,15:32,932,Haoxi (Simon) Wang,2,Roughing
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,19:49,1189,Kyle Powers,2,Charging
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,19:49,1189,Kyle Powers,5,Grabbing Facemask
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,19:49,1189,Ben Merrill,5,Grabbing Facemask
+2026-27,2026-10-03_10_4,2026-10-03,Alaska,Boston University,True,3,19:49,1189,Kyle Powers,10,Game Misconduct
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,19:49,1189,Ben Merrill,10,Game Misconduct
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,1,1:20,80,Ty Cheveldayoff,2,Interference
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,1,4:11,251,Cole McKinney,2,Boarding
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,1,10:06,606,Will Horcoff,2,Roughing
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,1,12:02,722,Ben Doran,2,Holding
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,1,13:38,818,Aidan Park,2,Interference
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,2,0:00,0,Ty Cheveldayoff,10,Misconduct
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,2,0:36,36,Noah Morneau,2,Slashing
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,3,9:42,582,Cole McKinney,2,Interference
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,3,15:52,952,BENCH,2,Too Many Players
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,3,16:49,1009,Will Horcoff,2,Cross-Checking
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,1,6:07,367,Jimmy Goffredo,2,Interference
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,1,18:11,1091,Gavin Garland,2,Roughing
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,1,20:00,1200,FJ Buteau,2,Elbowing
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,1:40,100,Nathan Leek,2,Slashing
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,5:53,353,Nathan Mackie,2,Elbowing
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,2,10:53,653,Joey Henneberry,2,Interference
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,13:09,789,Owen Mehlenbacher,2,Tripping
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,2,13:41,821,Walter Zacher,2,Hooking
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,13:41,821,Trevor Taulien,2,Embellishment
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,18:22,1102,Reggie Newman,2,Cross-Checking
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,3,7:38,458,Kyan Haldenby,2,Slashing
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,3,7:38,458,Zach Bade,2,Cross-Checking
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,3,10:31,631,Hunter Price,2,Cross-Checking
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,1,12:48,768,Larry Keenan,2,Tripping
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,2,1:46,106,Zach Olsen,2,Hooking
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,2,5:18,318,Daniel Jenčko,2,Roughing
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,3,15:41,941,Coleson Hanrahan,2,Roughing
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,3,15:41,941,Max Burkholder,2,Roughing
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,3,15:41,941,Justin Kerr,2,Roughing
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,3,16:06,966,Jack Galanek,2,Hooking
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,3,17:54,1074,Klavs Veinbergs,2,Roughing
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,1,5:52,352,Ethan Warrener,2,Cross-Checking
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,1,8:48,528,Reid Varkonyi,2,Slashing
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,1,13:47,827,Paul Bloomer,2,Hooking
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,1,18:33,1113,JP Steele,2,Roughing
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,2,2:23,143,Blake Fiddler,2,Holding
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,2,11:59,719,Max Heise,2,Interference
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,2,19:30,1170,Sam Harris,2,Slashing
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,2,19:30,1170,Drew Nelson,2,Roughing
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,3,2:14,134,Luke Helgeson,2,Hooking
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,3,10:01,601,Drew Hockley,2,Holding the Stick
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,3,11:03,663,JP Steele,2,Cross-Checking
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,1,15:18,918,Quinn McCall,2,Tripping
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,1,19:18,1158,Owain Johnston,2,Tripping
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,2,1:14,74,Charlie Russell,2,Roughing
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,2,1:14,74,Anthony Biakabutuka,2,Roughing
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,2,18:43,1123,Jack Larrigan,2,Tripping
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,2:51,171,Thomas Pichette,2,Interference
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,2:56,176,Owen Fowler,2,Tripping
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,5:46,346,Sully Scholle,2,Hooking
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,12:44,764,Jeremy Langlois,2,Tripping
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,15:30,930,Sully Scholle,2,Cross-Checking
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,3,16:00,960,Preston Lounsbury,2,Tripping
+2026-27,2026-10-03_29_47,2026-10-03,Merrimack,Quinnipiac,False,1,9:27,567,Ryan O'Connell,2,Holding
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,1,11:39,699,BENCH,2,Too Many Players
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,3,5:59,359,Gabriel Frasca,2,Interference
+2026-27,2026-10-03_29_47,2026-10-03,Merrimack,Quinnipiac,False,3,15:39,939,Nathan King,2,Hooking
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,1,13:33,813,Coster Dunn,2,Tripping
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,2,7:20,440,BENCH,2,Too Many Players
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,2,14:09,849,Jason Davenport,2,Holding
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,2,16:30,990,Darik Olson,2,Roughing
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,2,16:30,990,Ethan Hay,2,Roughing
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,3,2:00,120,Kocha Delic,2,Holding
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,3,2:36,156,Branden Piku,2,Tripping
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,3,7:38,458,Noah Houle,2,Cross-Checking
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,3,15:52,952,Doug Grimes,2,High-sticking
+2026-27,2026-10-03_33_34,2026-10-03,Minnesota,Michigan Tech,False,1,6:01,361,Axel Löfgren,2,Kneeing
+2026-27,2026-10-03_33_34,2026-10-03,Michigan Tech,Minnesota,True,2,8:55,535,Owen Baker,2,Diving
+2026-27,2026-10-03_33_34,2026-10-03,Minnesota,Michigan Tech,False,3,18:51,1131,Beckett Hendrickson,2,Roughing
+2026-27,2026-10-03_33_34,2026-10-03,Michigan Tech,Minnesota,True,3,18:51,1131,Lucas Brenton,2,Roughing
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,1,1:41,101,Brady Cleveland,2,Tripping
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,1,6:52,412,Sixten Jennersjö,2,Roughing
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,1,6:52,412,Harper Bentz,2,Roughing
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,1,16:29,989,JT Veney,2,Hooking
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,2,2:57,177,Garrett Valk,2,Slashing
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,2,6:44,404,Trent Powell,2,Holding
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,2,14:05,845,Ryan Zaremba,2,Interference
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,2,16:11,971,Samuel Rousseau,2,Interference
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,2:49,169,Grayden Siepmann,2,Tripping
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,4:59,299,Lucas Lemieux,2,Slashing
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,9:47,587,Hunter Anderson,2,Slashing
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,11:29,689,Callum Arnott,2,Slashing
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,14:02,842,Ryan Zaremba,2,Cross-Checking
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,14:58,898,Trent Powell,2,Slashing
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,15:24,924,Lucas Lemieux,2,Cross-Checking
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:48,1068,Braden Fischer,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:48,1068,Barrett Hall,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:48,1068,Adam Kleber,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,Samuel Rousseau,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,Isaac Lambert,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,Blake Matheson,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:48,1068,Hunter Anderson,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,JT Veney,10,Game Misconduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,Anthony Lucarelli,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_36_62,2026-10-03,Long Island,Minnesota-Duluth,False,3,17:48,1068,JT Veney,5,Hitting From Behind
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:48,1068,Keith McInnis,10,Unsportsmanlike Conduct
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,1,1:21,81,Jacob Maillet,2,High-sticking
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,1,4:45,285,Matthew Wang,2,Cross-Checking
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,1,6:44,404,Spencer Young,2,Roughing
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,1,6:44,404,Nathan DellaDonna,2,Roughing
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,1,9:38,578,William Moore,2,Slashing
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,1,15:54,954,William Moore,2,Slashing
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,2,4:20,260,Marshall Finnie,2,Holding
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,5:04,304,Christian Catalano,2,Holding
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,2,8:36,516,Ryan Humphrey,2,Tripping
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,10:52,652,Caleb Elfering,2,High-sticking
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,13:17,797,Braedyn Rogers,2,High-sticking
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,2,16:21,981,Ryan Humphrey,2,Holding
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,16:21,981,Matthew Wang,2,Roughing
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,16:21,981,Lucas Romeo,2,Roughing
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,3,2:38,158,Roberto Mancini,2,Hooking
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,3,6:40,400,BENCH,2,Delay of Game
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,3,12:03,723,Brayden Boehm,2,Roughing
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,3,12:03,723,Alex Christopoulos,2,Roughing
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,1,5:44,344,Jack Beck,2,Cross-Checking
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,1,6:16,376,Chris Thibodeau,2,Tripping
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,2,3:49,229,Connor Gengle,2,Slashing
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,2,6:42,402,Logan Morrell,2,Tripping
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,2,9:29,569,Jonas Woo,2,Slashing
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,2,12:04,724,Jack O'Brien,2,Interference
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,3,9:52,592,Kyle Smolen,2,Interference
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,1,12:35,755,Vasily Zelenov,2,Cross-Checking
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,1,12:35,755,Bruce McDonald,2,Roughing
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,1,13:58,838,Charlie Kinsman,2,Roughing
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,1,17:16,1036,Chase Jette,2,Interference
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,2,2:45,165,Luke Osburn,2,Unsportsmanlike Conduct
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,2,2:45,165,John Babcock,2,Unsportsmanlike Conduct
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,2,2:45,165,Calvin Crombie,2,Roughing
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,2,5:12,312,Patrick Johnson,2,Tripping
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,2,8:47,527,Bruce McDonald,2,Holding
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,2,10:04,604,Grady Deering,2,Interference
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,2,15:56,956,Charlie Kinsman,2,Holding
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,2,15:56,956,JJ Wiebusch,2,Embellishment
+2026-27,2026-10-03_50_58,2026-10-03,Robert Morris,Wisconsin,False,3,13:22,802,Ryan MacPherson,2,Holding
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,1,6:53,413,Finn McLaughlin,2,High-sticking
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,1,18:23,1103,Oliver Peer,2,Goaltender Interference
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,2,4:29,269,Nolan Roed,2,Interference
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,2,7:09,429,Jaksen Panzer,2,Delay of Game
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,2,12:41,761,Ben Vigneault,2,Holding
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,2,16:59,1019,Gavyn Thoreson,2,Tripping
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,3,9:36,576,Brayden Dube,2,Holding
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,3,10:17,617,Yan Shostak,2,Delay of Game
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,4,2:24,144,Jake Southgate,2,Slashing
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,2,6:24,384,Jack Ivey,2,Holding
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,2,13:13,793,Lukas McCloskey,2,Tripping
+2026-27,2026-10-03_54_6,2026-10-03,Union,Army,False,3,9:58,598,Jacob Jeannette,2,Interference
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,3,11:37,697,Barron Woodring,2,Holding the Stick
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,3,14:18,858,Thomas Neu,2,Hooking
+2026-27,2026-10-04_33_34,2026-10-04,Minnesota,Michigan Tech,False,1,12:18,738,Axel Löfgren,2,Roughing
+2026-27,2026-10-04_33_34,2026-10-04,Minnesota,Michigan Tech,False,2,18:19,1099,Axel Löfgren,2,Slashing
+2026-27,2026-10-04_33_34,2026-10-04,Michigan Tech,Minnesota,True,3,3:28,208,Carson Birnie,5,Boarding
+2026-27,2026-10-04_33_34,2026-10-04,Minnesota,Michigan Tech,False,3,16:13,973,Mason Moe,2,Hooking
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,1,1:05,65,Nathan Mackie,2,Boarding
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,1,14:37,877,Ty Henricks,2,Hooking
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,2,2:07,127,Reggie Newman,2,Charging
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,4:18,258,BENCH,2,Too Many Players
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,8:22,502,Cole Spicer,2,Boarding
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,2,11:11,671,Brian Morse,2,Hooking
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,13:33,813,Edison Engle,2,Roughing
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,14:02,842,Colby Woogk,2,Interference
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,15:42,942,Theo Wallberg,2,Holding
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,2,17:53,1073,Nathan Leek,2,Roughing
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,3,10:31,631,Zaccharya Wisdom,2,Slashing
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,3,14:01,841,Adam Benák,2,Slashing
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,3,14:18,858,Owen Mehlenbacher,2,Interference
+2026-27,2026-10-08_21_57,2026-10-08,Ferris State,Western Michigan,False,3,17:13,1033,Nicholas Johnson,2,Cross-Checking
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,1,11:11,671,Charles Savoie,2,High-sticking
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,1,14:01,841,Adam Belusko,2,Tripping
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,1,14:01,841,Raoul Boilard,2,Roughing
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,1,14:01,841,Andrew LeBlanc,2,Roughing
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,5:54,354,Brody Mortensen,2,Roughing
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,2,5:54,354,Hunter Ramos,2,Roughing
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,9:10,550,Andrew LeBlanc,2,High-sticking
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,14:51,891,Brody Mortensen,2,Cross-Checking
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,2,14:51,891,Mans Toresson,2,Embellishment
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,2,15:18,918,John Herrington,2,Slashing
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,19:25,1165,Ty Nash,2,Unsportsmanlike Conduct
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,3,9:43,583,Cooper Foster,2,Delay of Game
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,1,9:28,568,Cam MacDonald,2,Boarding
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,1,16:44,1004,Michael Emerson,2,Hooking
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,2,7:55,475,Nick Ring,2,Tripping
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,2,7:55,475,Jacob Frasca,2,Unsportsmanlike Conduct
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,2,19:54,1194,Simon-Pier Brunet,2,Interference
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,3,1:13,73,BENCH,2,Faceoff Violation
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,3,7:12,432,Parker Lalonde,2,Cross-Checking
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,3,15:53,953,BENCH,2,Too Many Players
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,1,7:27,447,Roberto Mancini,2,Embellishment
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,1,7:27,447,Maddox Fleming,2,Hooking
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,1,14:38,878,Danny Nelson,2,Roughing
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,2,11:20,680,Henry Nelson,2,Roughing
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,2,11:20,680,Marshall Finnie,2,Roughing
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,2,11:45,705,Mitchell Young,2,Hooking
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,2,14:54,894,BENCH,2,Too Many Players
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,2,18:24,1104,William Belle,2,Interference
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,3,5:54,354,David Klee,2,Goaltender Interference
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,3,5:54,354,Charles-Edward Gravel,2,Embellishment
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,10:55,655,Ty Cheveldayoff,2,Roughing
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,1,13:17,797,Emmanuel Vermette,2,Interference
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,1,13:36,816,Liam Lesakowski,2,Tripping
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,18:04,1084,Brody Waters,2,Tripping
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,19:22,1162,Evan Bushy,2,Roughing
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,19:22,1162,Connor Levis,2,Cross-Checking
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,1,19:22,1162,Taos Jordan,2,Roughing
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,2,16:39,999,Brandon Whynott,2,Charging
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,3,12:04,724,Aiden VanRooyan,2,Slashing
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,3,12:32,752,Brayden Crampton,2,Tripping
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,3,18:01,1081,Chase Ramsay,2,Holding
+2026-27,2026-10-09_13_62,2026-10-09,Canisius,Long Island,False,2,8:35,515,Jason Gallucci,2,Tripping
+2026-27,2026-10-09_13_62,2026-10-09,Long Island,Canisius,True,2,9:52,592,Luc Bydal,2,Hooking
+2026-27,2026-10-09_13_62,2026-10-09,Canisius,Long Island,False,2,13:54,834,Cole Gordon,2,High-sticking
+2026-27,2026-10-09_13_62,2026-10-09,Long Island,Canisius,True,2,14:07,847,Luc Bydal,2,Hooking
+2026-27,2026-10-09_13_62,2026-10-09,Long Island,Canisius,True,3,3:13,193,Alexis Bourque,2,Holding
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,1,1:10,70,Zack Sandhu,2,Holding
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,1,3:48,228,Joey McGraw,2,Roughing
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,2,4:49,289,Kuzma Voronin,2,Holding
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,2,18:24,1104,Owen Van Steensel,2,Roughing
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,3,6:37,397,David Adaszynski,5,Contact to the Head
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,3,6:37,397,David Adaszynski,10,Game Misconduct
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,3,13:55,835,Jace Letourneau,2,Kneeing
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,3,17:47,1067,Remi Gelinas,2,Cross-Checking
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,3,17:47,1067,Sean Kilcullen,2,Embellishment
+2026-27,2026-10-09_15_422,2026-10-09,Stonehill,Colgate,True,1,5:28,328,Pat Murphy,2,Interference
+2026-27,2026-10-09_15_422,2026-10-09,Colgate,Stonehill,False,1,6:59,419,Antonio Fernandez,2,Tripping
+2026-27,2026-10-09_15_422,2026-10-09,Stonehill,Colgate,True,1,8:12,492,Ozbej Rep,2,Interference
+2026-27,2026-10-09_15_422,2026-10-09,Colgate,Stonehill,False,1,12:38,758,Antonio Fernandez,2,Interference
+2026-27,2026-10-09_15_422,2026-10-09,Colgate,Stonehill,False,1,18:19,1099,Ryan Sullivan,2,Cross-Checking
+2026-27,2026-10-09_15_422,2026-10-09,Stonehill,Colgate,True,2,10:04,604,Dimitry Kebreau,2,Contact to the Head
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,2,8:46,526,Anthony Allain Samake,2,Boarding
+2026-27,2026-10-09_17_60,2026-10-09,Penn State,Connecticut,False,2,11:38,698,Justin Larose,2,Cross-Checking
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,3,3:43,223,Charlie Morrison,2,Elbowing
+2026-27,2026-10-09_17_60,2026-10-09,Penn State,Connecticut,False,3,5:09,309,Kale Dach,2,Holding
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,3,19:26,1166,Mike Murtagh,2,Slashing
+2026-27,2026-10-09_17_60,2026-10-09,Penn State,Connecticut,False,3,19:49,1189,Dane Dowiak,2,Roughing
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,1,6:49,409,Aiden Grossklaus,2,Slashing
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,1,10:33,633,Will Staring,2,Hooking
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,1,17:30,1050,Jakub Altrichter,2,Tripping
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,2,1:25,85,Jakub Altrichter,2,Holding
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,2,1:25,85,Jake Peterson,2,Roughing
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,2,1:31,91,Aidan Willis,2,Embellishment
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,2,1:31,91,Bauer Berry,2,High-sticking
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,2,7:36,456,Kevin Anderson,2,Roughing
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,2,7:36,456,Hayden Nichol,2,Roughing
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,2,18:41,1121,Justin Kipkie,2,Cross-Checking
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,2,19:23,1163,Will Staring,2,Interference
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,3,2:20,140,Quinn Rudrud,2,Slashing
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,3,5:13,313,Duke Gentzler,2,Slashing
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,1,1:12,72,BENCH,2,Too Many Players
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,1,2:48,168,Reggie Newman,2,Roughing
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,1,13:45,825,William Whitelaw,2,Hooking
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,1,16:10,970,Reggie Newman,2,Tripping
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,2,1:33,93,Nathan Mackie,2,Charging the Goalie
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,2,9:53,593,Colby Woogk,2,Slashing
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,2,12:03,723,Austin Zemlak,2,Cross-Checking
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,2,18:05,1085,Urban Podrekar,2,Interference
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,3,1:17,77,Nathan Mackie,2,Roughing
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,3,1:21,81,Adam Benák,2,Hooking
+2026-27,2026-10-09_23_61,2026-10-09,Arizona State,Holy Cross,True,1,8:10,490,Filip Nordberg,2,Kneeing
+2026-27,2026-10-09_23_61,2026-10-09,Arizona State,Holy Cross,True,1,9:27,567,Landon Hafele,2,Cross-Checking
+2026-27,2026-10-09_23_61,2026-10-09,Holy Cross,Arizona State,False,2,0:45,45,Connor Welsh,2,High-sticking
+2026-27,2026-10-09_23_61,2026-10-09,Holy Cross,Arizona State,False,2,3:03,183,Noah Eyre,2,Slashing
+2026-27,2026-10-09_23_61,2026-10-09,Holy Cross,Arizona State,False,2,8:16,496,Matthew Kursonis,2,Boarding
+2026-27,2026-10-09_23_61,2026-10-09,Arizona State,Holy Cross,True,2,15:59,959,Filip Nordberg,2,Holding
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,1,4:06,246,Jacob Delaney,2,Cross-Checking
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,1,10:27,627,Hunter Ramos,2,Slashing
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,1,14:09,849,Matteo Mann,2,Interference
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,2,0:50,50,Cooper Foster,2,Interference
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,2,8:26,506,Ethan Zielke,2,Holding
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,2,10:53,653,Andrew LeBlanc,2,Unsportsmanlike Conduct
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,3,13:42,822,Joey Potter,5,Cross-Checking
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,1,1:56,116,Jack Stockfish,2,Hooking
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,1,11:26,686,Elliott Groenewold,2,Hooking
+2026-27,2026-10-09_25_47,2026-10-09,Maine,Quinnipiac,True,2,10:04,604,Lukas Peterson,2,Roughing
+2026-27,2026-10-09_25_47,2026-10-09,Maine,Quinnipiac,True,2,14:51,891,Charlie Russell,2,Tripping
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,2,15:55,955,Ethan Wyttenbach,2,Cross-Checking
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,3,4:47,287,Dylan Edwards,2,Boarding
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,3,5:53,353,Graham Sward,2,Slashing
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,3,19:40,1180,Andon Cerbone,2,Tripping
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,1,4:24,264,Christian Catalano,2,Holding
+2026-27,2026-10-09_27_49,2026-10-09,Massachusetts,RIT,True,1,6:53,413,Justin Kerr,2,Holding
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,2,2:02,122,Evan Konyen,2,Tripping
+2026-27,2026-10-09_27_49,2026-10-09,Massachusetts,RIT,True,2,4:15,255,Samu Alalauri,2,Roughing
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,2,4:15,255,Evan Konyen,2,Grabbing Facemask
+2026-27,2026-10-09_27_49,2026-10-09,Massachusetts,RIT,True,2,6:06,366,Václav Nestrašil,2,Hooking
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,2,9:52,592,Christian Catalano,2,Slashing
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,3,0:49,49,Kevin Scott,2,Slashing
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,1,5:00,300,Girts Silkalns,2,Charging
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,1,8:25,505,Michael Burchill,2,Hooking
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,1,8:25,505,Reilley Kotai,2,Cross-Checking
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,2,2:40,160,BENCH,2,Too Many Players
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,2,5:16,316,Medrick Bolduc,10,Game Misconduct
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,2,5:16,316,Medrick Bolduc,5,Hitting From Behind
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,2,8:50,530,BENCH,2,Too Many Players
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,2,14:23,863,Shane Vansaghi,2,Tripping
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,2,18:30,1110,Chase Reid,2,Roughing
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,2,20:00,1200,Thomas Bleyl,2,Roughing
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,2,20:00,1200,Mathew Ward,2,Roughing
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,1:06,66,Jason Davenport,2,Tripping
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,7:06,426,Owen West,2,Interference
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,11:22,682,Noah Houle,2,Cross-Checking
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,14:09,849,Noah Houle,2,Tripping
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,16:04,964,Gavin O'Connell,2,Tripping
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,19:59,1199,Oliver Auyeung-Ashton,2,Unsportsmanlike Conduct
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,19:59,1199,Ian Engel,2,Unsportsmanlike Conduct
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,19:59,1199,Shane Vansaghi,2,Roughing
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,19:59,1199,Shane Vansaghi,2,Unsportsmanlike Conduct
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,19:59,1199,Jason Davenport,10,Game Misconduct
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,19:59,1199,Jason Davenport,5,Contact to the Head
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,19:59,1199,Shane Vansaghi,10,Misconduct
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,1,4:14,254,Brock Souch,2,Faceoff Violation
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,1,7:18,438,Carson Birnie,2,Tripping
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,1,17:14,1034,Gavyn Thoreson,2,Roughing
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,1,19:11,1151,Jack Reimann,2,Slashing
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,2,4:20,260,Tyler Miller,2,Tripping
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,2,13:25,805,Matthew Van Blaricom,2,Slashing
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,2,19:59,1199,Charlie Lurie,2,Cross-Checking
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,3,5:58,358,Noah Urness,2,Tripping
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,3,14:37,877,Lucas Brenton,2,Interference
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,3,18:00,1080,Kalem Parker,2,Roughing
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,3,18:00,1080,Gavyn Thoreson,2,Roughing
+2026-27,2026-10-09_35_58,2026-10-09,Minnesota State,Wisconsin,True,1,15:38,938,Ean Somoza,2,Hooking
+2026-27,2026-10-09_35_58,2026-10-09,Minnesota State,Wisconsin,True,2,16:04,964,Reid Morich,2,Cross-Checking
+2026-27,2026-10-09_35_58,2026-10-09,Wisconsin,Minnesota State,False,3,11:55,715,Vasily Zelenov,2,Boarding
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,1,1:35,95,Brady Cleveland,2,Boarding
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,1,17:25,1045,Joey DelGreco,2,Interference
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,1,19:03,1143,Grayden Siepmann,2,Tripping
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,2,4:22,262,Owen Baumgartner,2,Interference
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,2,9:22,562,Samo Meritähti,2,Cross-Checking
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,2,9:22,562,Brady Cleveland,2,Charging
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,2,12:52,772,Brady Cleveland,2,Holding
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,3,7:11,431,BENCH,2,Too Many Players
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,3,14:09,849,Barrett Hall,2,Slashing
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,1,1:12,72,Henry Nelson,2,Roughing
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,1,12:33,753,Danny Nelson,2,Roughing
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,1,12:33,753,Mitchell Young,2,Holding the Stick
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,1,12:33,753,Cole Brown,2,Roughing
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,1,13:31,811,Spencer Young,2,Slashing
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,2,0:27,27,Evan Werner,2,Hooking
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,2,6:38,398,Marshall Finnie,2,Hooking
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,2,8:51,531,BENCH,2,Too Many Players
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,2,9:03,543,Paul Fischer,2,Interference
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,2,9:11,551,Spencer Young,2,Interference
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,2,17:04,1024,Michael Schermerhorn,2,Cross-Checking
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,3,10:14,614,Paul Fischer,2,Delay of Game
+2026-27,2026-10-09_39_43,2026-10-09,Niagara,Notre Dame,False,3,14:25,865,Ryan Humphrey,2,Contact to the Head
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,1,5:36,336,Charles Tardif,2,High-sticking
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,1,9:53,593,Jack Nesbitt,2,Cross-Checking
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,2,13:30,810,Cooper Anderson,2,Holding
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,3,10:49,649,Ethan Warrener,2,Slashing
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,3,13:58,838,Cooper Anderson,2,Roughing
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,3,13:58,838,Matthew Martin-Gaudreault,2,Roughing
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,13:58,838,Nic Sima,2,Roughing
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,19:29,1169,Malcolm Spence,10,Taunting
+2026-27,2026-10-09_40_7,2026-10-09,Bemidji State,North Dakota,True,1,5:59,359,Rylan Gould,2,Cross-Checking
+2026-27,2026-10-09_40_7,2026-10-09,Bemidji State,North Dakota,True,1,16:51,1011,Will Dawson,2,Hooking
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,1,19:41,1181,BENCH,2,Too Many Players
+2026-27,2026-10-09_40_7,2026-10-09,Bemidji State,North Dakota,True,2,12:27,747,Ethan Miedema,2,Holding
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,3,5:55,355,Garrett Lindberg,2,Holding
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,3,19:37,1177,Cody Croal,2,Holding
+2026-27,2026-10-09_44_48,2026-10-09,Ohio State,RPI,False,1,6:20,380,Felix Caron,2,Hooking
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,1,20:00,1200,Landen Hilditch,2,Tripping
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,2,7:21,441,Jagger Tapper,10,Game Misconduct
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,2,7:21,441,Jagger Tapper,5,Contact to the Head
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,3,5:59,359,Grayson Burzynski,2,Cross-Checking
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,3,11:26,686,Ian Scherzer,2,Tripping
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,1,10:38,638,Cayden Casey,2,Slashing
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,1,12:12,732,Will Bishop,2,Boarding
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,1,12:12,732,Clint Levens,2,Roughing
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,1,16:10,970,Gunnar Thoreson,2,Hooking
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,1,16:59,1019,John Mustard,2,Slashing
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,1,19:37,1177,Blake Zielinski,2,Boarding
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,1,19:37,1177,Max Dirracolo,5,Cross-Checking
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,1,19:37,1177,Max Dirracolo,10,Game Misconduct
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,2,11:22,682,William Bishop,2,Tripping
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,2,13:05,785,Gunnar Thoreson,2,Goaltender Interference
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,2,14:24,864,Everett Baldwin,2,Slashing
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,2,19:57,1197,Will Bishop,2,Holding
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,3,4:53,293,Andrew Brown,2,Cross-Checking
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,3,9:14,554,Everett Baldwin,2,Cross-Checking
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,3,9:14,554,James Fisher,2,Roughing
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,3,9:14,554,Everett Baldwin,2,Roughing
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,3,12:42,762,Jake Lammens,2,High-sticking
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,1,0:16,16,Linden Burrett,2,Hooking
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,1,5:24,324,Casey Mutryn,2,Hooking
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,1,10:08,608,Quinn Beauchesne,2,Cross-Checking
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,1,14:12,852,Nathan Rickey,2,Holding
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,1,19:36,1176,Grady Gallatin,2,Slashing
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,1,20:00,1200,Oscar Hemming,2,Roughing
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,2,5:29,329,Matias Vanhanen,2,Hooking
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,3,2:35,155,Alex Pelletier,2,Interference
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,3,6:38,398,BENCH,2,Too Many Players
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,3,13:50,830,Grady Gallatin,2,Holding
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,3,15:30,930,Teddy Stiga,2,Kneeing
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,3,16:24,984,Quinn Beauchesne,2,Holding
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,3,16:24,984,Rylen Roersma,2,Embellishment
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,3,16:24,984,Quinn Beauchesne,2,Roughing
+2026-27,2026-10-09_55_8,2026-10-09,Vermont,Bentley,False,1,0:25,25,Ethan Burroughs,2,Slashing
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,1,0:40,40,Ryan Mansfield,2,Interference
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,1,4:08,248,Jack Dalton,2,Boarding
+2026-27,2026-10-09_55_8,2026-10-09,Vermont,Bentley,False,2,6:46,406,Sebastian Törnqvist,2,Tripping
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,2,12:30,750,Tobias Larsen,2,Roughing
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,3,1:14,74,Ryan Mansfield,2,Roughing
+2026-27,2026-10-09_55_8,2026-10-09,Vermont,Bentley,False,3,1:14,74,Michael Hagens,5,Spearing
+2026-27,2026-10-09_55_8,2026-10-09,Vermont,Bentley,False,3,1:14,74,Michael Hagens,10,Game Misconduct
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,3,1:45,105,Kellan Hjartarson,2,High-sticking
+2026-27,2026-10-09_55_8,2026-10-09,Vermont,Bentley,False,3,1:45,105,Sebastian Törnqvist,2,Embellishment
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,1,5:01,301,Adam Zlnka,2,Cross-Checking
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,2,4:01,241,Lirim Amidovski,2,Tripping
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,2,8:10,490,Lirim Amidovski,2,Tripping
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,2,10:26,626,Ty Cheveldayoff,2,Interference
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,2,20:00,1200,Ethan Gardula,2,Roughing
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,3,2:14,134,Ty Cheveldayoff,2,Tripping
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,3,3:28,208,Ethan Whitcomb,5,Spearing
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,3,3:28,208,Ethan Whitcomb,10,Game Misconduct
+2026-27,2026-10-10_13_62,2026-10-10,Canisius,Long Island,False,1,13:45,825,Joey Henneberry,2,Holding
+2026-27,2026-10-10_13_62,2026-10-10,Canisius,Long Island,False,1,16:44,1004,Ben Brunelle,2,Holding
+2026-27,2026-10-10_13_62,2026-10-10,Long Island,Canisius,True,2,13:54,834,Bo Cosman,2,Roughing
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,1,16:12,972,Talon Sigurdson,2,Hooking
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,2,7:37,457,Hayden Reid,2,Slashing
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,2,12:15,735,Michael Craig,2,Slashing
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,2,13:30,810,Bryce Sookro,2,Roughing
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,2,15:54,954,Justin Cote,2,Goaltender Interference
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,2,18:10,1090,Thomas Vandenberg,2,Tripping
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,3,0:16,16,Tomas Machu,2,Slashing
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,3,2:05,125,Mikael Huchette,2,Tripping
+2026-27,2026-10-10_14_46,2026-10-10,Clarkson,Providence,False,3,5:17,317,Talon Sigurdson,2,Boarding
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,1,2:15,135,Luke Pakulak,2,Boarding
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,1,12:23,743,Pat Murphy,2,Cross-Checking
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,1,14:32,872,Nathan Larioza,2,Elbowing
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,1,17:37,1057,JJ Grainda,2,Tripping
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,2,5:45,345,Nathan Larioza,2,Cross-Checking
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,2,10:00,600,Owen Drury,2,Interference
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,2,13:35,815,Zachary Aben,2,Tripping
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,2,16:56,1016,Elias Zimmerman,2,Cross-Checking
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,3,5:18,318,Pat Murphy,2,Tripping
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,3,7:13,433,Ryan Sullivan,2,Roughing
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,3,9:38,578,Charles Banquier,2,Boarding
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,3,13:47,827,Nathan Larioza,2,Boarding
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,3,17:51,1071,Nathan Larioza,2,Tripping
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,1,0:41,41,BENCH,2,Too Many Players
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,2,12:03,723,Jakub Altrichter,5,Cross-Checking
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,2,16:24,984,Christian Kim,2,Slashing
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,2,18:39,1119,Zander Lipsett,2,Hooking
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,2,18:39,1119,Lucas Van Vliet,2,Embellishment
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,3,2:31,151,Mason Poolman,2,Tripping
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,3,12:11,731,Harper Searles,2,Holding
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,1,0:19,19,Anthony Biakabutuka,2,High-sticking
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,1,12:36,756,Benjamin Kevan,2,Roughing
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,1,12:36,756,Owain Johnston,2,Roughing
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,1,19:07,1147,William Elias,2,Tripping
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,2,1:32,92,Boden Sampair,2,Roughing
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,2,1:32,92,Landon Hafele,2,Boarding
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,2,1:32,92,Rylan Brown,2,Roughing
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,3,1:58,118,Brody Gagno,2,Boarding
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,3,4:30,270,Matthew Kursonis,2,Holding
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,3,10:08,608,BENCH,2,Too Many Players
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,3,18:01,1081,Ben Riche,2,Tripping
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,1,10:32,632,Alex Kostov,10,Game Misconduct
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,1,10:32,632,Alex Kostov,5,Charging
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,2,6:36,396,Aaron Schwartz,2,Embellishment
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,2,6:36,396,Sully Scholle,2,Interference
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,2,9:47,587,Tanner Klimpke,2,Tripping
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,3,17:53,1073,Matthew Lansing,2,Cross-Checking
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,3,20:00,1200,BENCH,10,Game Misconduct
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,1,3:38,218,Sam Frandina,2,Slashing
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,1,4:26,266,Dalyn Wakely,2,Goaltender Interference
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,1,12:21,741,Luke Posthumus,2,Holding
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,1,15:23,923,Kuzma Voronin,2,Holding
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,2,7:15,435,Dominic Payne,2,Cross-Checking
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,2,8:12,492,Jake Rozzi,2,Slashing
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,2,11:40,700,Nate Misskey,2,Holding
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,2,12:52,772,Cooper Pierson,2,Boarding
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,0:35,35,James Fisher,5,Cross-Checking
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,0:35,35,James Fisher,10,Game Misconduct
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,3,5:47,347,Tobias Pitka,2,Hooking
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,8:08,488,Jacob Bernadet,2,Holding the Stick
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,3,8:32,512,Kolin Sisson,2,Interference
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,10:42,642,Ihnat Pazii,2,Hooking
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,1,13:02,782,Landon Nycz,2,Interference
+2026-27,2026-10-10_27_49,2026-10-10,RIT,Massachusetts,False,2,6:59,419,BENCH,2,Too Many Players
+2026-27,2026-10-10_27_49,2026-10-10,RIT,Massachusetts,False,2,11:22,682,Nathan DellaDonna,2,Tripping
+2026-27,2026-10-10_27_49,2026-10-10,RIT,Massachusetts,False,2,14:58,898,Christian Catalano,2,Roughing
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,3,3:16,196,Gavin Cornforth,2,Tripping
+2026-27,2026-10-10_27_49,2026-10-10,RIT,Massachusetts,False,3,6:42,402,Julian Demiglio,2,Boarding
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,1,1:04,64,Carson Birnie,2,Hooking
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,1,5:06,306,Noah Reinhart,2,Tripping
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,1,5:53,353,Hayden Paupanekis,2,Hooking
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,1,10:08,608,Matthew Van Blaricom,2,Roughing
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,1,10:08,608,Nolan Roed,2,Goaltender Interference
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,2,12:13,733,Carson Birnie,2,Roughing
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,2,12:13,733,Brock Souch,2,Roughing
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,2,13:29,809,Jacob Napier,2,Slashing
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,3,1:35,95,Carson Latimer,2,Holding
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,1,3:21,201,Luke Osburn,2,Boarding
+2026-27,2026-10-10_35_58,2026-10-10,Minnesota State,Wisconsin,True,1,12:45,765,Ean Somoza,2,Slashing
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,1,19:57,1197,Dylan Compton,2,Interference
+2026-27,2026-10-10_35_58,2026-10-10,Minnesota State,Wisconsin,True,2,10:51,651,Mason Kraft,2,Slashing
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,2,14:44,884,Jack Phelan,2,Holding
+2026-27,2026-10-10_35_58,2026-10-10,Minnesota State,Wisconsin,True,3,7:18,438,Gus Thorp,2,Holding
+2026-27,2026-10-10_36_64,2026-10-10,Augustana,Minnesota-Duluth,True,1,12:53,773,Jacob Fletcher,2,Hooking
+2026-27,2026-10-10_36_64,2026-10-10,Minnesota-Duluth,Augustana,False,2,8:39,519,Aaron Pionk,2,Interference
+2026-27,2026-10-10_36_64,2026-10-10,Minnesota-Duluth,Augustana,False,2,15:30,930,Aaron Pionk,2,Holding
+2026-27,2026-10-10_36_64,2026-10-10,Augustana,Minnesota-Duluth,True,3,6:32,392,Landon Fandel,2,Holding
+2026-27,2026-10-10_36_64,2026-10-10,Minnesota-Duluth,Augustana,False,3,7:39,459,Adam Kleber,2,Slashing
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,10:55,655,Jacob Terpstra,2,High-sticking
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,17:27,1047,Matthew Martin-Gaudreault,2,Tripping
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,18:21,1101,Jack Nesbitt,2,Roughing
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,18:21,1101,Oren Shtrom,2,Roughing
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,19:21,1161,Nic Sima,2,Roughing
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,19:21,1161,Asher Barnett,2,Cross-Checking
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,19:21,1161,Rhett Ravndahl,2,Roughing
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,19:21,1161,Ben Anderson,2,Slashing
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,2,9:36,576,Drew Hockley,2,Cross-Checking
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,2,14:53,893,Cole McKinney,2,Holding
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,3,2:56,176,Adam Parsons,2,Tripping
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,3,12:37,757,J.P. Hurlbert,2,Cross-Checking
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,1,3:12,192,Josh Zakreski,2,Interference
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,1,11:29,689,Maxon Vig,2,Hooking
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,1,13:07,787,Luke Roelofs,2,Boarding
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,1,15:47,947,Luca D'Amato,2,Holding
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,2,11:04,664,Joe Gramer,2,Tripping
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,2,19:25,1165,Max Namestnikov,5,Hitting From Behind
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,2,19:25,1165,Max Namestnikov,10,Game Misconduct
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,3,6:50,410,Sam Laurila,2,Cross-Checking
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,1,4:02,242,Jack Dalton,2,Cross-Checking
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,1,11:23,683,Alex Pineau,2,Hooking
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,1,17:57,1077,BENCH,2,Too Many Players
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,2,10:31,631,Saxton Tess,2,Hooking
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,2,13:22,802,Andy Moore,2,Charging
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,2,14:06,846,Jack Dalton,2,Tripping
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,2,17:23,1043,Jacob Sagadin,2,Tripping
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,3,7:25,445,Trey Jefferis,2,Hooking
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,3,9:07,547,Owen Goodbrand,2,Embellishment
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,3,9:07,547,Jordan Tourigny,2,Roughing
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,1,16:21,981,Jake Karabela,2,Tripping
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,1,20:00,1200,Nathan Lewis,2,Roughing
+2026-27,2026-10-10_44_48,2026-10-10,RPI,Ohio State,True,1,20:00,1200,Caleb Hadland,2,Roughing
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,2,0:48,48,Sascha Boumedienne,2,Hitting From Behind
+2026-27,2026-10-10_44_48,2026-10-10,RPI,Ohio State,True,2,14:14,854,Caleb Hadland,2,Cross-Checking
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,3,4:43,283,James Hong,2,Hooking
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,3,11:45,705,Sam Deckhut,5,Butt-ending
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,3,11:45,705,Sam Deckhut,10,Game Misconduct
+2026-27,2026-10-10_44_48,2026-10-10,RPI,Ohio State,True,3,19:43,1183,BENCH,2,Too Many Players
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,1,10:18,618,Troy Pelton,5,Contact to the Head
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,1,10:18,618,Troy Pelton,10,Game Misconduct
+2026-27,2026-10-10_4_54,2026-10-10,Alaska,Union,False,1,13:25,805,Joel Lehtinen,2,Interference
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,1,19:33,1173,Will Felicio,2,Hooking
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,2,6:25,385,Lefty Markonidis,2,Holding
+2026-27,2026-10-10_4_54,2026-10-10,Alaska,Union,False,2,11:45,705,William Fleet,2,Elbowing
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,2,16:40,1000,Riley Brueck,2,Hooking
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,3,7:51,471,Luke Buss,2,High-sticking
+2026-27,2026-10-10_4_54,2026-10-10,Alaska,Union,False,3,12:18,738,Davis Borozinskis,2,Slashing
+2026-27,2026-10-10_4_54,2026-10-10,Alaska,Union,False,3,15:13,913,Linden Burrett,2,Cross-Checking
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,1,12:18,738,Braedon Ford,2,Diving
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,1,19:11,1151,Landon Hanson,2,Holding
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,1,19:11,1151,Dane Dowiak,2,Holding
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,2,4:58,298,Mirko Buttazzoni,2,Tripping
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,2,8:26,506,Shea Busch,2,High-sticking
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,3,0:39,39,Shea Busch,2,High-sticking
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,3,13:04,784,Shea Busch,2,Goaltender Interference
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,1,2:12,132,Mason West,2,Cross-Checking
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,2,6:16,376,Sean Barnhill,2,Interference
+2026-27,2026-10-11_32_42,2026-10-11,Northern Michigan,Michigan State,False,2,8:27,507,Evan Depatie,2,Slashing
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,2,15:26,926,Eric Nilson,2,High-sticking
+2026-27,2026-10-11_32_42,2026-10-11,Northern Michigan,Michigan State,False,3,2:10,130,Oliver Auyeung-Ashton,2,Delay of Game
+2026-27,2026-10-11_32_42,2026-10-11,Northern Michigan,Michigan State,False,3,10:28,628,Girts Silkalns,2,High-sticking

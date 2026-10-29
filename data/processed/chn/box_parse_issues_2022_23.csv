@@ -1,0 +1,12 @@
+game_id,issue
+2022-10-02_28_44,home skater goals 0 != 1
+2022-10-07_1_25,away skater goals 3 != 4
+2022-10-08_422_62,"away scoring summary has 0 goals, linescore 7"
+2022-10-08_422_62,"home scoring summary has 0 goals, linescore 1"
+2022-10-21_14_28,away skater goals 1 != 2
+2022-10-21_24_31,home goalie GA 4 != opponent goals 5
+2022-10-21_60_63,home skater goals 2 != 3
+2022-10-27_17_9,home skater goals 4 != 5
+2022-12-29_28_51,away skater goals 2 != 3
+2023-02-03_1_28,away skater goals 2 != 3
+2023-03-03_28_49,away skater goals 2 != 3

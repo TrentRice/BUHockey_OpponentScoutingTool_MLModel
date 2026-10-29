@@ -1,0 +1,440 @@
+season,game_id,date,team,opponent,is_home,period,time,time_seconds,strength,is_pp,is_sh,is_en,is_extra_attacker,scorer,scorer_chn_id,scorer_season_goal,assist1,assist2
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,1,3:58,238,EV,False,False,False,False,Jack Murtagh,60016,1,Tynan Lawrence,
+2026-27,2026-10-02_10_4,2026-10-02,Alaska,Boston University,True,1,6:25,385,PP,True,False,False,False,Linden Burrett,125282,1,Joel Lehtinen,Misha Danylov
+2026-27,2026-10-02_10_4,2026-10-02,Boston University,Alaska,False,4,1:18,78,3x3,False,False,False,False,Tynan Lawrence,60978,1,Jack Harvey,Carter Amico
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,1,5:01,301,EV,False,False,False,False,J.P. Hurlbert,61091,1,Henry Mews,
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,1,7:24,444,PP,True,False,False,False,Jérémie Minville,61438,1,Dominik Rymon,Ty Higgins
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,2,4:30,270,EV,False,False,False,False,Cole McKinney,60066,1,Nick Moldenhauer,Landon DuPont
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,2,6:44,404,PP,True,False,False,False,Michael Hage,59709,1,Jayden Perron,Henry Mews
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,2,12:19,739,EV,False,False,False,False,Jayden Perron,57755,1,Landon DuPont,Michael Hage
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,1:31,91,4x4,False,False,False,False,Garrett Schifsky,59013,1,Cam Reid,Drew Schock
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,10:45,645,EV,False,False,False,False,Michael Hage,59709,2,Drew Schock,Jayden Perron
+2026-27,2026-10-02_11_31,2026-10-02,Bowling Green,Michigan,False,3,13:11,791,EV,False,False,False,False,Maxwell Martin,60551,1,Carson Campbell,Connor Levis
+2026-27,2026-10-02_11_31,2026-10-02,Michigan,Bowling Green,True,3,17:37,1057,EV,False,False,False,False,Malcolm Spence,61797,1,Garrett Schifsky,
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,1,8:42,522,PP,True,False,False,False,Jimmy Goffredo,60537,1,,
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,1,11:38,698,PP,True,False,False,False,Noah Quinn,58891,1,Kyan Haldenby,Rhys Chiddenton
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,2,3:55,235,EV,False,False,False,False,Ethan Wolthers,36678,1,Cole Gordon,Jimmy Goffredo
+2026-27,2026-10-02_13_21,2026-10-02,Canisius,Ferris State,True,2,5:25,325,EV,False,False,False,False,Louis-Philippe Fontaine,61652,1,Walter Zacher,FJ Buteau
+2026-27,2026-10-02_16_27,2026-10-02,Colorado College,Massachusetts,True,1,14:09,849,EV,False,False,False,False,Mats Lindgren,125632,1,Klavs Veinbergs,Wilson Bjorck
+2026-27,2026-10-02_16_27,2026-10-02,Colorado College,Massachusetts,True,3,19:47,1187,EN,False,False,True,False,Drew Montgomery,58856,1,Bret Link,
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,1,1:41,101,EV,False,False,False,False,Tye Spencer,61552,1,Oren Shtrom,JP Steele
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,1,10:35,635,EV,False,False,False,False,Daxon Rudolph,128319,1,Cale Ashcroft,Ryan Miller
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,1:15,75,SH,False,True,False,False,Kieran Cebrian,56875,1,Brendan McMorrow,
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,6:12,372,EV,False,False,False,False,Cale Ashcroft,57653,1,Clarke Caswell,Kristian Epperson
+2026-27,2026-10-02_20_3,2026-10-02,Alaska-Anchorage,Denver,True,2,9:27,567,PP,True,False,False,False,Tye Spencer,61552,2,Cooper Anderson,Oren Shtrom
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,10:58,658,EV,False,False,False,False,Sam Harris,59214,1,Clarke Caswell,Kristian Epperson
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,2,11:12,672,EV,False,False,False,False,Jake Fisher,58871,1,Kieran Cebrian,Daxon Rudolph
+2026-27,2026-10-02_20_3,2026-10-02,Denver,Alaska-Anchorage,False,3,10:39,639,4x4,False,False,False,False,Jake Fisher,58871,2,James Reeder,Daxon Rudolph
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,1,4:54,294,5x3,False,False,False,False,Tanner Klimpke,59654,1,Isa Parekh,Sully Scholle
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,1,7:33,453,PP,True,False,False,False,Tanner Klimpke,59654,2,Isa Parekh,Sully Scholle
+2026-27,2026-10-02_23_25,2026-10-02,Holy Cross,Maine,True,2,5:05,305,SH,False,True,False,False,Matthew Kursonis,57814,1,Ben Riche,
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,3,6:00,360,EV,False,False,False,False,Brock James,61241,1,Lukas Peterson,Judah Makway
+2026-27,2026-10-02_23_25,2026-10-02,Maine,Holy Cross,False,3,18:20,1100,EN,False,False,True,False,Owen Fowler,36714,1,Samuel Alfano,Lukas Peterson
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,2:29,149,SH,False,True,False,False,Coster Dunn,125773,1,Mathew Ward,Ian Engel
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,2,18:00,1080,PP,True,False,False,False,Darik Olson,128434,1,Joe Schiller,Branden Piku
+2026-27,2026-10-02_30_42,2026-10-02,Northern Michigan,Miami,True,3,18:33,1113,"PP, EN",True,False,True,False,Ian Engel,61958,1,,
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,1,8:03,483,EV,False,False,False,False,Barrett Hall,59173,1,Hunter Anderson,Jayson Shaugabay
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,1,9:04,544,EV,False,False,False,False,Adam Kleber,59221,1,Ty Hanson,Callum Arnott
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,8:08,488,EV,False,False,False,False,Luc Bydal,125605,1,Sixten Jennersjö,Dylan Kinch
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,11:45,705,EV,False,False,False,False,Luc Bydal,125605,2,Dylan Kinch,Lucas Lemieux
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,2,14:01,841,EV,False,False,False,False,Hunter Anderson,59085,1,Max Plante,Carter Murphy
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,2,16:50,1010,EV,False,False,False,False,Luca Leighton,59927,1,,
+2026-27,2026-10-02_36_62,2026-10-02,Long Island,Minnesota-Duluth,False,3,3:08,188,EV,False,False,False,False,Brennan Nelson,59980,1,Blake Matheson,Sixten Jennersjö
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,3:20,200,EV,False,False,False,False,Jayson Shaugabay,57752,1,Hunter Anderson,Adam Kleber
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,13:57,837,EV,False,False,False,False,Luke Bibby,61690,1,Ty Hanson,Blake Bechen
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,14:47,887,PP,True,False,False,False,Callum Arnott,60011,1,Max Plante,Jayson Shaugabay
+2026-27,2026-10-02_36_62,2026-10-02,Minnesota-Duluth,Long Island,True,3,19:39,1179,"SH, EN",False,True,True,False,Ty Hanson,57777,1,Carter Murphy,Callum Arnott
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,1,2:29,149,EV,False,False,False,False,Ethan Wyttenbach,60078,1,Jack Stockfish,
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,1,6:02,362,EV,False,False,False,False,Tyler Borgula,59741,1,Alex Kostov,Elliott Groenewold
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,1,10:54,654,EV,False,False,False,False,Dylan Edwards,125711,1,Parker Alcos,Antonin Verreault
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,1,13:55,835,EV,False,False,False,False,Matthew Lansing,61847,1,Braden Blace,Alex Kostov
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,0:26,26,EV,False,False,False,False,Braden Blace,59384,1,Markus Vidicek,Elliott Groenewold
+2026-27,2026-10-02_38_47,2026-10-02,New Hampshire,Quinnipiac,False,2,13:33,813,EV,False,False,False,False,Mason Zebeski,125467,1,Felix Gagnon,Jacob Newcombe
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,15:08,908,PP,True,False,False,False,Chris Pelosi,57804,1,Markus Vidicek,Ethan Wyttenbach
+2026-27,2026-10-02_38_47,2026-10-02,New Hampshire,Quinnipiac,False,2,17:01,1021,PP,True,False,False,False,Nick Ring,59513,1,Conner de Haro,
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,2,17:20,1040,4x4,False,False,False,False,Ethan Wyttenbach,60078,2,,
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,3,0:16,16,PP,True,False,False,False,Mason Marcellus,58315,1,Aaron Schwartz,Andrew Strathmann
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,3,11:05,665,EV,False,False,False,False,Parker Alcos,125752,1,Jack Stockfish,Jan Golicic
+2026-27,2026-10-02_38_47,2026-10-02,Quinnipiac,New Hampshire,True,3,11:35,695,EV,False,False,False,False,Chris Pelosi,57804,2,,
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,1,6:53,413,EV,False,False,False,False,Mitchell Young,128625,1,Alix Durocher,Jacob Maillet
+2026-27,2026-10-02_39_49,2026-10-02,RIT,Niagara,False,1,11:51,711,EV,False,False,False,False,Camden Bajzer,61708,1,Ryan Shaw,Matthew Mania
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,1:17,77,EV,False,False,False,False,Jack Richard,59127,1,Jacob Maillet,Alix Durocher
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,2,13:28,808,EV,False,False,False,False,Hunter Wallace,57830,1,Adam Gionta,Dante Josefsson-Westling
+2026-27,2026-10-02_39_49,2026-10-02,Niagara,RIT,True,3,7:29,449,PP,True,False,False,False,Jack Richard,59127,2,Alix Durocher,Spencer Young
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,1,16:47,1007,PP,True,False,False,False,Ben Muthersbaugh,60085,1,Jack Beck,Cade Littler
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,2,19:27,1167,EV,False,False,False,False,Kyle Smolen,59527,1,Logan Morrell,Landon Hafele
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,3,9:57,597,EV,False,False,False,False,Olivier Houde,61655,1,Nicholas Chin-DeGraves,
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,3,17:49,1069,EN,False,False,True,False,Nicholas Chin-DeGraves,60006,1,Sean McGurn,Filip Nordberg
+2026-27,2026-10-02_433_61,2026-10-02,Arizona State,Lindenwood,False,3,19:48,1188,PP,True,False,False,False,Daniel Shlaine,60682,1,Benjamin Kevan,Rylan Brown
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,1,17:03,1023,EV,False,False,False,False,Luke Osburn,60172,1,Vasily Zelenov,
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,2,8:48,528,EV,False,False,False,False,Bruno Idzan,61638,1,Luke Osburn,Vasily Zelenov
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,2,16:13,973,PP,True,False,False,False,Dylan Compton,61135,1,Vasily Zelenov,Oliver Tulk
+2026-27,2026-10-02_50_58,2026-10-02,Robert Morris,Wisconsin,False,3,3:14,194,PP,True,False,False,False,Dominic Elliott,57098,1,Jackson Reineke,Bruce McDonald
+2026-27,2026-10-02_50_58,2026-10-02,Wisconsin,Robert Morris,True,3,15:26,926,SH,False,True,False,False,Finn Brink,61204,1,Chase Jette,Weston Knox
+2026-27,2026-10-02_50_58,2026-10-02,Robert Morris,Wisconsin,False,3,19:58,1198,EV,False,False,False,False,George Krotiris,59077,1,,
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,1,7:09,429,PP,True,False,False,False,Cooper Pierson,61888,1,Isaac Tremblay,Jake Rozzi
+2026-27,2026-10-02_53_66,2026-10-02,St. Lawrence,Maryville,True,2,5:18,318,EV,False,False,False,False,Luke Posthumus,59157,1,Cooper Pierson,Jake Rozzi
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,2,18:10,1090,SH,False,True,False,False,Antoine Dorion,128492,1,Campbell Mclean,
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,3,10:03,603,PP,True,False,False,False,Antoine Dorion,128492,2,Anthony Hall,Tanner Bruender
+2026-27,2026-10-02_53_66,2026-10-02,Maryville,St. Lawrence,False,3,18:59,1139,EV,False,False,False,False,Gustavs Ozolins,60610,1,Adam Timm,Antoine Dorion
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,3:43,223,EV,False,False,False,False,Haoxi (Simon) Wang,60976,1,Brandon Svoboda,Aiden Celebrini
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,11:14,674,EV,False,False,False,False,Kamil Bednarik,59212,1,,
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,17:42,1062,EN,False,False,True,False,Caleb Malhotra,60977,1,Jack Harvey,Kamil Bednarik
+2026-27,2026-10-03_10_4,2026-10-03,Boston University,Alaska,False,3,18:16,1096,EN,False,False,True,False,Tynan Lawrence,60978,2,Jack Murtagh,
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,1,1:01,61,EV,False,False,False,False,Breck McKinley,60368,1,Carson Campbell,Tyler Hotson
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,1,4:02,242,EV,False,False,False,False,Jérémie Minville,61438,2,,
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,2,0:13,13,EV,False,False,False,False,Jayden Perron,57755,2,Will Horcoff,Michael Hage
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,2,7:31,451,EV,False,False,False,False,Michael Hage,59709,3,Drew Schock,Jayden Perron
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,2,10:50,650,EV,False,False,False,False,Drew Schock,60166,1,Michael Hage,Jayden Perron
+2026-27,2026-10-03_11_31,2026-10-03,Bowling Green,Michigan,True,3,11:16,676,PP,True,False,False,False,Connor Levis,61400,1,Brody Waters,Noah Morneau
+2026-27,2026-10-03_11_31,2026-10-03,Michigan,Bowling Green,False,3,12:10,730,EV,False,False,False,False,Jayden Perron,57755,3,Michael Hage,Asher Barnett
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,2,3:45,225,EV,False,False,False,False,Walter Zacher,59826,1,Ben Brunelle,Jimmy Goffredo
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,4:20,260,EV,False,False,False,False,Zach Bade,59938,1,Ryan Kusler,Colton Jamieson
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,2,5:37,337,EV,False,False,False,False,Jimmy Goffredo,60537,2,Ethan Wolthers,Jason Gallucci
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,2,9:32,572,EV,False,False,False,False,Louis-Philippe Fontaine,61652,2,Walter Zacher,FJ Buteau
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,10:23,623,EV,False,False,False,False,Owen Mehlenbacher,57598,1,Jack Mesic,Brian Morse
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,12:56,776,EV,False,False,False,False,Hudson Darby,125742,1,Reggie Newman,Christopher Lie
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,16:53,1013,EV,False,False,False,False,Brian Morse,60473,1,Nathan Leek,Justin Stupka
+2026-27,2026-10-03_13_21,2026-10-03,Ferris State,Canisius,False,2,18:33,1113,SH,False,True,False,False,Justin Stupka,61078,1,,
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,3,2:26,146,EV,False,False,False,False,Hunter Price,60669,1,Ben Brunelle,Ethan Wolthers
+2026-27,2026-10-03_13_21,2026-10-03,Canisius,Ferris State,True,3,3:19,199,EV,False,False,False,False,FJ Buteau,61905,1,Kyan Haldenby,Carter Patterson
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,1,18:17,1097,EV,False,False,False,False,Riley Stuart,56297,1,Ty Halaburda,
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,2,10:03,603,EV,False,False,False,False,Drew Montgomery,58856,2,,
+2026-27,2026-10-03_16_27,2026-10-03,Massachusetts,Colorado College,False,2,14:59,899,EV,False,False,False,False,Egor Barabanov,59753,1,Maxim Masse,Barrett Dexheimer
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,2,15:52,952,EV,False,False,False,False,Philippe Blais-Savoie,59500,1,Carmelo Crandell,Mats Lindgren
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,3,10:27,627,EV,False,False,False,False,Bret Link,57329,1,Klavs Veinbergs,Fisher Scott
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,3,11:28,688,EV,False,False,False,False,Max Burkholder,56149,1,Ryan Koering,Klavs Veinbergs
+2026-27,2026-10-03_16_27,2026-10-03,Colorado College,Massachusetts,True,3,16:54,1014,5x3,False,False,False,False,Connor Hvidston,61770,1,Owen Beckner,Philippe Blais-Savoie
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,1,19:14,1154,PP,True,False,False,False,Ryan Lin,125815,1,Jack Pridham,Ben MacBeath
+2026-27,2026-10-03_20_3,2026-10-03,Alaska-Anchorage,Denver,True,2,5:40,340,EV,False,False,False,False,Cooper Anderson,61161,1,Matthew Martin-Gaudreault,Ethan Neutens
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,3,4:02,242,PP,True,False,False,False,Sam Harris,59214,2,Daxon Rudolph,Kristian Epperson
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,3,15:50,950,EV,False,False,False,False,Michael Berchild,61331,1,Kyle Chyzowski,Daxon Rudolph
+2026-27,2026-10-03_20_3,2026-10-03,Denver,Alaska-Anchorage,False,3,19:46,1186,EN,False,False,True,False,Ryan Miller,61576,1,Reid Varkonyi,
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,1,8:57,537,EV,False,False,False,False,Matthew Kursonis,57814,2,Anthony Biakabutuka,Preston Lounsbury
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,3,13:05,785,PP,True,False,False,False,Noah Eyre,60476,1,Owen Kim,William Elias
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,16:33,993,4x4,False,False,False,False,Isa Parekh,59816,1,Tanner Klimpke,William Gerrior
+2026-27,2026-10-03_23_25,2026-10-03,Maine,Holy Cross,False,3,17:22,1042,4x4,False,False,False,False,Lee Parks,59679,1,Lukas Peterson,
+2026-27,2026-10-03_23_25,2026-10-03,Holy Cross,Maine,True,4,1:33,93,"3x3, EA",False,False,False,True,Connor Welsh,59673,1,William Elias,Owen Kim
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,1,3:20,200,EV,False,False,False,False,Jack Stockfish,59062,1,Dylan Edwards,Antonin Verreault
+2026-27,2026-10-03_29_47,2026-10-03,Merrimack,Quinnipiac,False,1,13:07,787,PP,True,False,False,False,Parker Lalonde,61953,1,Nathan King,Seamus Powell
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,1,14:31,871,EV,False,False,False,False,Tyler Borgula,59741,2,Alex Kostov,Elliott Groenewold
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,2,4:09,249,EV,False,False,False,False,Braden Blace,59384,2,Elliott Groenewold,Antonin Verreault
+2026-27,2026-10-03_29_47,2026-10-03,Merrimack,Quinnipiac,False,2,16:05,965,EV,False,False,False,False,Ty Daneault,57816,1,Nathan King,Ethan Beyer
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,2,19:17,1157,EV,False,False,False,False,Gabriel Frasca,125521,1,Tyler Borgula,Matthew Lansing
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,3,4:24,264,EV,False,False,False,False,Mason Marcellus,58315,2,Chris Pelosi,Ethan Wyttenbach
+2026-27,2026-10-03_29_47,2026-10-03,Merrimack,Quinnipiac,False,3,9:15,555,EV,False,False,False,False,Caelan Fitzpatrick,60817,1,Parker Lalonde,Ty Daneault
+2026-27,2026-10-03_29_47,2026-10-03,Quinnipiac,Merrimack,True,3,18:05,1085,EN,False,False,True,False,Aaron Schwartz,58320,1,,
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,1,15:09,909,PP,True,False,False,False,Matous Kucharcik,125769,1,Ryder Thompson,Austin Baker
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,3,8:46,526,PP,True,False,False,False,Austin Baker,61094,1,Ryan Smith,Matous Kucharcik
+2026-27,2026-10-03_30_42,2026-10-03,Northern Michigan,Miami,True,3,17:51,1071,"PP, EA",True,False,False,True,Merril Steenari,61773,1,Evan Depatie,Grayden Slipec
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,3,18:22,1102,EN,False,False,True,False,Matteo Giampa,59061,1,,
+2026-27,2026-10-03_30_42,2026-10-03,Miami,Northern Michigan,False,3,19:22,1162,EN,False,False,True,False,Bradley Walker,61377,1,Doug Grimes,
+2026-27,2026-10-03_33_34,2026-10-03,Michigan Tech,Minnesota,True,1,16:19,979,EV,False,False,False,False,Matthew Van Blaricom,59844,1,Carson Birnie,Tom Leppa
+2026-27,2026-10-03_33_34,2026-10-03,Minnesota,Michigan Tech,False,2,1:25,85,EV,False,False,False,False,Tate Pritchard,60681,1,Finn Loftus,
+2026-27,2026-10-03_33_34,2026-10-03,Michigan Tech,Minnesota,True,2,6:29,389,EV,False,False,False,False,Elias Jansson,60775,1,Matthew Van Blaricom,Luke Shipley
+2026-27,2026-10-03_33_34,2026-10-03,Minnesota,Michigan Tech,False,2,8:46,526,EV,False,False,False,False,Beckett Hendrickson,59220,1,Axel Löfgren,Brooks Cullen
+2026-27,2026-10-03_33_34,2026-10-03,Michigan Tech,Minnesota,True,3,11:41,701,EV,False,False,False,False,Matthew Van Blaricom,59844,2,Kalem Parker,
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,1,0:09,9,EV,False,False,False,False,Barrett Hall,59173,2,Hunter Anderson,Jayson Shaugabay
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,1,13:18,798,EV,False,False,False,False,Ryan Zaremba,61119,1,Grayden Siepmann,Callum Arnott
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,4:59,299,PS,False,False,False,False,Grayden Siepmann,61446,1,,
+2026-27,2026-10-03_36_62,2026-10-03,Minnesota-Duluth,Long Island,True,3,17:32,1052,EV,False,False,False,False,Zam Plante,57751,1,Ty Hanson,Jayson Shaugabay
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,1,0:41,41,EV,False,False,False,False,Matthew Mania,61858,1,Tristan Allen,Caleb Elfering
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,1,2:52,172,SH,False,True,False,False,Theo Lemieux,128426,1,Brayden Boehm,
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,2:55,175,EV,False,False,False,False,Julian Demiglio,60690,1,Matthew Wang,Camden Bajzer
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,2,6:49,409,SH,False,True,False,False,William Moore,60012,1,Caleb Elfering,Kevin Scott
+2026-27,2026-10-03_39_49,2026-10-03,Niagara,RIT,False,3,1:20,80,EV,False,False,False,False,Adam Gionta,125474,1,Hunter Wallace,Josh Van Mulligen
+2026-27,2026-10-03_39_49,2026-10-03,RIT,Niagara,True,3,19:29,1169,EN,False,False,True,False,William Moore,60012,2,Zach Wigle,Kevin Scott
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,1,2:11,131,EV,False,False,False,False,Brady McIsaac,61662,1,Brody Mortensen,
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,1,3:25,205,EV,False,False,False,False,Chase LaPinta,60407,1,Ryan Abraham,
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,1,4:49,289,EV,False,False,False,False,Brady McIsaac,61662,2,Connor Gengle,Jake Delaney
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,1,7:37,457,4x4,False,False,False,False,Benjamin Kevan,60183,1,Lincoln Kuehne,
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,1,10:33,633,EV,False,False,False,False,Daniel Shlaine,60682,2,,
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,1,15:41,941,EV,False,False,False,False,Nathan Behm,125600,1,Jack Beck,Jonas Woo
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,2,6:18,378,EV,False,False,False,False,Kyle Smolen,59527,2,Landon Hafele,Logan Morrell
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,2,14:12,852,EV,False,False,False,False,Jake Leblanc,61788,1,Kian Bell,Brody Mortensen
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,2,17:20,1040,EV,False,False,False,False,Adam Raesler,60853,1,Jake Delaney,Chris Thibodeau
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,2,19:25,1165,EV,False,False,False,False,Anselmo Rego,61663,1,Jake Leblanc,
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,2,19:51,1191,EV,False,False,False,False,Anselmo Rego,61663,2,Ethan Zielke,
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,3,1:10,70,EV,False,False,False,False,Nathan Behm,125600,2,Jack O'Brien,Jack Beck
+2026-27,2026-10-03_433_61,2026-10-03,Arizona State,Lindenwood,False,3,4:57,297,EV,False,False,False,False,Jonas Woo,125698,1,Landon Hafele,Logan Morrell
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,3,19:28,1168,EN,False,False,True,False,Caden Brown,125647,1,Jake Delaney,
+2026-27,2026-10-03_433_61,2026-10-03,Lindenwood,Arizona State,True,3,19:43,1183,EN,False,False,True,False,Ty Nash,61696,1,Michael Bevilacqua,Ethan Elias
+2026-27,2026-10-03_50_58,2026-10-03,Wisconsin,Robert Morris,True,2,6:39,399,PP,True,False,False,False,Grady Deering,60645,1,Logan Hensler,Oliver Tulk
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,1,4:12,252,EV,False,False,False,False,Max Namestnikov,61525,1,Maxon Vig,Jake McLean
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,2,4:04,244,EV,False,False,False,False,Jake McLean,59047,1,Vann Yuhas,Hudson Thornton
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,2,13:47,827,PP,True,False,False,False,Nolan Roed,61183,1,Finn McLaughlin,Gavyn Thoreson
+2026-27,2026-10-03_52_7,2026-10-03,St. Cloud State,Bemidji State,False,3,7:11,431,EV,False,False,False,False,Charlie Lurie,59845,1,Thor Byfuglien,Nolan Stevenson
+2026-27,2026-10-03_52_7,2026-10-03,Bemidji State,St. Cloud State,True,4,3:14,194,PP,True,False,False,False,Hudson Thornton,61933,1,Max Namestnikov,Carter Rapalje
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,1,5:19,319,EV,False,False,False,False,Brent Keefer,60200,1,,
+2026-27,2026-10-03_54_6,2026-10-03,Army,Union,True,1,16:21,981,EV,False,False,False,False,Rhys Wallin,60747,1,Brent Keefer,Lukas McCloskey
+2026-27,2026-10-03_54_6,2026-10-03,Union,Army,False,1,17:21,1041,EV,False,False,False,False,Tyler Dunbar,57175,1,Tommy Cronin,
+2026-27,2026-10-03_54_6,2026-10-03,Union,Army,False,2,7:58,478,PP,True,False,False,False,Connor Smith,58888,1,Tommy Cronin,Riley Brueck
+2026-27,2026-10-03_54_6,2026-10-03,Union,Army,False,3,18:09,1089,EV,False,False,False,False,Will Felicio,59994,1,Lucas Buzziol,Riley Brueck
+2026-27,2026-10-03_54_6,2026-10-03,Union,Army,False,3,18:33,1113,EN,False,False,True,False,Connor Smith,58888,2,August Falloon,
+2026-27,2026-10-04_33_34,2026-10-04,Michigan Tech,Minnesota,True,2,6:12,372,EV,False,False,False,False,Conner Roulette,125843,1,Tyler Miller,Michael Cicek
+2026-27,2026-10-04_33_34,2026-10-04,Minnesota,Michigan Tech,False,3,8:12,492,PP,True,False,False,False,Mason Moe,61342,1,Axel Löfgren,Evan Murr
+2026-27,2026-10-04_33_34,2026-10-04,Michigan Tech,Minnesota,True,3,17:14,1034,PP,True,False,False,False,Teydon Trembecky,61868,1,Noah Reinhart,Conner Roulette
+2026-27,2026-10-04_33_34,2026-10-04,Michigan Tech,Minnesota,True,3,18:51,1131,EN,False,False,True,False,Matthew Van Blaricom,59844,3,Elias Jansson,
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,1,12:05,725,EV,False,False,False,False,Garrett Szydlowski,60253,1,Tyler MacKenzie,
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,7:18,438,EV,False,False,False,False,Garrett Szydlowski,60253,2,Cole Crusberg-Roseen,Zack Sharp
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,7:49,469,EV,False,False,False,False,William Whitelaw,57790,1,Bobby Cowan,Cole Crusberg-Roseen
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,2,18:40,1120,PP,True,False,False,False,Joona Väisänen,60803,1,Tommy Lafrenière,Ty Henricks
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,3,3:04,184,EV,False,False,False,False,Nicholas Sykora,60317,1,Michael Neumeier,Joona Väisänen
+2026-27,2026-10-08_21_57,2026-10-08,Western Michigan,Ferris State,True,3,18:16,1096,PP,True,False,False,False,Tommy Lafrenière,125568,1,Joona Väisänen,William Whitelaw
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,1,3:52,232,EV,False,False,False,False,Charles Savoie,61944,1,Casper Nassen,Nolan Seed
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,1,6:27,387,EV,False,False,False,False,Carter Batchelder,59098,1,Ethan Moore,John Herrington
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,1,10:12,612,EV,False,False,False,False,Jacob Leblanc,61788,2,Caden Brown,
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,2,11:08,668,PP,True,False,False,False,Nolan Seed,61943,1,Cooper Foster,Calem Mangone
+2026-27,2026-10-08_24_433,2026-10-08,Lake Superior,Lindenwood,False,2,13:00,780,EV,False,False,False,False,Charles Savoie,61944,2,Raoul Boilard,Casper Nassen
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,17:22,1042,EV,False,False,False,False,Chase LaPinta,60407,2,Michael Bevilacqua,Ryan Abraham
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,2,18:20,1100,EV,False,False,False,False,Ethan Zielke,60235,1,Christopher Thibodeau,Ethan Elias
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,3,1:38,98,EV,False,False,False,False,Ty Nash,61696,2,Ethan Zielke,Caden Brown
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,3,11:58,718,EV,False,False,False,False,Brady McIsaac,61662,3,Adam Raesler,Connor Gengle
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,3,17:58,1078,EN,False,False,True,False,Caden Brown,125647,2,Michael Bevilacqua,Ethan Zielke
+2026-27,2026-10-08_24_433,2026-10-08,Lindenwood,Lake Superior,True,3,19:47,1187,EN,False,False,True,False,Adam Raesler,60853,2,Christopher Thibodeau,
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,1,1:15,75,EV,False,False,False,False,Brendan Fitzgerald,59315,1,Ryan Johnson,Nick Ring
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,1,5:40,340,EV,False,False,False,False,Caelan Fitzpatrick,60817,2,Caden Cranston,Ethan Beyer
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,1,13:50,830,EV,False,False,False,False,Nick Ring,59513,2,Emile Guite,
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,1,19:07,1147,EV,False,False,False,False,Trevor Hoskin,60417,1,David Green,Austin Oravetz
+2026-27,2026-10-08_29_38,2026-10-08,New Hampshire,Merrimack,False,3,9:19,559,EV,False,False,False,False,Felix Gagnon,61809,1,Nick VanTassell,Alex Carr
+2026-27,2026-10-08_29_38,2026-10-08,Merrimack,New Hampshire,True,3,13:11,791,EV,False,False,False,False,Simon-Pier Brunet,61730,1,Parker Lalonde,
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,1,6:02,362,EV,False,False,False,False,Henry Nelson,36689,1,Beckham Edwards,William Belle
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,2,12:52,772,PP,True,False,False,False,Sammy Nelson,61821,1,Evan Werner,Danny Nelson
+2026-27,2026-10-08_39_43,2026-10-08,Niagara,Notre Dame,False,2,18:52,1132,PP,True,False,False,False,Noah Hackett,58867,1,Davis Codd,Theo Lemieux
+2026-27,2026-10-08_39_43,2026-10-08,Notre Dame,Niagara,True,3,19:19,1159,EN,False,False,True,False,Paul Fischer,57770,1,Jayden Davis,Carter Slaggert
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,9:06,546,EV,False,False,False,False,Dominik Rymon,61883,1,Noah Morneau,
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,1,14:58,898,5x3,False,False,False,False,Tyler Hotson,57462,1,Breck McKinley,Connor Levis
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,1,17:09,1029,EV,False,False,False,False,Diego Buttazzoni,61534,1,Gavin Bryant,Mirko Buttazzoni
+2026-27,2026-10-09_11_51,2026-10-09,Sacred Heart,Bowling Green,True,3,10:54,654,EV,False,False,False,False,Diego Buttazzoni,61534,2,Devin Phillips,Vitaly Levyy
+2026-27,2026-10-09_11_51,2026-10-09,Bowling Green,Sacred Heart,False,3,18:15,1095,PP,True,False,False,False,Brody Waters,59639,1,Connor Levis,Noah Morneau
+2026-27,2026-10-09_13_62,2026-10-09,Canisius,Long Island,False,1,7:05,425,EV,False,False,False,False,Carter Anderson,61461,1,Louis-Philippe Fontaine,FJ Buteau
+2026-27,2026-10-09_13_62,2026-10-09,Long Island,Canisius,True,1,10:24,624,EV,False,False,False,False,Sixten Jennersjö,57599,1,Alexis Bourque,Jaden Dyke
+2026-27,2026-10-09_13_62,2026-10-09,Canisius,Long Island,False,1,14:24,864,EV,False,False,False,False,Carter Patterson,60563,1,Ryan Franks,Matt Campbell
+2026-27,2026-10-09_13_62,2026-10-09,Long Island,Canisius,True,1,17:01,1021,EV,False,False,False,False,Brennan Nelson,59980,2,Luca Leighton,Isaac Lambert
+2026-27,2026-10-09_13_62,2026-10-09,Canisius,Long Island,False,3,4:57,297,PP,True,False,False,False,Jason Gallucci,57146,1,Noah Quinn,Ethan Wolthers
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,1,8:27,507,EV,False,False,False,False,Libor Nemec,59677,1,Jak Vaarwerk,Nicholas Wellenreiter
+2026-27,2026-10-09_14_26,2026-10-09,Mass.-Lowell,Clarkson,True,1,17:10,1030,EV,False,False,False,False,Jacob MacDonald,60746,1,Dalyn Wakely,
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,1,19:24,1164,EV,False,False,False,False,Adrian Misaljevic,61462,1,Talon Sigurdson,Zack Sandhu
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,2,17:45,1065,EV,False,False,False,False,Adrian Misaljevic,61462,2,Talon Sigurdson,Bryce Sookro
+2026-27,2026-10-09_14_26,2026-10-09,Clarkson,Mass.-Lowell,False,3,9:48,588,PP,True,False,False,False,Remi Gelinas,61499,1,Owen Van Steensel,Ty Brassington
+2026-27,2026-10-09_15_422,2026-10-09,Colgate,Stonehill,False,1,12:53,773,SH,False,True,False,False,Jake Schneider,57679,1,Luke Pakulak,
+2026-27,2026-10-09_15_422,2026-10-09,Stonehill,Colgate,True,2,0:51,51,EV,False,False,False,False,Matthew Romer,36398,1,Billy Renfrew,Justin Gibson
+2026-27,2026-10-09_15_422,2026-10-09,Stonehill,Colgate,True,4,3:06,186,3x3,False,False,False,False,JJ Grainda,60269,1,Luke Lepper,Cole Melady
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,1,9:11,551,EV,False,False,False,False,William McIsaac,125794,1,Mike Murtagh,Ethan Gardula
+2026-27,2026-10-09_17_60,2026-10-09,Penn State,Connecticut,False,2,6:39,399,EV,False,False,False,False,Kale Dach,60461,1,Justin Poirier,Shea Van Olm
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,2,15:35,935,EV,False,False,False,False,Joey Muldowney,58858,1,Alexandre Blais,Charlie Morrison
+2026-27,2026-10-09_17_60,2026-10-09,Connecticut,Penn State,True,3,18:26,1106,EN,False,False,True,False,Kaden Shahan,59738,1,Carlin Dezainde,
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,1,13:18,798,EV,False,False,False,False,Nick Sajevic,60620,1,Simon Houge,Brendan Gibbons
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,1,17:36,1056,PP,True,False,False,False,Aidan Willis,60161,1,Ren Morque,Oliver Genest
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,2,2:46,166,4x4,False,False,False,False,Christian Kim,125278,1,,
+2026-27,2026-10-09_1_63,2026-10-09,St. Thomas,Air Force,True,3,3:33,213,SH,False,True,False,False,Jakub Altrichter,59288,1,Cole Miller,
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,3,16:57,1017,EN,False,False,True,False,Sam Stitz,59606,1,Will Staring,Hayden Nichol
+2026-27,2026-10-09_1_63,2026-10-09,Air Force,St. Thomas,False,3,18:03,1083,EN,False,False,True,False,Nick Sajevic,60620,2,Hayden Nichol,Sam Stitz
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,1,4:19,259,PP,True,False,False,False,Zaccharya Wisdom,60360,1,Michael Neumeier,Adam Benák
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,1,10:59,659,EV,False,False,False,False,Bobby Cowan,59893,1,Adam Benák,Zaccharya Wisdom
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,2,6:49,409,EV,False,False,False,False,Joona Väisänen,60803,2,Alex Calbeck,Adam Benák
+2026-27,2026-10-09_21_57,2026-10-09,Ferris State,Western Michigan,True,2,11:11,671,PP,True,False,False,False,Adyn Merrick,59329,1,Nicholas Johnson,Nathan Mackie
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,3,9:56,596,EV,False,False,False,False,Zach Nehring,58936,1,Theo Wallberg,Colby Woogk
+2026-27,2026-10-09_21_57,2026-10-09,Western Michigan,Ferris State,False,3,18:15,1095,EV,False,False,False,False,William Whitelaw,57790,2,Bobby Cowan,Adam Benák
+2026-27,2026-10-09_23_61,2026-10-09,Arizona State,Holy Cross,True,3,14:58,898,EV,False,False,False,False,Daniel Shlaine,60682,3,Sean McGurn,
+2026-27,2026-10-09_23_61,2026-10-09,Holy Cross,Arizona State,False,3,18:34,1114,EV,False,False,False,False,Quinn McCall,61031,1,Ben Riche,Andrew Lacroix
+2026-27,2026-10-09_23_61,2026-10-09,Holy Cross,Arizona State,False,3,18:45,1125,EV,False,False,False,False,Ben Riche,61433,1,Owen Kim,Matthew Kursonis
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,1,13:54,834,EV,False,False,False,False,Calem Mangone,61363,1,Charles Savoie,Cooper Foster
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,1,17:27,1047,EV,False,False,False,False,Charles Savoie,61944,3,Raoul Boilard,Casper Nassen
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,2,3:54,234,EV,False,False,False,False,Tyler Loughman,60850,1,Ethan Zielke,Michael Bevilacqua
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,2,11:28,688,PP,True,False,False,False,Casper Nassen,59969,1,Cooper Foster,Hunter Ramos
+2026-27,2026-10-09_24_433,2026-10-09,Lake Superior,Lindenwood,False,2,17:41,1061,EV,False,False,False,False,Calem Mangone,61363,2,Charles Savoie,Cooper Foster
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,2,19:56,1196,EV,False,False,False,False,Chase LaPinta,60407,3,Brody Mortensen,
+2026-27,2026-10-09_24_433,2026-10-09,Lindenwood,Lake Superior,True,3,8:14,494,EV,False,False,False,False,Adam Raesler,60853,3,Brody Mortensen,Brady McIsaac
+2026-27,2026-10-09_25_47,2026-10-09,Maine,Quinnipiac,True,1,2:39,159,PP,True,False,False,False,Lee Parks,59679,2,William Gerrior,Max Scott
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,1,4:49,289,EV,False,False,False,False,Mason Marcellus,58315,3,Ethan Wyttenbach,Elliott Groenewold
+2026-27,2026-10-09_25_47,2026-10-09,Quinnipiac,Maine,False,1,10:22,622,EV,False,False,False,False,Ethan Wyttenbach,60078,3,Jan Golicic,Matthew Lansing
+2026-27,2026-10-09_27_49,2026-10-09,Massachusetts,RIT,True,1,6:30,390,EV,False,False,False,False,Jack Galanek,60117,1,Francesco Dell'Elce,Samu Alalauri
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,1,17:07,1027,EV,False,False,False,False,Camden Bajzer,61708,2,,
+2026-27,2026-10-09_27_49,2026-10-09,RIT,Massachusetts,False,2,9:31,571,EV,False,False,False,False,Lucas Romeo,125831,1,Kevin Scott,
+2026-27,2026-10-09_27_49,2026-10-09,Massachusetts,RIT,True,3,20:00,1200,EA,False,False,False,True,Francesco Dell'Elce,59094,1,Jack Musa,Justin Kerr
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,1,1:48,108,EV,False,False,False,False,Anthony Romani,61800,1,Ethan Belchetz,Brady Peddle
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,1,9:33,573,5x3,False,False,False,False,Cullen Potter,60311,1,Anthony Romani,Ryker Lee
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,1,10:24,624,PP,True,False,False,False,Cayden Lindstrom,61798,1,Eric Nilson,
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,1,13:11,791,EV,False,False,False,False,Branden Piku,60227,1,,
+2026-27,2026-10-09_32_42,2026-10-09,Northern Michigan,Michigan State,False,3,0:40,40,EV,False,False,False,False,Grayden Slipec,60923,1,Coster Dunn,Oliver Auyeung-Ashton
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,1:34,94,PP,True,False,False,False,Gavin O'Connell,58866,1,Chase Reid,Ryker Lee
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,12:13,733,PP,True,False,False,False,Anthony Romani,61800,2,Chase Reid,Ryker Lee
+2026-27,2026-10-09_32_42,2026-10-09,Michigan State,Northern Michigan,True,3,15:28,928,PP,True,False,False,False,Jack Hextall,61103,1,Eric Nilson,Thomas Bleyl
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,1,15:51,951,EV,False,False,False,False,Gavyn Thoreson,59257,1,Nolan Roed,
+2026-27,2026-10-09_33_52,2026-10-09,St. Cloud State,Michigan Tech,True,2,4:25,265,PP,True,False,False,False,Hayden Paupanekis,128459,1,Noah Urness,Finn McLaughlin
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,2,10:48,648,EV,False,False,False,False,Teydon Trembecky,61868,2,Max Koskipirtti,Noah Reinhart
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,3,12:29,749,EV,False,False,False,False,Reid Andresen,61599,1,Giovanni Morneau,Michael Cicek
+2026-27,2026-10-09_33_52,2026-10-09,Michigan Tech,St. Cloud State,False,4,2:09,129,3x3,False,False,False,False,Teydon Trembecky,61868,3,Kalem Parker,Conner Roulette
+2026-27,2026-10-09_35_58,2026-10-09,Wisconsin,Minnesota State,False,1,11:51,711,EV,False,False,False,False,Brent Solomon,61326,1,Ryan Botterill,Joe Palodichuk
+2026-27,2026-10-09_35_58,2026-10-09,Wisconsin,Minnesota State,False,1,12:30,750,EV,False,False,False,False,Oliver Tulk,61457,1,Vasily Zelenov,Bruno Idzan
+2026-27,2026-10-09_35_58,2026-10-09,Wisconsin,Minnesota State,False,2,17:58,1078,PP,True,False,False,False,Logan Hensler,60142,1,Zach Wooten,Vasily Zelenov
+2026-27,2026-10-09_35_58,2026-10-09,Wisconsin,Minnesota State,False,3,5:12,312,EV,False,False,False,False,Grady Deering,60645,2,Ryan Botterill,Oliver Tulk
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,1,17:41,1061,PP,True,False,False,False,Callum Arnott,60011,2,Jayson Shaugabay,Victor Plante
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,1,18:29,1109,EV,False,False,False,False,Leonid Bulgakov,60517,1,,
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,2,19:04,1144,EV,False,False,False,False,Barrett Hall,59173,3,Adam Kleber,Hunter Anderson
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,3,16:49,1009,EV,False,False,False,False,Landon Fandel,61928,1,Joey DelGreco,
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,3,17:06,1026,EV,False,False,False,False,Jacob Fletcher,61633,1,Samo Meritähti,
+2026-27,2026-10-09_36_64,2026-10-09,Minnesota-Duluth,Augustana,False,3,18:39,1119,EA,False,False,False,True,Zam Plante,57751,2,Jayson Shaugabay,Ty Hanson
+2026-27,2026-10-09_36_64,2026-10-09,Augustana,Minnesota-Duluth,True,4,0:20,20,3x3,False,False,False,False,Brett Meerman,60211,1,Hayden Hennen,Jacob Jastrzebski
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,2,13:25,805,EV,False,False,False,False,Evan Werner,57789,1,Danny Nelson,
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,2,15:46,946,EV,False,False,False,False,Panayioti Fimis,61452,1,Jimmy Jurcev,
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,3,17:07,1027,EN,False,False,True,False,William Belle,59766,1,Carter Slaggert,Danny Klaers
+2026-27,2026-10-09_39_43,2026-10-09,Notre Dame,Niagara,True,3,17:40,1060,EN,False,False,True,False,Evan Werner,57789,2,Sammy Nelson,Jayden Davis
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,1,0:23,23,EV,False,False,False,False,Cole McKinney,60066,2,Malcolm Spence,Nick Moldenhauer
+2026-27,2026-10-09_3_31,2026-10-09,Alaska-Anchorage,Michigan,False,1,4:11,251,EV,False,False,False,False,Ethan Warrener,60665,1,Karter McNarland,
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,1,7:50,470,EV,False,False,False,False,Jack Nesbitt,128411,1,Nick Moldenhauer,
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,1,10:45,645,SH,False,True,False,False,Garrett Schifsky,59013,2,,
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,2,5:34,334,EV,False,False,False,False,Will Horcoff,60749,1,Michael Hage,Jayden Perron
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,2,8:42,522,EV,False,False,False,False,Nick Moldenhauer,59629,1,Cole McKinney,Landon DuPont
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,8:03,483,EV,False,False,False,False,Jayden Perron,57755,4,Landon DuPont,Cam Reid
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,8:36,516,EV,False,False,False,False,Cole McKinney,60066,3,Ben Robertson,Nick Moldenhauer
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,11:02,662,PP,True,False,False,False,Drew Schock,60166,2,Dakoda Rheaume-Mullen,Cole McKinney
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,12:25,745,EV,False,False,False,False,Jack Nesbitt,128411,2,Adam Valentini,
+2026-27,2026-10-09_3_31,2026-10-09,Michigan,Alaska-Anchorage,True,3,19:29,1169,EV,False,False,False,False,Dakoda Rheaume-Mullen,61278,1,J.P. Hurlbert,Malcolm Spence
+2026-27,2026-10-09_40_7,2026-10-09,Bemidji State,North Dakota,True,1,11:05,665,EV,False,False,False,False,Will Dawson,59607,1,Jaksen Panzer,Jiri Klima
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,1,11:35,695,EV,False,False,False,False,Cole Reschny,61815,1,Will Zellers,
+2026-27,2026-10-09_40_7,2026-10-09,Bemidji State,North Dakota,True,2,9:10,550,EV,False,False,False,False,Ethan Miedema,125811,1,,
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,2,13:24,804,PP,True,False,False,False,Mac Swanson,59684,1,Cooper Simpson,Will Zellers
+2026-27,2026-10-09_40_7,2026-10-09,North Dakota,Bemidji State,False,3,15:21,921,EV,False,False,False,False,Cole Reschny,61815,2,Will Zellers,Sam Laurila
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,1,15:03,903,EV,False,False,False,False,Filip Sitar,61235,1,Luke Goukler,
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,2,17:50,1070,EV,False,False,False,False,Rainers Rullers,60893,1,Thomas Klassek,James Guo
+2026-27,2026-10-09_44_48,2026-10-09,RPI,Ohio State,True,3,19:46,1186,EN,False,False,True,False,Rainers Rullers,60893,2,,
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,1,8:56,536,EV,False,False,False,False,Blake Zielinski,61155,1,Julius Sumpf,
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,1,12:00,720,PP,True,False,False,False,Jonathan Fauchon,61454,1,Tanner Adams,Quinn Mantei
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,2,1:28,88,4x4,False,False,False,False,Andrew Centrella,57757,1,Logan Sawyer,Julius Sumpf
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,2,6:05,365,EV,False,False,False,False,Jonathan Fauchon,61454,2,Blake Zielinski,
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,2,11:29,689,PP,True,False,False,False,Ryder Cali,125841,1,Julius Sumpf,Logan Sawyer
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,2,17:34,1054,EV,False,False,False,False,James Fisher,59199,1,Gunnar Thoreson,Luke Santilli
+2026-27,2026-10-09_46_53,2026-10-09,Providence,St. Lawrence,True,3,13:42,822,PP,True,False,False,False,John Mustard,60475,1,Logan Sawyer,Julius Sumpf
+2026-27,2026-10-09_46_53,2026-10-09,St. Lawrence,Providence,False,3,17:37,1057,EV,False,False,False,False,Gunnar Thoreson,59121,1,,
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,1,1:59,119,PP,True,False,False,False,Teddy Stiga,59234,1,Will Vote,Carson Woodall
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,1,17:56,1076,EV,False,False,False,False,Sam Elliott,128651,1,Jack Rogers,William Fleet
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,3,3:10,190,PP,True,False,False,False,Davis Borozinskis,61923,1,Nathan Rickey,Rylen Roersma
+2026-27,2026-10-09_4_9,2026-10-09,Alaska,Boston College,False,3,9:00,540,EV,False,False,False,False,Davis Borozinskis,61923,2,,
+2026-27,2026-10-09_4_9,2026-10-09,Boston College,Alaska,True,3,13:58,838,PP,True,False,False,False,Dean Letourneau,60126,1,Luka Radivojevic,Matias Vanhanen
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,1,7:04,424,EV,False,False,False,False,James Duerr,59179,1,Jimmy Doyle,Garrett Horsager
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,1,14:03,843,EV,False,False,False,False,Jimmy Doyle,56772,1,Marton Nemes,
+2026-27,2026-10-09_55_8,2026-10-09,Bentley,Vermont,True,3,18:52,1132,EN,False,False,True,False,Owen Goodbrand,125242,1,Ryan Mansfield,
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,2,0:17,17,EV,False,False,False,False,Mike Murtagh,57088,1,Alexandre Blais,Joey Muldowney
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,2,5:43,343,PP,True,False,False,False,Ty Higgins,61528,1,Brayden Crampton,Dominik Rymon
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,3,2:00,120,EV,False,False,False,False,Tyler Hotson,57462,2,Connor Levis,Brody Waters
+2026-27,2026-10-10_11_17,2026-10-10,Connecticut,Bowling Green,True,3,6:14,374,SH,False,True,False,False,Carter Sproule,125633,1,,
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,3,7:39,459,PP,True,False,False,False,Noah Morneau,61387,1,Connor Levis,Brody Waters
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,3,18:07,1087,EN,False,False,True,False,Dominik Rymon,61883,2,Brandon Whynott,Noah Morneau
+2026-27,2026-10-10_11_17,2026-10-10,Bowling Green,Connecticut,False,3,19:36,1176,EN,False,False,True,False,Noah Morneau,61387,2,Brody Waters,Brandon Whynott
+2026-27,2026-10-10_13_62,2026-10-10,Long Island,Canisius,True,1,1:39,99,EV,False,False,False,False,Trent Powell,58240,1,Luca Leighton,Brennan Nelson
+2026-27,2026-10-10_13_62,2026-10-10,Long Island,Canisius,True,1,2:28,148,EV,False,False,False,False,Garrett Valk,59657,1,Isaac Lambert,Samuel Rousseau
+2026-27,2026-10-10_13_62,2026-10-10,Canisius,Long Island,False,2,9:16,556,EV,False,False,False,False,Rhys Chiddenton,59817,1,Noah Quinn,Brice Cooke
+2026-27,2026-10-10_13_62,2026-10-10,Long Island,Canisius,True,2,12:15,735,EV,False,False,False,False,Jaden Dyke,61912,1,Sixten Jennersjö,Trent Powell
+2026-27,2026-10-10_13_62,2026-10-10,Canisius,Long Island,False,2,13:37,817,EV,False,False,False,False,Walter Zacher,59826,2,Louis-Philippe Fontaine,Matt Campbell
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,2,4:17,257,EV,False,False,False,False,Blake Zielinski,61155,2,Jonathan Fauchon,Julius Sumpf
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,2,9:29,569,PP,True,False,False,False,Ryder Cali,125841,2,Julius Sumpf,John Mustard
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,2,10:22,622,EV,False,False,False,False,Cade Christenson,60884,1,Beau Jelsma,Aleksi Kivioja
+2026-27,2026-10-10_14_46,2026-10-10,Providence,Clarkson,True,2,11:04,664,EV,False,False,False,False,Will Elger,57780,1,Tanner Adams,Quinn Mantei
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,1,3:20,200,PP,True,False,False,False,Matthew Rafalski,61683,1,Anthony Galante,JJ Grainda
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,1,14:37,877,SH,False,True,False,False,Jake Schneider,57679,2,,
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,2,9:33,573,EV,False,False,False,False,Billy Renfrew,59831,1,Matthew Romer,Cole Melady
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,2,15:46,946,EV,False,False,False,False,JJ Grainda,60269,2,Luke Lepper,Mason Vaccari
+2026-27,2026-10-10_15_422,2026-10-10,Colgate,Stonehill,False,3,2:22,142,EV,False,False,False,False,Tobias Ohman,61569,1,Luke Malboeuf,
+2026-27,2026-10-10_15_422,2026-10-10,Stonehill,Colgate,True,3,18:14,1094,PP,True,False,False,False,Pat Murphy,61913,1,Billy Renfrew,Charles Banquier
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,2,0:46,46,EV,False,False,False,False,David Rozsival,128475,1,Dylan Godbout,Mason Poolman
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,2,7:37,457,EV,False,False,False,False,Oliver Genest,60988,1,Ren Morque,Jake Peterson
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,2,19:38,1178,4x4,False,False,False,False,Chase Cheslock,59605,1,Kevin Anderson,David Rozsival
+2026-27,2026-10-10_1_63,2026-10-10,Air Force,St. Thomas,False,3,2:47,167,PP,True,False,False,False,Cole Christian,61494,1,Sam Stitz,Nolan Cunningham
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,3,14:13,853,EV,False,False,False,False,Quinn Rudrud,59081,1,Nathan Pilling,Chase Cheslock
+2026-27,2026-10-10_1_63,2026-10-10,St. Thomas,Air Force,True,3,18:15,1095,EN,False,False,True,False,Lucas Van Vliet,61101,1,Justin Kipkie,Luken Huff
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,1,6:33,393,EV,False,False,False,False,Olivier Houde,61655,2,Daniel Shlaine,Sean McGurn
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,1,20:00,1200,SH,False,True,False,False,Matthew Kursonis,57814,3,Owen Kim,
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,2,15:00,900,EV,False,False,False,False,Owen Kim,58957,1,Quinn McCall,Matthew Kursonis
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,2,19:41,1181,EV,False,False,False,False,David Hymovitch,60199,1,,
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,3,12:05,725,PP,True,False,False,False,Nathan Behm,125600,3,Rylan Brown,Olivier Houde
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,3,15:28,928,EV,False,False,False,False,Kyle Smolen,59527,3,Rylan Brown,Landon Hafele
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,3,18:27,1107,PP,True,False,False,False,Ben Muthersbaugh,60085,2,Jonas Woo,
+2026-27,2026-10-10_23_61,2026-10-10,Holy Cross,Arizona State,False,3,19:43,1183,EV,False,False,False,False,David Hymovitch,60199,2,William Elias,Noah Eyre
+2026-27,2026-10-10_23_61,2026-10-10,Arizona State,Holy Cross,True,4,0:46,46,3x3,False,False,False,False,Jack Beck,61937,1,Jonas Woo,Jack O'Brien
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,1,7:42,462,EV,False,False,False,False,Loic Usereau,61533,1,Max Scott,Masun Fleece
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,1,8:55,535,EV,False,False,False,False,Jack Stockfish,59062,2,Antonin Verreault,Dylan Edwards
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,1,13:48,828,PP,True,False,False,False,Samuel Alfano,61835,1,Max Scott,Lukas Peterson
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,1,16:16,976,EV,False,False,False,False,Jan Golicic,128446,1,Ethan Wyttenbach,Dylan Edwards
+2026-27,2026-10-10_25_47,2026-10-10,Quinnipiac,Maine,False,2,1:04,64,EV,False,False,False,False,Mason Marcellus,58315,4,Ethan Wyttenbach,Andrew Strathmann
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,2,3:24,204,EV,False,False,False,False,Isa Parekh,59816,2,Owen Fowler,Lee Parks
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,2,6:07,367,EV,False,False,False,False,Lee Parks,59679,3,William Gerrior,Max Scott
+2026-27,2026-10-10_25_47,2026-10-10,Maine,Quinnipiac,True,3,18:11,1091,"PP, EN",True,False,True,False,Sully Scholle,59869,1,Owen Fowler,
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,1,3:54,234,PP,True,False,False,False,Jak Vaarwerk,58896,1,Anthony Dowd,Kolin Sisson
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,1,9:43,583,EV,False,False,False,False,Cole Lonsdale,61256,1,Sean Kilcullen,
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,2,13:38,818,4x4,False,False,False,False,Thomas Stewart,128665,1,Dalyn Wakely,Kuzma Voronin
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,6:33,393,PP,True,False,False,False,Nicholas Beneteau,59852,1,Gabe Westling,Andrew Brown
+2026-27,2026-10-10_26_53,2026-10-10,Mass.-Lowell,St. Lawrence,True,3,14:46,886,EV,False,False,False,False,Jacob MacDonald,60746,2,Kuzma Voronin,Dalyn Wakely
+2026-27,2026-10-10_26_53,2026-10-10,St. Lawrence,Mass.-Lowell,False,3,18:09,1089,EA,False,False,False,True,Ihnat Pazii,125629,1,Luke Posthumus,Jake Rozzi
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,1,16:27,987,EV,False,False,False,False,Larry Keenan,59114,1,Lukáš Klečka,Justin Kerr
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,1,19:11,1151,EV,False,False,False,False,Egor Barabanov,59753,2,Maxim Masse,Jack Musa
+2026-27,2026-10-10_27_49,2026-10-10,RIT,Massachusetts,False,1,19:49,1189,EV,False,False,False,False,Nick De Angelis,61612,1,Zach Wigle,Christian Catalano
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,2,4:53,293,EV,False,False,False,False,Coleson Hanrahan,61056,1,Jack Musa,Maxim Masse
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,2,7:41,461,PP,True,False,False,False,Václav Nestrašil,60604,1,Egor Barabanov,Jack Musa
+2026-27,2026-10-10_27_49,2026-10-10,Massachusetts,RIT,True,2,15:19,919,PP,True,False,False,False,Maxim Masse,125709,1,Jack Musa,
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,1,2:05,125,SH,False,True,False,False,Elias Jansson,60775,2,Tom Leppa,Owen Bartoszkiewicz
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,1,2:33,153,PP,True,False,False,False,Brock Souch,59861,1,Jake Southgate,William Ahlrik
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,2,8:34,514,EV,False,False,False,False,Thor Byfuglien,58849,1,Noah Urness,Gavyn Thoreson
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,2,15:29,929,EV,False,False,False,False,Isaac Gordon,59510,1,Matthew Van Blaricom,Luke Shipley
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,3,0:44,44,EV,False,False,False,False,William Ahlrik,59900,1,Charlie Lurie,Carson Pilgrim
+2026-27,2026-10-10_33_52,2026-10-10,Michigan Tech,St. Cloud State,False,3,1:15,75,EV,False,False,False,False,Michael Cicek,61466,1,Luke Shipley,Lucas Brenton
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,3,8:06,486,EV,False,False,False,False,Joseph Belisle,60569,1,Nolan Roed,Gavyn Thoreson
+2026-27,2026-10-10_33_52,2026-10-10,St. Cloud State,Michigan Tech,True,3,18:48,1128,EN,False,False,True,False,Gavyn Thoreson,59257,2,,
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,1,6:49,409,EV,False,False,False,False,Chase Jette,60458,1,Vasily Zelenov,Oliver Tulk
+2026-27,2026-10-10_35_58,2026-10-10,Minnesota State,Wisconsin,True,2,16:33,993,PP,True,False,False,False,Sam Court,58974,1,Luigi Benincasa,Mason Kraft
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,2,19:22,1162,EV,False,False,False,False,Zach Wooten,125582,1,JJ Wiebusch,Gavin Morrissey
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,3,9:14,554,PP,True,False,False,False,Vasily Zelenov,61396,1,Logan Hensler,Zach Wooten
+2026-27,2026-10-10_35_58,2026-10-10,Wisconsin,Minnesota State,False,3,19:14,1154,EN,False,False,True,False,Finn Brink,61204,2,Gavin Morrissey,
+2026-27,2026-10-10_36_64,2026-10-10,Augustana,Minnesota-Duluth,True,2,3:44,224,EV,False,False,False,False,Leonid Bulgakov,60517,2,Hayden Hennen,Landon Fandel
+2026-27,2026-10-10_36_64,2026-10-10,Minnesota-Duluth,Augustana,False,2,6:38,398,EV,False,False,False,False,Ty Hanson,57777,2,Zam Plante,Luke Bibby
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,7:22,442,EV,False,False,False,False,Jayden Perron,57755,5,Ben Robertson,Michael Hage
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,8:44,524,EV,False,False,False,False,Drew Schock,60166,3,Garrett Schifsky,Dakoda Rheaume-Mullen
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,1,9:51,591,EV,False,False,False,False,Jalen Bianchet,128350,1,Oren Shtrom,Tye Spencer
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,1,18:45,1125,PP,True,False,False,False,Cole McKinney,60066,4,Malcolm Spence,Cam Reid
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,2,5:21,321,EV,False,False,False,False,Malcolm Spence,61797,2,Nick Moldenhauer,
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,2,8:21,501,EV,False,False,False,False,Jayden Perron,57755,6,Michael Hage,Will Horcoff
+2026-27,2026-10-10_3_31,2026-10-10,Alaska-Anchorage,Michigan,False,2,14:02,842,EV,False,False,False,False,Cooper Anderson,61161,2,Jacob Terpstra,Aiden Westin
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,2,17:26,1046,EV,False,False,False,False,Will Horcoff,60749,2,Michael Hage,Jayden Perron
+2026-27,2026-10-10_3_31,2026-10-10,Michigan,Alaska-Anchorage,True,3,3:16,196,PP,True,False,False,False,Jayden Perron,57755,7,Michael Hage,Landon DuPont
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,1,13:18,798,5x3,False,False,False,False,Will Zellers,59492,1,Cole Reschny,Mac Swanson
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,1,14:25,865,PP,True,False,False,False,Will Zellers,59492,2,Ethan MacKenzie,Mac Swanson
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,1,19:26,1166,EV,False,False,False,False,Rylan Gould,61517,1,Brayden Dube,
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,2,7:13,433,EV,False,False,False,False,Ethan Miedema,125811,2,Oliver Peer,Maxon Vig
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,2,17:44,1064,EV,False,False,False,False,Mac Swanson,59684,2,Gavin Lindberg,Will Zellers
+2026-27,2026-10-10_40_7,2026-10-10,Bemidji State,North Dakota,False,3,15:09,909,EV,False,False,False,False,Jaksen Panzer,56221,1,Luke Roelofs,
+2026-27,2026-10-10_40_7,2026-10-10,North Dakota,Bemidji State,True,3,16:02,962,EV,False,False,False,False,Jack Kernan,60385,1,Sam Laurila,Hudson Malinoski
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,1,4:43,283,4x4,False,False,False,False,Jordan Tourigny,125680,1,Tyler Fukakusa,Miguel Marques
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,1,8:36,516,EV,False,False,False,False,Jacob Mathieu,61961,1,Amine Hajibi,Joe Connor
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,2,7:22,442,EV,False,False,False,False,Noah Laberge,125657,1,Jordan Tourigny,Jacob Mathieu
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,2,19:46,1186,EV,False,False,False,False,Matthew Maltais,61123,1,Miguel Marques,Jordan Tourigny
+2026-27,2026-10-10_41_8,2026-10-10,Bentley,Northeastern,True,3,8:30,510,PP,True,False,False,False,Jack Dalton,60560,1,Oskar Bakkevig,Josh Giuliani
+2026-27,2026-10-10_41_8,2026-10-10,Northeastern,Bentley,False,3,14:01,841,EV,False,False,False,False,Jacob Mathieu,61961,2,Amine Hajibi,Joe Connor
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,1,1:51,111,EV,False,False,False,False,Jake Karabela,61619,1,William Smith,Benjamin Wilmott
+2026-27,2026-10-10_44_48,2026-10-10,RPI,Ohio State,True,2,2:12,132,PP,True,False,False,False,Filip Sitar,61235,2,Benjamin Yurchuk,Rainers Rullers
+2026-27,2026-10-10_44_48,2026-10-10,RPI,Ohio State,True,2,10:05,605,EV,False,False,False,False,Kazimier Sobieski,57718,1,Caleb Hadland,Jagger Tapper
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,3,2:36,156,EV,False,False,False,False,Sam Deckhut,59515,1,Chris Able,Nathan Lewis
+2026-27,2026-10-10_44_48,2026-10-10,Ohio State,RPI,False,3,11:30,690,EV,False,False,False,False,Max Montes,57197,1,Ryan Rucinski,
+2026-27,2026-10-10_4_54,2026-10-10,Alaska,Union,False,1,11:36,696,PP,True,False,False,False,Joel Lehtinen,60901,1,Jhett Larson,Misha Danylov
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,1,13:38,818,4x4,False,False,False,False,Tommy Cronin,61510,1,Alex Laurenza,Etienne Lessard
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,2,5:17,317,EV,False,False,False,False,Luke Garry,60092,1,Jacob Jeannette,DJ Hart
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,2,11:54,714,PP,True,False,False,False,Tyler Dunbar,57175,2,Luke Garry,Etienne Lessard
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,3,4:29,269,EV,False,False,False,False,Lucas Buzziol,59344,1,Tommy Cronin,Riley Brueck
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,3,6:44,404,EV,False,False,False,False,Luke Garry,60092,2,Will Felicio,Jack Henry
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,3,13:27,807,PP,True,False,False,False,Connor Smith,58888,3,Will Felicio,Nathan Free
+2026-27,2026-10-10_4_54,2026-10-10,Union,Alaska,True,3,18:58,1138,EV,False,False,False,False,Luke Buss,60764,1,Jacob Jeannette,
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,2,12:27,747,EV,False,False,False,False,Landen Gunderson,61261,1,Taos Jordan,Gavin Bryant
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,2,16:34,994,EV,False,False,False,False,Taos Jordan,128450,1,,
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,2,18:18,1098,EV,False,False,False,False,Emmanuel Vermette,128452,1,Nick Bernardo,Chase Ramsay
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,3,3:17,197,EV,False,False,False,False,Kale Dach,60461,2,Justin Poirier,Justin Larose
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,3,3:38,218,EV,False,False,False,False,Justin Larose,125431,1,Kale Dach,Justin Poirier
+2026-27,2026-10-10_51_60,2026-10-10,Penn State,Sacred Heart,False,3,4:44,284,EV,False,False,False,False,Mac Gadowsky,59183,1,Jackson Smith,Luke Misa
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,3,9:17,557,EV,False,False,False,False,Landen Gunderson,61261,2,Ethan Semeniuk,
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,3,17:56,1076,EN,False,False,True,False,Jake Bongo,56990,1,Gavin Bryant,
+2026-27,2026-10-10_51_60,2026-10-10,Sacred Heart,Penn State,True,3,19:55,1195,EN,False,False,True,False,Aiden VanRooyan,60515,1,Vitaly Levyy,
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,1,9:33,573,EV,False,False,False,False,Jimmy Clark,58231,1,Brady Peddle,Gavin O'Connell
+2026-27,2026-10-11_32_42,2026-10-11,Northern Michigan,Michigan State,False,2,1:45,105,EV,False,False,False,False,Michael Burchill,61088,1,Mathew Ward,Oliver Auyeung-Ashton
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,2,9:49,589,PP,True,False,False,False,Ethan Belchetz,128327,1,Jack Hextall,Chase Reid
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,2,13:13,793,EV,False,False,False,False,Ryker Lee,60264,1,Jimmy Clark,Jack Hextall
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,2,16:30,990,SH,False,True,False,False,Anthony Romani,61800,3,Cullen Potter,Quentin Sigurdson
+2026-27,2026-10-11_32_42,2026-10-11,Michigan State,Northern Michigan,True,3,12:02,722,PP,True,False,False,False,Jack Hextall,61103,2,Thomas Bleyl,Eric Nilson

@@ -6,3 +6,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .DS_Store
+
+# Raw CHN box score pages (~100 MB; re-download with chn_boxscore_downloader)
+data/raw/chn/boxscores/
+
+# Raw CHN schedule pages (re-download with chn_team_schedule_scraper)
+data/raw/chn/schedules/

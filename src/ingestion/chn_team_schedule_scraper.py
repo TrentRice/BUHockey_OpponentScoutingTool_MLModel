@@ -7,8 +7,11 @@ Parses  table.data.schedule.full  from pages like
 Usage (from project root):
   uv run python -m src.ingestion.chn_team_schedule_scraper                        # current season, all teams
   uv run python -m src.ingestion.chn_team_schedule_scraper --season 2025-26        # a specific season
-  uv run python -m src.ingestion.chn_team_schedule_scraper --team "Northeastern"   # one team
+  uv run python -m src.ingestion.chn_team_schedule_scraper --team "Northeastern"   # refresh one team's page
   uv run python -m src.ingestion.chn_team_schedule_scraper --refresh               # ignore cached HTML
+
+--team only refreshes that team's cached page; run without it to rebuild all_games (fresh cached
+pages are reused, so that's quick).
 
 The team list (and conferences) is read from CHN's "Other Teams" menu for the chosen season,
 so realignment and new programs are picked up automatically.
@@ -19,8 +22,9 @@ are re-downloaded once they are older than --max-age-hours, so new results come 
 
 Outputs (<tag> is e.g. 2026_27):
   data/raw/chn/schedules/<slug>_<season code>.html
-  data/processed/chn/team_schedule_<team_snake>_<tag>.csv
   data/processed/chn/all_games_<tag>.csv   (one row per game, home_team/away_team)
+
+For one team's season, filter all_games on home_team/away_team.
 """
 
 from __future__ import annotations
@@ -528,13 +532,8 @@ def scrape_team(
     df["team_conference"] = reg.conference.get(team)
     df["opponent_conference"] = df["opponent_team_id"].map(reg.id_to_conference)
 
-    out = (
-        root / f"data/processed/chn/team_schedule_{slug.lower().replace('-', '_')}_{season.tag}.csv"
-    )
-    out.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(out, index=False)
     played = int(df["result"].notna().sum())
-    msg = f"{team}: {len(df)} games ({played} played) -> {out}"
+    msg = f"{team}: {len(df)} games ({played} played)"
     if df.attrs.get("skipped_rows"):
         msg += f"  [WARNING: {df.attrs['skipped_rows']} rows couldn't be read]"
     print(msg)

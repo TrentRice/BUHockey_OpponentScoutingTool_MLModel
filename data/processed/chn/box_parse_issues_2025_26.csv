@@ -1,0 +1,7 @@
+game_id,issue
+2025-10-03_33_34,away skater goals 2 != 3
+2025-12-07_64_7,home skater goals 3 != 4
+2025-12-13_35_64,home skater goals 3 != 4
+2026-01-23_40_61,home skater goals 3 != 4
+2026-02-28_30_37,home goalie GA 3 != opponent goals 4
+2026-03-06_64_7,home skater goals 4 != 5

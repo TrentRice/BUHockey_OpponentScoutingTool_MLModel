@@ -76,6 +76,9 @@ def load_played_games(root: Path, season: Season) -> pd.DataFrame:
             f"  uv run python -m src.ingestion.chn_team_schedule_scraper --season {season.label}"
         )
     games = pd.read_csv(path)
+    if "is_played" not in games.columns and {"home_goals", "away_goals"} <= set(games.columns):
+        # games tables written before the is_played column existed
+        games["is_played"] = games["home_goals"].notna() & games["away_goals"].notna()
     need = {"game_id", "date", "home_team", "away_team", "is_played", "box_score_url"}
     if need - set(games.columns):
         raise SystemExit(f"{path} is missing columns: {sorted(need - set(games.columns))}")
